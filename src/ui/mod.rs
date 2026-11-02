@@ -6,6 +6,7 @@ pub mod legend;
 pub mod lessons;
 pub mod review;
 pub mod settings;
+pub mod stats;
 
 use eframe::egui::{Color32, Key};
 use vietnamska_slovicka::fsrs::Rating;

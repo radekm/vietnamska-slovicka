@@ -70,6 +70,8 @@ pub enum Screen {
     Home,
     /// Procházení lekcí a hledání.
     Lessons,
+    /// Statistiky.
+    Stats(ui::stats::StatsState),
     /// Nastavení.
     Settings(ui::settings::SettingsState),
     /// Probíhající sezení.
@@ -280,16 +282,20 @@ impl eframe::App for App {
                 }
                 // Během opakování se záložky schovají, aby se sezení neopustilo omylem.
                 // Tlačítko legendy má obrazovka opakování ve své liště.
+                let today = study_day(now);
                 if !matches!(loaded.screen, Screen::Review(_)) {
-                    nav_bar(ui, loaded);
+                    nav_bar(ui, loaded, today);
                 }
                 error_bar(ui, loaded);
                 let settings_file = self.dirs.settings_file();
-                let today = study_day(now);
                 let action = match &loaded.screen {
                     Screen::Home => ui::home::show(ui, loaded, today, &settings_file),
                     Screen::Lessons => {
                         ui::lessons::show(ui, loaded, today);
+                        Action::None
+                    }
+                    Screen::Stats(_) => {
+                        ui::stats::show(ui, loaded, today);
                         Action::None
                     }
                     Screen::Settings(_) => ui::settings::show(ui, loaded, &self.dirs),
@@ -316,13 +322,15 @@ impl eframe::App for App {
 enum Tab {
     Home,
     Lessons,
+    Stats,
     Settings,
 }
 
 /// Horní lišta se záložkami a tlačítkem legendy tónů.
-fn nav_bar(ui: &mut egui::Ui, loaded: &mut Loaded) {
+fn nav_bar(ui: &mut egui::Ui, loaded: &mut Loaded, today: Date) {
     let active = match loaded.screen {
         Screen::Lessons => Some(Tab::Lessons),
+        Screen::Stats(_) => Some(Tab::Stats),
         Screen::Settings(_) => Some(Tab::Settings),
         Screen::Home | Screen::Finished(_) => Some(Tab::Home),
         Screen::Review(_) => None,
@@ -334,6 +342,7 @@ fn nav_bar(ui: &mut egui::Ui, loaded: &mut Loaded) {
             for (tab, title) in [
                 (Tab::Home, "Úvod"),
                 (Tab::Lessons, "Lekce"),
+                (Tab::Stats, "Statistiky"),
                 (Tab::Settings, "Nastavení"),
             ] {
                 let text = RichText::new(title).size(17.0);
@@ -353,6 +362,7 @@ fn nav_bar(ui: &mut egui::Ui, loaded: &mut Loaded) {
             loaded.screen = match tab {
                 Tab::Home => Screen::Home,
                 Tab::Lessons => Screen::Lessons,
+                Tab::Stats => Screen::Stats(ui::stats::StatsState::new(loaded, today)),
                 Tab::Settings => {
                     Screen::Settings(ui::settings::SettingsState::new(&loaded.settings))
                 }
