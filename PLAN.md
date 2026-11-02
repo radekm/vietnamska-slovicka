@@ -324,6 +324,15 @@ Upřesnění (etapa 7, schváleno autorem):
   Stav v minulých dnech se zjistí přehráním historie hodnocení přes FSRS (stabilita nezávisí
   na cílové retenci). Počítají se jen kartičky, které jsou v lekcích (bez osiřelých).
 - Osa X ukazuje datum („2. 11.“), při najetí myší se ukáže den a hodnota.
+- Statistiky se počítají při otevření záložky (přehrání historie je při velké historii
+  pomalejší) a znovu jen při změně studijního dne.
+- Úspěšnost se počítá z přehrané historie, stejně jako „zapomenutí“ v FSRS: hodnocení
+  v jiný studijní den než předchozí hodnocení téže kartičky.
+- Když přehraná historie nesedí s `postup.toml` (jiná stabilita nebo poslední opakování,
+  např. po ruční úpravě dat), zaloguje se varování s počtem takových kartiček. Graf
+  naučených pak může být nepřesný, ostatní grafy ne.
+- Legenda grafů je vlastní, v řádku s nadpisem (legenda `egui_plot` řadí položky abecedně
+  a překrývá graf).
 
 ## Font
 
@@ -390,7 +399,7 @@ slovnicky/
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | hotovo |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
-| 7 | Statistiky | rozpracováno |
+| 7 | Statistiky | hotovo |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
 
 ## Otevřené otázky

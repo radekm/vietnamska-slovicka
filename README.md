@@ -18,7 +18,7 @@ cargo run --release
 
 ## Ovládání
 
-- Nahoře jsou záložky **Úvod**, **Lekce** a **Nastavení**. Tlačítko **?** (nebo klávesa
+- Nahoře jsou záložky **Úvod**, **Lekce**, **Statistiky** a **Nastavení**. Tlačítko **?** (nebo klávesa
   **F1**) otevře legendu tónů, i během opakování.
 - Na úvodu zaškrtni lekce, ze kterých se mají brát nové kartičky, a spusť sezení
   tlačítkem **Začít** (nebo Enterem).
@@ -28,6 +28,11 @@ cargo run --release
 - V **Lekcích** se dají procházet všechna slovíčka a u každého je vidět, kdy přijdou
   na řadu jeho kartičky. Hledání prohledává všechny lekce a na diakritice nezáleží
   („cam on“ najde „cảm ơn“).
+- Ve **Statistikách** je souhrn (dnes ohodnoceno, zavedené a naučené kartičky, úspěšnost
+  za 30 dní) a tři grafy: opakování za posledních 30 dní podle hodnocení, předpověď opakování
+  na dalších 30 dní a vývoj počtu zavedených a naučených kartiček. Naučená je kartička se
+  stabilitou FSRS aspoň 21 dní. Po najetí myší na sloupec nebo bod grafu se ukáže datum
+  a hodnota.
 - V **Nastavení** jde změnit složku se slovníčky, denní limit nových kartiček, cílovou
   retenci a směry procvičování. Změny se projeví až po stisknutí **Uložit**. Nová cílová
   retence platí jen pro další hodnocení, už naplánovaná opakování se nemění.
