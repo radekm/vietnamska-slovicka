@@ -3,6 +3,7 @@
 //! Binárka (`main.rs`) obsahuje jen GUI a spuštění. Všechno, co jde testovat
 //! bez okna, patří sem.
 
+pub mod browse;
 pub mod fsrs;
 pub mod lessons;
 pub mod model;

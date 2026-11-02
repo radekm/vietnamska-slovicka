@@ -192,6 +192,12 @@ impl Study {
         &self.fsrs
     }
 
+    /// Vymění plánovač (po změně cílové retence). Nová retence platí jen pro další
+    /// hodnocení, už naplánovaná opakování v postupu se nemění (viz `PLAN.md`).
+    pub fn set_fsrs(&mut self, fsrs: Fsrs) {
+        self.fsrs = fsrs;
+    }
+
     /// Ohodnotí kartičku v čase `now` (místní čas) a uloží postup i historii.
     ///
     /// Hodnocení se zapíše do paměti vždy. Když uložení selže, vrátí chybu a příští
@@ -462,6 +468,27 @@ mod tests {
         assert_eq!(reloaded.progress, study.progress);
         assert_eq!(reloaded.history.entries().len(), 2);
         assert_eq!(reloaded.history.entries()[1].time, night);
+    }
+
+    #[test]
+    fn new_retention_applies_only_to_further_reviews() {
+        let dir = TempDir::new("session-retention");
+        let dirs = AppDirs::in_dir(dir.path());
+        let mut study = Study::load(&dirs, Fsrs::default()).unwrap();
+        let card = vi("cảm ơn");
+        study
+            .rate(&card, Rating::Easy, datetime!(2026-11-02 20:00 +01:00))
+            .unwrap();
+        let scheduled = study.progress.get(&card).unwrap().clone();
+
+        // Nižší retence znamená delší intervaly, naplánované opakování se ale nemění.
+        let later = datetime!(2026-11-18 20:00 +01:00);
+        let before = study.preview(&card, later);
+        study.set_fsrs(Fsrs::new(0.8).unwrap());
+        assert_eq!(study.fsrs().desired_retention(), 0.8);
+        assert_eq!(study.progress.get(&card), Some(&scheduled));
+        let after = study.preview(&card, later);
+        assert!(after[2] > before[2], "{before:?} → {after:?}");
     }
 
     #[test]

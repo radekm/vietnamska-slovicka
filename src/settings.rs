@@ -161,6 +161,12 @@ impl Settings {
         Ok(())
     }
 
+    /// Cílová retence zaokrouhlená na setiny, jak ji nastavuje posuvník v GUI.
+    /// Bez zaokrouhlení by se do souboru zapsalo např. `0.8500000000000001`.
+    pub fn round_retention(retention: f64) -> f64 {
+        (retention * 100.0).round() / 100.0
+    }
+
     /// Plánovač FSRS s cílovou retencí z nastavení.
     pub fn fsrs(&self) -> Result<Fsrs> {
         Fsrs::new(self.desired_retention)
@@ -251,6 +257,19 @@ mod tests {
                 "mělo selhat: {text}"
             );
         }
+    }
+
+    #[test]
+    fn retention_is_rounded_to_hundredths() {
+        assert_eq!(Settings::round_retention(0.7 + 15.0 * 0.01), 0.85);
+        assert_eq!(Settings::round_retention(0.899_999_9), 0.9);
+        let text = Settings {
+            desired_retention: Settings::round_retention(0.7 + 0.01 * 15.0),
+            ..Settings::default()
+        }
+        .to_toml_string()
+        .unwrap();
+        assert!(text.contains("cilova_retence = 0.85\n"), "{text}");
     }
 
     #[test]
