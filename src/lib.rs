@@ -9,6 +9,7 @@ pub mod model;
 pub mod paths;
 pub mod progress;
 pub mod scheduler;
+pub mod session;
 pub mod settings;
 pub mod storage;
 

@@ -14,6 +14,8 @@ use anyhow::{Context, Result};
 const DATA_DIR_NAME: &str = "data";
 /// Název složky s logy v pracovním adresáři.
 const LOG_DIR_NAME: &str = "logs";
+/// Název výchozí složky se slovníčky v pracovním adresáři.
+const DEFAULT_LESSONS_DIR_NAME: &str = "slovnicky";
 
 /// Složky, se kterými aplikace pracuje.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -22,6 +24,8 @@ pub struct AppDirs {
     pub data: PathBuf,
     /// Složka s logy.
     pub logs: PathBuf,
+    /// Složka se slovníčky, dokud uživatel v nastavení nevybere jinou.
+    pub default_lessons: PathBuf,
 }
 
 impl AppDirs {
@@ -36,6 +40,7 @@ impl AppDirs {
         Self {
             data: base.join(DATA_DIR_NAME),
             logs: base.join(LOG_DIR_NAME),
+            default_lessons: base.join(DEFAULT_LESSONS_DIR_NAME),
         }
     }
 
@@ -64,6 +69,10 @@ mod tests {
         let dirs = AppDirs::in_dir(Path::new("/home/radek/slovicka"));
         assert_eq!(dirs.data, PathBuf::from("/home/radek/slovicka/data"));
         assert_eq!(dirs.logs, PathBuf::from("/home/radek/slovicka/logs"));
+        assert_eq!(
+            dirs.default_lessons,
+            PathBuf::from("/home/radek/slovicka/slovnicky")
+        );
     }
 
     #[test]
