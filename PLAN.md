@@ -166,6 +166,22 @@ pak přejmenování.
 - Plánování po dnech. Den začíná ve 4:00 místního času, aby učení po půlnoci patřilo k předchozímu dni.
 - Modul s algoritmem je čistá logika bez GUI, pokrytá unit testy (známé hodnoty z referenční implementace).
 
+Upřesnění implementace (`src/fsrs.rs`, etapa 3):
+
+- Referenční implementace je **py-fsrs v4.1.2** (FSRS-5) nastavená bez učebních kroků
+  a bez fuzzu (`learning_steps=()`, `relearning_steps=()`, `enable_fuzzing=False`).
+  Testy porovnávají stabilitu, obtížnost a interval s hodnotami z ní.
+- **Bez náhodného rozptylu intervalů (fuzz)**, plánování je deterministické.
+- **Bez učebních kroků**, nejkratší interval je 1 den, nejdelší 36 500 dní.
+- Interval se zaokrouhluje na celé dny, polovina k sudé (jako `round` v Pythonu).
+- Opakování ve **stejný studijní den** jako předchozí (např. zopakování po „Znovu“ během
+  sezení) používá krátkodobý vzorec FSRS-5 (parametry w17, w18).
+- **Zapomenutí** (`lapses`) je hodnocení „Znovu“ při opakování v jiný den než předchozí
+  opakování. První hodnocení nové kartičky ani zopakování týž den se nepočítá.
+- Cílová retence musí být v rozsahu 0,70 až 0,99.
+- Studijní den spočítá `study_day` z místního času (posun o 4 hodiny). Zjištění místního
+  časového pásma (feature `local-offset` crate `time`) řeší až etapa 4.
+
 ## Průběh opakování
 
 1. Aplikace sestaví frontu: kartičky k opakování dnes + nové kartičky do denního limitu
@@ -227,7 +243,7 @@ src/
   settings.rs    # nastavení
   paths.rs       # umístění složek data/ a logs/
   logging.rs     # nastavení tracing
-  fsrs.rs        # algoritmus FSRS
+  fsrs.rs        # algoritmus FSRS-5, studijní den
   scheduler.rs   # sestavení fronty na dnešek
 assets/
   fonts/
@@ -246,7 +262,7 @@ slovnicky/
 | 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | hotovo |
 | 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | hotovo |
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | hotovo |
-| 3 | FSRS + testy | probíhá |
+| 3 | FSRS + testy | hotovo |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | čeká |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | čeká |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | čeká |
