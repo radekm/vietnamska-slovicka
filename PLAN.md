@@ -79,7 +79,8 @@ Cílem je **přesný** fonetický přepis hanojské výslovnosti, bez zjednoduš
 
 Lekce jsou ve složce se slovníčky jako `lekce01.toml`, `lekce02.toml`, … V repozitáři je
 to složka `slovnicky/`. Aplikace si cestu ke složce pamatuje v nastavení a jde ji změnit
-dialogem pro výběr složky (`rfd`). Lekce se řadí podle čísla v názvu souboru.
+dialogem pro výběr složky (`rfd`). Dokud není nastavená, použije se `slovnicky/`
+v pracovním adresáři. Lekce se řadí podle čísla v názvu souboru.
 
 ```toml
 # slovnicky/lekce01.toml
@@ -257,13 +258,26 @@ Upřesnění implementace (`src/fsrs.rs`, etapa 3):
 3. Uživatel přemýšlí a pak kartičku otočí (tlačítko nebo mezerník).
 4. Zobrazí se **rub**: vždy všechna pole, tedy vietnamsky, česky, výslovnost česky, IPA a poznámka.
 5. Uživatel se ohodnotí. FSRS spočítá příští opakování. Při hodnocení „Znovu“ se kartička
-   během sezení zopakuje ještě jednou.
-6. Postup se ukládá průběžně po každém hodnocení.
+   vrátí do fronty o 5 kartiček dál (nebo na konec, když jich tolik nezbývá) a opakuje se,
+   dokud nedostane jiné hodnocení než „Znovu“.
+6. Postup se ukládá průběžně po každém hodnocení. Když se uložení nepovede, hodnocení
+   zůstane v paměti, zobrazí se chyba a další hodnocení zkusí uložit znovu. Studijní den
+   se bere z času každého hodnocení, takže sezení přes 4:00 se zapíše správně.
+
+Pořadí kartiček v sezení:
+
+- Nové kartičky jsou **rovnoměrně rozprostřené** mezi kartičky k opakování.
+- Dvě kartičky téhož slovíčka nejdou hned po sobě, pokud je mezi ně co dát.
+- Na konci sezení (i předčasném) se zaloguje souhrn hodnocení.
 
 ## Obrazovky (egui)
 
-- **Úvod:** kolik je dnes k opakování a kolik nových, výběr lekcí a tlačítko Začít.
-- **Opakování:** kartička, otočení, hodnocení, ukazatel postupu sezení.
+- **Úvod:** kolik je dnes k opakování a kolik nových, výběr lekcí (u každé počet slovíček
+  a zbývajících nových kartiček, výběr se hned ukládá) a tlačítko Začít. Chyby v lekcích
+  nebo poškozená data se zobrazí jako seznam hlášek s tlačítkem „Zkusit znovu“.
+- **Opakování:** ukazatel postupu sezení, směr, tlačítko Ukončit; kartička a otočení
+  (mezerník); hodnocení tlačítky nebo klávesami 1–4, u každého tlačítka příští interval
+  (např. „za 3 dny“). Na konci shrnutí a návrat na úvod.
 - **Lekce:** seznam lekcí a slovíček, aby šlo procházet a hledat.
 - **Statistiky** (`egui_plot`): opakování za den, předpověď počtu opakování na další dny,
   počet naučených kartiček.
@@ -311,6 +325,7 @@ src/
   logging.rs     # nastavení tracing
   fsrs.rs        # algoritmus FSRS-5, studijní den
   scheduler.rs   # sestavení fronty na dnešek
+  session.rs     # průběh sezení, uložení hodnocení
 assets/
   fonts/
     NotoSans-Regular.ttf
@@ -330,7 +345,7 @@ slovnicky/
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | hotovo |
 | 3 | FSRS + testy | hotovo |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | hotovo |
-| 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | čeká |
+| 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | probíhá |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | čeká |
 | 7 | Statistiky | čeká |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
