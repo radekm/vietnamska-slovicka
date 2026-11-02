@@ -10,7 +10,7 @@ Před začátkem práce si vždy přečti tento soubor a `PLAN.md`.
 - **Komentáře v kódu:** česky.
 - **Dokumentace** (`README.md`, `PLAN.md`, tento soubor, dokumentační komentáře `///`): česky.
 - **Texty v uživatelském rozhraní:** česky.
-- **Obsah lekcí:** vietnamština (severní, hanojská výslovnost), čeština, IPA.
+- **Obsah lekcí:** vietnamština (severní, hanojská výslovnost), čeština, přesný přepis IPA.
 
 ## Když si nejsi jistý
 
@@ -68,8 +68,9 @@ Zatím žádné. V `Cargo.toml` se nepřidávají vlastní profily ani `[lints]`
 
 - Lekce jsou v TOML souborech `lekce01.toml`, `lekce02.toml`, … ve složce se slovníčky
   (v repozitáři `slovnicky/`). Formát popisuje `PLAN.md`.
-- Klíčem slovíčka je vietnamské slovo (`vi`), u homonym volitelný `klic`. Klíč musí být
-  unikátní napříč všemi lekcemi. **Změna `vi` nebo `klic` u existujícího slovíčka
+- Klíčem slovíčka je vietnamské slovo (`vi`). Volitelné pole `klic` slouží **jen pro
+  homonyma** (stejně psaná slova s jiným významem, např. *đường* = cesta / cukr), aby každé
+  mělo vlastní postup učení. Klíč musí být unikátní napříč všemi lekcemi. **Změna `vi` nebo `klic` u existujícího slovíčka
   znamená ztrátu jeho postupu**, proto se dělá jen vědomě a po dohodě s autorem.
 - Postup učení, nastavení a logy se ukládají mimo složku se slovníčky, do datové složky
   aplikace (viz `PLAN.md`).

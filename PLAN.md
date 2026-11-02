@@ -25,16 +25,26 @@ s rozloženým opakováním (spaced repetition).
 
 Ze slovíčka vzniknou **dvě kartičky**, jedna pro každý směr. Každá se plánuje samostatně.
 
-### Klíč slovíčka
+### Klíč slovíčka a proč existuje pole `klic`
 
-Postup učení se k slovíčku váže přes jeho **klíč**. Klíčem je `klic`, pokud je vyplněný,
-jinak `vi`. Klíč musí být unikátní napříč všemi lekcemi. Při načtení se to kontroluje
-a duplicita je chyba se srozumitelnou hláškou.
+Aplikace si u každé kartičky pamatuje postup učení (kdy se opakovala, jak dobře ji umíš).
+Aby ho mohla přiřadit ke správnému slovíčku, potřebuje každé slovíčko jednoznačný
+identifikátor, tedy **klíč**. Klíčem je běžně samotné vietnamské slovo (`vi`).
 
-`klic` je potřeba jen u homonym, tedy stejně psaných slov s jiným významem
-(např. *đường* = cesta / cukr, *bàn* = stůl / diskutovat). Pokud se opraví překlep ve `vi`,
-slovíčko přijde o postup. Aplikace takové osiřelé záznamy v postupu ponechá, takže omyl
-jde napravit vrácením původního klíče.
+**Pole `klic` existuje kvůli homonymům.** Homonyma jsou stejně psaná slova s různým
+významem, např. *đường* = cesta i cukr, *bàn* = stůl i diskutovat. Kdyby klíčem bylo jen
+`vi`, obě slovíčka *đường* by sdílela jeden postup učení a aplikace by je nerozlišila.
+Proto se u homonym vyplní `klic`, který je odliší (např. `"đường (cesta)"`
+a `"đường (cukr)"`). U ostatních slovíček se `klic` nevyplňuje.
+
+Pravidla:
+
+- Klíčem je `klic`, pokud je vyplněný, jinak `vi`.
+- Klíč musí být unikátní napříč všemi lekcemi. Při načtení se to kontroluje
+  a duplicita je chyba se srozumitelnou hláškou, která radí doplnit `klic`.
+- Když se změní `vi` (např. oprava překlepu) nebo `klic`, slovíčko přijde o postup.
+  Aplikace takové osiřelé záznamy v postupu ponechá, takže omyl jde napravit vrácením
+  původního klíče.
 
 ### Český popis výslovnosti
 
@@ -54,13 +64,16 @@ při přípravě první lekce (etapa 8) a doplní se sem.
 
 ### Konvence IPA
 
-- Hanojská výslovnost, slabiky oddělené mezerou.
-- Tóny Chaovými tónovými písmeny: ngang ˧˧, huyền ˨˩, sắc ˧˥, hỏi ˧˩˧, ngã ˧ˀ˥, nặng ˨˩ˀ.
-- *ch* a *tr* (v Hanoji splývají) se zapisují jako **c** (např. *chào* → `caːw˨˩`),
-  ne jako t͡ɕ. Znak ɕ font Inter nemá.
-- Nepoužívají se kombinující diakritická znaménka IPA (např. ̚ pro nevypuštěné koncové
-  souhlásky nebo ̰ pro skřípavý hlas). Font Inter je nemá a egui je spolehlivě nevykreslí.
-  Rázy a skřípavost tónů ngã a nặng vyjadřuje ˀ v tónové značce.
+Cílem je **přesný** fonetický přepis hanojské výslovnosti, bez zjednodušování kvůli fontu.
+
+- Slabiky se oddělují mezerou.
+- Tóny se zapisují Chaovými tónovými písmeny za slabikou: ngang ˧˧, huyền ˨˩, sắc ˧˥,
+  hỏi ˧˩˧, ngã ˧ˀ˥, nặng ˨˩ˀ.
+- *ch* a *tr*, které v Hanoji splývají, se zapisují jako **t͡ɕ** (např. *chào* → `t͡ɕaːw˨˩`).
+- Nevypuštěné koncové souhlásky se značí ̚ (např. *một* → `mot̚˨˩ˀ`).
+- Při přípravě první lekce (etapa 8) se konvence ověří podle odborných zdrojů
+  (např. Kirby 2011, *Vietnamese (Hanoi Vietnamese)*, Journal of the IPA) a případně
+  upřesní. Hlavně jde o přesné hodnoty tónů.
 
 ## Složka se slovníčky
 
@@ -77,7 +90,7 @@ popis = "Základní pozdravy a zdvořilostní fráze"
 vi = "xin chào"
 cs = "dobrý den / ahoj"
 vyslovnost_cs = "sin (rovně) čao (nízko klesá)"
-ipa = "sin˧˧ caːw˨˩"
+ipa = "sin˧˧ t͡ɕaːw˨˩"
 stitky = ["pozdrav"]
 
 [[slovicka]]
@@ -86,6 +99,21 @@ cs = "děkuji"
 vyslovnost_cs = "kam (klesá a stoupá) ən (rovně)"
 ipa = "kaːm˧˩˧ ʔəːn˧˧"
 poznamka = "běžné poděkování"
+
+# Homonyma: stejné vi, různý význam, proto má každé svůj klic.
+[[slovicka]]
+vi = "đường"
+klic = "đường (cesta)"
+cs = "cesta, silnice"
+vyslovnost_cs = "dɨəng (nízko klesá)"
+ipa = "ɗɨəŋ˨˩"
+
+[[slovicka]]
+vi = "đường"
+klic = "đường (cukr)"
+cs = "cukr"
+vyslovnost_cs = "dɨəng (nízko klesá)"
+ipa = "ɗɨəŋ˨˩"
 ```
 
 ## Datová složka aplikace
@@ -144,13 +172,18 @@ Zápis je vždy bezpečný: nejdřív do dočasného souboru, pak přejmenován�
 
 ## Font
 
-Použije se **Inter** (licence OFL), statické řezy `Inter_18pt-Regular.ttf`
-a `Inter_18pt-Bold.ttf` ve složce `assets/fonts/`, přibalené do binárky (`include_bytes!`).
+Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
+a `NotoSans-Bold.ttf` ve složce `assets/fonts/`, přibalené do binárky (`include_bytes!`).
 Variabilní verze se nepoužívá.
 
-Ověřené pokrytí: celá vietnamská abeceda (malá i velká písmena), čeština a znaky IPA
-potřebné pro vietnamštinu (ɗ, ɓ, ɲ, ŋ, ʔ, ɣ, ɛ, ɔ, ə, ɤ, ɨ, ɯ, ː, ˀ, tónová písmena ˥˦˧˨˩).
-Chybí ɕ, ̚ a ̰, proto je konvence IPA upravená (viz výše) a záložní font není potřeba.
+Ověřené pokrytí: celá vietnamská abeceda (malá i velká písmena), čeština a všechny znaky
+IPA potřebné pro vietnamštinu, včetně ɕ, ̚, ̰, spojovacího obloučku ͡ a tónových písmen ˥˦˧˨˩.
+
+- Noto Sans nemá šipku → a další symboly. Výchozí fonty egui proto zůstanou v seznamu
+  jako záložní, až za Noto Sans.
+- Riziko: egui nepoužívá plnohodnotný OpenType shaping, takže kombinující znaménka
+  (͡ v t͡ɕ, ̚) se nemusí umístit přesně. Ověří se vizuálně v etapě 1. Kdyby to vypadalo
+  špatně, řešení se domluví s autorem.
 
 ## Logování
 
@@ -177,8 +210,8 @@ src/
   scheduler.rs   # sestavení fronty na dnešek
 assets/
   fonts/
-    Inter_18pt-Regular.ttf
-    Inter_18pt-Bold.ttf
+    NotoSans-Regular.ttf
+    NotoSans-Bold.ttf
     OFL.txt
 slovnicky/
   lekce01.toml
@@ -190,7 +223,7 @@ slovnicky/
 | # | Etapa | Stav |
 |---|-------|------|
 | 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | hotovo |
-| 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Inter a ověření IPA | čeká |
+| 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | čeká |
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | čeká |
 | 3 | FSRS + testy | čeká |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | čeká |
