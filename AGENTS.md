@@ -41,7 +41,7 @@ Cokoliv dalšího (i nová feature) vyžaduje předchozí souhlas autora.
 
 ```toml
 anyhow = "=1.0.104"
-time = { version = "=0.3.55", default-features = false, features = ["std", "macros", "formatting", "parsing"] }
+time = { version = "=0.3.55", default-features = false, features = ["std", "macros", "formatting", "parsing", "local-offset"] }
 serde = { version = "=1.0.229", default-features = false, features = ["std", "derive"] }
 
 tokio = { version = "=1.54.1", default-features = false, features = ["rt", "macros", "time"] }

@@ -246,7 +246,7 @@ slovnicky/
 | 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | hotovo |
 | 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | hotovo |
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | hotovo |
-| 3 | FSRS + testy | čeká |
+| 3 | FSRS + testy | probíhá |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | čeká |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | čeká |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | čeká |
