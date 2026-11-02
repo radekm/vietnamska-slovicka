@@ -142,19 +142,77 @@ se slovníčky:
 
 - `data/` je datová složka. Obsahuje:
   - `postup.toml` se stavem FSRS pro každou kartičku (klíč + směr): stabilitu, obtížnost,
-    datum posledního a příštího opakování, počet opakování a počet zapomenutí. Kartičky,
-    které v souboru nejsou, jsou nové.
+    datum prvního, posledního a příštího opakování, počet opakování a počet zapomenutí.
+    Kartičky, které v souboru nejsou, jsou nové.
   - `historie.toml` s historií hodnocení (čas, kartička, hodnocení). Slouží pro statistiky
     a pro budoucí doladění parametrů FSRS.
-  - `nastaveni.toml` s cestou ke slovníčkům, denním limitem nových kartiček, cílovou retencí
-    a směry procvičování.
+  - `nastaveni.toml` s cestou ke slovníčkům, denním limitem nových kartiček, cílovou retencí,
+    směry procvičování a vybranými lekcemi.
 
   Vytvoří se při prvním ukládání.
 - `logs/` obsahuje JSON logy, jeden soubor na den, drží se posledních 7.
   Vytváří se při startu aplikace.
 
-Obě složky jsou v `.gitignore`. Zápis dat je vždy bezpečný: nejdřív do dočasného souboru,
-pak přejmenování.
+Obě složky jsou v `.gitignore`. Zápis dat je vždy bezpečný: nejdřív do dočasného souboru
+ve stejné složce, `sync_all` a pak přejmenování.
+
+### Formát datových souborů
+
+Data se zapisují v nativních typech TOML (datum, čas s časovým posunem). Každý soubor má
+`verze = 1` kvůli budoucím úpravám formátu. Neznámé pole je chyba, aby starší verze
+aplikace tiše nesmazala, čemu nerozumí.
+
+```toml
+# data/postup.toml
+verze = 1
+
+[[karticky]]
+klic = "cảm ơn"
+smer = "vi-cs"                 # "cs-vi" nebo "vi-cs"
+stabilita = 10.73892584613159
+obtiznost = 5.272967931287446
+prvni_opakovani = 2026-11-02   # pro denní limit nových a statistiku naučených
+posledni_opakovani = 2026-11-05
+pristi_opakovani = 2026-11-16
+opakovani = 2
+zapomenuti = 0
+```
+
+```toml
+# data/historie.toml
+verze = 1
+
+[[hodnoceni]]
+cas = 2026-11-02T16:53:12+01:00
+klic = "cảm ơn"
+smer = "vi-cs"
+hodnoceni = 3                  # 1 Znovu, 2 Těžké, 3 Dobré, 4 Snadné
+```
+
+```toml
+# data/nastaveni.toml
+verze = 1
+slozka_slovnicku = "/home/radek/vietnamska-slovicka/slovnicky"   # volitelné
+novych_denne = 10
+cilova_retence = 0.9
+smery = ["cs-vi", "vi-cs"]
+vybrane_lekce = [1, 2]         # čísla lekcí zapamatovaná z úvodní obrazovky
+```
+
+Pravidla:
+
+- Chybějící soubor znamená prázdný postup, prázdnou historii nebo výchozí nastavení.
+- **Poškozený soubor je chyba, nikdy prázdný stav.** Jinak by ho první uložení přepsalo
+  a postup by se ztratil.
+- Osiřelé záznamy (klíč, který v lekcích už není) se zachovávají.
+- Historie se po každém hodnocení zapisuje celá znovu (bezpečně, viz výše).
+
+### Místní čas
+
+Místní časový posun se zjistí **jednou na začátku `main`**, dokud program běží v jednom
+vlákně (`time` ho na Linuxu ve vícevláknovém programu nevrátí). Když se to nepovede, použije
+se UTC a zaloguje se varování. Pokud aplikace běží přes přechod letního času, může se začátek
+studijního dne posunout o hodinu až do restartu, což je zanedbatelné.
 
 ## Algoritmus: FSRS
 
@@ -180,12 +238,19 @@ Upřesnění implementace (`src/fsrs.rs`, etapa 3):
   opakování. První hodnocení nové kartičky ani zopakování týž den se nepočítá.
 - Cílová retence musí být v rozsahu 0,70 až 0,99.
 - Studijní den spočítá `study_day` z místního času (posun o 4 hodiny). Zjištění místního
-  časového pásma (feature `local-offset` crate `time`) řeší až etapa 4.
+  časového posunu popisuje oddíl „Místní čas“.
 
 ## Průběh opakování
 
-1. Aplikace sestaví frontu: kartičky k opakování dnes + nové kartičky do denního limitu
-   (z vybraných lekcí, v pořadí lekcí a slovíček).
+1. Aplikace sestaví frontu: kartičky k opakování dnes + nové kartičky do denního limitu.
+   - K opakování jdou kartičky ze **všech** lekcí (výběr lekcí je neomezuje), jen v zapnutých
+     směrech. Řadí se od nejvíc prošlých, při shodě podle pořadí lekcí a slovíček.
+   - Nové kartičky jen z **vybraných** lekcí, v pořadí lekcí a slovíček. Limit se počítá
+     v kartičkách a odečítají se nové, které už dnes začaly (podle `prvni_opakovani`).
+   - Nové slovíčko se zavádí nejdřív jako **VI → CS**. Kartička **CS → VI** je nová k zavedení
+     až v pozdější den, než se poprvé opakovala VI → CS (jinak by byla zadarmo, protože
+     odpověď byla právě vidět). Platí jen, když jsou zapnuté oba směry.
+   - Když jsou obě kartičky téhož slovíčka k opakování týž den, ukážou se obě.
 2. Zobrazí se **líc** kartičky:
    - **CS → VI:** česky (+ poznámka).
    - **VI → CS:** vietnamsky + český popis výslovnosti + IPA.
@@ -241,6 +306,7 @@ src/
   lessons.rs     # načítání lekcí z TOML + kontrola (duplicitní klíče, prázdná pole)
   progress.rs    # načítání/ukládání postupu a historie
   settings.rs    # nastavení
+  storage.rs     # bezpečný zápis souborů, převody data a času pro TOML
   paths.rs       # umístění složek data/ a logs/
   logging.rs     # nastavení tracing
   fsrs.rs        # algoritmus FSRS-5, studijní den
@@ -263,7 +329,7 @@ slovnicky/
 | 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | hotovo |
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | hotovo |
 | 3 | FSRS + testy | hotovo |
-| 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | čeká |
+| 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | probíhá |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | čeká |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | čeká |
 | 7 | Statistiky | čeká |
