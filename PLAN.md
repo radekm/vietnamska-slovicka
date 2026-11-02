@@ -286,8 +286,7 @@ Pořadí kartiček v sezení:
 
 Upřesnění (etapa 6):
 
-- **Navigace:** nahoře lišta se záložkami Úvod · Lekce · Nastavení (v etapě 7 přibudou
-  Statistiky) a vpravo tlačítko „?“. Během opakování se záložky schovají, aby se sezení
+- **Navigace:** nahoře lišta se záložkami Úvod · Lekce · Statistiky · Nastavení a vpravo tlačítko „?“. Během opakování se záložky schovají, aby se sezení
   neopustilo omylem, tlačítko „?“ zůstane.
 - **Legenda tónů** je plovoucí okno, které nic neblokuje, přepíná ho tlačítko „?“ nebo F1.
   Kromě tabulky tónů ukazuje i Chaova tónová písmena (viz „Konvence IPA“) a příklad
@@ -305,6 +304,26 @@ Upřesnění (etapa 6):
 - **Chybová obrazovka** (data se nepodařilo načíst) nabízí kromě „Zkusit znovu“ i změnu
   složky se slovníčky.
 - V Nastavení je i tlačítko „Načíst lekce znovu“ pro načtení ručně upravených lekcí.
+
+Upřesnění (etapa 7, schváleno autorem):
+
+- **Statistiky** jsou záložka mezi Lekce a Nastavení. Výpočty jsou v `src/stats.rs` (čistá
+  logika s testy), GUI je jen vykresluje. Počítá se po **studijních dnech** (od 4:00),
+  **oba směry dohromady**, pevný rozsah **30 dní** (bez přepínače).
+- **Souhrn nahoře:** dnes ohodnoceno, zavedeno kartiček, naučeno kartiček a úspěšnost za
+  30 dní (podíl opakování v jiný den než předchozí opakování, která nebyla „Znovu“).
+- **Opakování za den:** posledních 30 dní včetně dneška, skládaný sloupcový graf podle
+  hodnocení Znovu / Těžké / Dobré / Snadné. Počítá se každé hodnocení z `historie.toml`,
+  i zopakování po „Znovu“ týž den.
+- **Předpověď opakování:** dnešek a dalších 29 dní, sloupcový graf počtu kartiček podle
+  `pristi_opakovani`. Prošlé se připočtou k dnešku, nové kartičky se nepočítají. Jen kartičky,
+  které jsou v lekcích a v zapnutých směrech (jako skutečná fronta).
+- **Naučené kartičky:** čárový graf za posledních 30 dní se dvěma čarami:
+  - **zavedené** = kartička byla aspoň jednou ohodnocena,
+  - **naučené** = stabilita FSRS **≥ 21 dní** (obdoba „zralých“ kartiček v Anki).
+  Stav v minulých dnech se zjistí přehráním historie hodnocení přes FSRS (stabilita nezávisí
+  na cílové retenci). Počítají se jen kartičky, které jsou v lekcích (bez osiřelých).
+- Osa X ukazuje datum („2. 11.“), při najetí myší se ukáže den a hodnota.
 
 ## Font
 
@@ -337,7 +356,7 @@ src/
   lib.rs         # knihovna: logika oddělená od GUI (testovatelná bez okna)
   fonts.rs       # nastavení fontů
   app.rs         # stav aplikace, přepínání obrazovek
-  ui/            # obrazovky: úvod, opakování, shrnutí, lekce, nastavení, legenda tónů
+  ui/            # obrazovky: úvod, opakování, shrnutí, lekce, statistiky, nastavení, legenda tónů
   model.rs       # slovíčko, kartička, směr
   browse.rs      # hledání slovíček bez diakritiky, stav kartičky pro seznam lekcí
   lessons.rs     # načítání lekcí z TOML + kontrola (duplicitní klíče, prázdná pole)
@@ -349,6 +368,7 @@ src/
   fsrs.rs        # algoritmus FSRS-5, studijní den
   scheduler.rs   # sestavení fronty na dnešek
   session.rs     # průběh sezení, uložení hodnocení
+  stats.rs       # výpočty pro statistiky (opakování za den, předpověď, naučené)
 assets/
   fonts/
     NotoSans-Regular.ttf
@@ -370,7 +390,7 @@ slovnicky/
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | hotovo |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
-| 7 | Statistiky | čeká |
+| 7 | Statistiky | rozpracováno |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
 
 ## Otevřené otázky
@@ -379,8 +399,6 @@ slovnicky/
   výslovnosti (etapa 8).
 - Ověřit konvenci IPA, hlavně přesné hodnoty tónů, podle odborných zdrojů (např. Kirby 2011).
   Po ověření upravit i tabulku tónů v `src/ui/legend.rs` (etapa 8).
-- Etapa 7: `egui_plot = "=0.38.0"` je povolený, ale zatím není v `Cargo.toml`. Ověřit, že je
-  kompatibilní s `eframe 0.37.0`, a když ne, domluvit se s autorem.
 - Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
   upozornění). Případně doplnit potvrzovací dotaz.
 - V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.
