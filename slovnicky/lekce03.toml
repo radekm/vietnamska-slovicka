@@ -1,0 +1,159 @@
+nazev = "Čísla"
+popis = "Čísla od nuly do milionu"
+
+[[slovicka]]
+vi = "không"
+klic = "không (nula)"
+cs = "nula"
+vyslovnost_cs = "chong (rovně)"
+ipa = "xoŋ͡m˧˧"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "một"
+cs = "jedna"
+vyslovnost_cs = "mot (krátce klesá)"
+ipa = "mot˨˩"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "hai"
+cs = "dva"
+vyslovnost_cs = "haj (rovně)"
+ipa = "haj˧˧"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "ba"
+cs = "tři"
+vyslovnost_cs = "ba (rovně)"
+ipa = "ɓa˧˧"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "bốn"
+cs = "čtyři"
+vyslovnost_cs = "bon (stoupá)"
+ipa = "ɓon˨˦"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "năm"
+cs = "pět"
+vyslovnost_cs = "nam (rovně)"
+ipa = "năm˧˧"
+poznamka = "stejně se řekne i „rok“"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "sáu"
+cs = "šest"
+vyslovnost_cs = "sau (stoupá)"
+ipa = "săw˨˦"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "bảy"
+cs = "sedm"
+vyslovnost_cs = "baj (klesá hluboko)"
+ipa = "ɓăj˧˩˨"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "tám"
+cs = "osm"
+vyslovnost_cs = "tam (stoupá)"
+ipa = "tam˨˦"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "chín"
+cs = "devět"
+vyslovnost_cs = "čin (stoupá)"
+ipa = "t͡ɕin˨˦"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "mười"
+cs = "deset"
+vyslovnost_cs = "mɨəj (klesá)"
+ipa = "mɯəj˧˨"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "mười một"
+cs = "jedenáct"
+vyslovnost_cs = "mɨəj (klesá) mot (krátce klesá)"
+ipa = "mɯəj˧˨ mot˨˩"
+poznamka = "11–19: mười + jednotky"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "mười lăm"
+cs = "patnáct"
+vyslovnost_cs = "mɨəj (klesá) lam (rovně)"
+ipa = "mɯəj˧˨ lăm˧˧"
+poznamka = "pětka za desítkou se říká lăm, ne năm"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "hai mươi"
+cs = "dvacet"
+vyslovnost_cs = "haj (rovně) mɨəj (rovně)"
+ipa = "haj˧˧ mɯəj˧˧"
+poznamka = "desítky od 20: číslo + mươi (tón ngang, na rozdíl od mười = deset)"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "hai mươi mốt"
+cs = "dvacet jedna"
+vyslovnost_cs = "haj (rovně) mɨəj (rovně) mot (stoupá)"
+ipa = "haj˧˧ mɯəj˧˧ mot˦˥"
+poznamka = "jednička za desítkami od 20 se říká mốt"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "hai mươi tư"
+cs = "dvacet čtyři"
+vyslovnost_cs = "haj (rovně) mɨəj (rovně) tɨ (rovně)"
+ipa = "haj˧˧ mɯəj˧˧ tɯ˧˧"
+poznamka = "čtyřka za desítkami od 20 se na severu říká tư"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "một trăm"
+cs = "sto"
+vyslovnost_cs = "mot (krátce klesá) čam (rovně)"
+ipa = "mot˨˩ t͡ɕăm˧˧"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "một trăm linh năm"
+cs = "sto pět"
+vyslovnost_cs = "mot (krátce klesá) čam (rovně) ling (rovně) nam (rovně)"
+ipa = "mot˨˩ t͡ɕăm˧˧ liŋ̟˧˧ năm˧˧"
+poznamka = "chybějící desítky se na severu vyjadřují slovem linh, na jihu lẻ"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "một nghìn"
+cs = "tisíc"
+vyslovnost_cs = "mot (krátce klesá) ngin (klesá)"
+ipa = "mot˨˩ ŋin˧˨"
+poznamka = "na severu nghìn, na jihu ngàn"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "mười nghìn"
+cs = "deset tisíc"
+vyslovnost_cs = "mɨəj (klesá) ngin (klesá)"
+ipa = "mɯəj˧˨ ŋin˧˨"
+poznamka = "vietnamština nemá zvláštní slovo pro deset tisíc"
+stitky = ["číslo"]
+
+[[slovicka]]
+vi = "một triệu"
+cs = "milion"
+vyslovnost_cs = "mot (krátce klesá) čiəu (krátce klesá, ráz)"
+ipa = "mot˨˩ t͡ɕiəw˨˩ˀ"
+stitky = ["číslo"]

@@ -1,0 +1,151 @@
+nazev = "Jídlo a pití"
+popis = "Základní jídla, nápoje a suroviny"
+
+[[slovicka]]
+vi = "cơm"
+cs = "vařená rýže / jídlo"
+vyslovnost_cs = "kəm (rovně)"
+ipa = "kɤm˧˧"
+poznamka = "ăn cơm = jíst (hlavní jídlo)"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "phở"
+cs = "nudlová polévka phở"
+vyslovnost_cs = "fə (klesá hluboko)"
+ipa = "fɤ˧˩˨"
+poznamka = "typické hanojské jídlo, často k snídani"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "bún"
+cs = "tenké rýžové nudle"
+vyslovnost_cs = "bun (stoupá)"
+ipa = "ɓun˨˦"
+poznamka = "např. bún chả, grilované vepřové s nudlemi"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "bánh mì"
+cs = "bageta, chléb"
+vyslovnost_cs = "bajng (stoupá) mi (klesá)"
+ipa = "ɓɛŋ̟˨˦ mi˧˨"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "thịt"
+cs = "maso"
+vyslovnost_cs = "thit (krátce klesá)"
+ipa = "tʰit˨˩"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "thịt bò"
+cs = "hovězí"
+vyslovnost_cs = "thit (krátce klesá) bo (klesá)"
+ipa = "tʰit˨˩ ɓɔ˧˨"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "thịt gà"
+cs = "kuřecí"
+vyslovnost_cs = "thit (krátce klesá) ga (klesá)"
+ipa = "tʰit˨˩ ɣa˧˨"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "thịt lợn"
+cs = "vepřové"
+vyslovnost_cs = "thit (krátce klesá) lən (krátce klesá, ráz)"
+ipa = "tʰit˨˩ lɤn˨˩ˀ"
+poznamka = "na severu lợn, na jihu heo"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "cá"
+cs = "ryba"
+vyslovnost_cs = "ka (stoupá)"
+ipa = "ka˨˦"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "tôm"
+cs = "kreveta"
+vyslovnost_cs = "tom (rovně)"
+ipa = "tom˧˧"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "rau"
+cs = "zelenina"
+vyslovnost_cs = "zau (rovně)"
+ipa = "zăw˧˧"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "trứng"
+cs = "vejce"
+vyslovnost_cs = "čɨng (stoupá)"
+ipa = "t͡ɕɯŋ˨˦"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "hoa quả"
+cs = "ovoce"
+vyslovnost_cs = "hua (rovně) kua (klesá hluboko)"
+ipa = "hʷa˧˧ kʷa˧˩˨"
+poznamka = "na severu hoa quả, na jihu trái cây"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "nước"
+cs = "voda"
+vyslovnost_cs = "nɨək (stoupá)"
+ipa = "nɯək˦˥"
+poznamka = "také „země, stát“"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "trà"
+cs = "čaj"
+vyslovnost_cs = "ča (klesá)"
+ipa = "t͡ɕa˧˨"
+poznamka = "na severu i chè"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "cà phê"
+cs = "káva"
+vyslovnost_cs = "ka (klesá) fe (rovně)"
+ipa = "ka˧˨ fe˧˧"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "cà phê sữa đá"
+cs = "ledová káva s mlékem"
+vyslovnost_cs = "ka (klesá) fe (rovně) sɨə (stoupá se zlomem) da (stoupá)"
+ipa = "ka˧˨ fe˧˧ sɯə˧ˀ˥ ɗa˨˦"
+poznamka = "sữa = mléko (do kávy se dává slazené kondenzované), đá = led"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "bia"
+cs = "pivo"
+vyslovnost_cs = "biə (rovně)"
+ipa = "ɓiə˧˧"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "ngon"
+cs = "chutný, dobrý"
+vyslovnost_cs = "ngon (rovně)"
+ipa = "ŋɔn˧˧"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "tôi đói"
+cs = "mám hlad"
+vyslovnost_cs = "toj (rovně) doj (stoupá)"
+ipa = "toj˧˧ ɗɔj˨˦"
+poznamka = "tôi khát = mám žízeň"
+stitky = ["fráze"]

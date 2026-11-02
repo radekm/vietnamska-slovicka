@@ -1,0 +1,155 @@
+nazev = "Objednávání v restauraci"
+popis = "Jak zavolat obsluhu, objednat si a zaplatit"
+
+[[slovicka]]
+vi = "em ơi!"
+cs = "prosím vás! (zavolání obsluhy)"
+vyslovnost_cs = "em (rovně) əj (rovně)"
+ipa = "ʔɛm˧˧ ʔɤj˧˧"
+poznamka = "obsluha bývá mladší, proto em; na staršího anh ơi nebo chị ơi"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "thực đơn"
+cs = "jídelní lístek"
+vyslovnost_cs = "thɨk (krátce klesá) dən (rovně)"
+ipa = "tʰɯk˨˩ ɗɤn˧˧"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "cho tôi xem thực đơn"
+cs = "můžu vidět jídelní lístek?"
+vyslovnost_cs = "čo (rovně) toj (rovně) sem (rovně) thɨk (krátce klesá) dən (rovně)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ sɛm˧˧ tʰɯk˨˩ ɗɤn˧˧"
+poznamka = "doslova „dejte mi podívat se na jídelní lístek“"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "cho tôi một bát phở"
+cs = "dejte mi jednu misku phở"
+vyslovnost_cs = "čo (rovně) toj (rovně) mot (krátce klesá) bat (stoupá) fə (klesá hluboko)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ mot˨˩ ɓat˦˥ fɤ˧˩˨"
+poznamka = "cho tôi … = dejte mi …, chtěl bych …"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "bát"
+cs = "miska"
+vyslovnost_cs = "bat (stoupá)"
+ipa = "ɓat˦˥"
+poznamka = "na severu bát, na jihu chén nebo tô"
+stitky = ["nádobí"]
+
+[[slovicka]]
+vi = "đĩa"
+cs = "talíř"
+vyslovnost_cs = "diə (stoupá se zlomem)"
+ipa = "ɗiə˧ˀ˥"
+stitky = ["nádobí"]
+
+[[slovicka]]
+vi = "cốc"
+cs = "sklenice, hrnek"
+vyslovnost_cs = "kok (stoupá)"
+ipa = "kok͡p˦˥"
+poznamka = "na severu cốc, na jihu ly"
+stitky = ["nádobí"]
+
+[[slovicka]]
+vi = "đũa"
+cs = "hůlky"
+vyslovnost_cs = "duə (stoupá se zlomem)"
+ipa = "ɗuə˧ˀ˥"
+stitky = ["nádobí"]
+
+[[slovicka]]
+vi = "thìa"
+cs = "lžíce"
+vyslovnost_cs = "thiə (klesá)"
+ipa = "tʰiə˧˨"
+poznamka = "na severu thìa, na jihu muỗng"
+stitky = ["nádobí"]
+
+[[slovicka]]
+vi = "một chai bia"
+cs = "jedna láhev piva"
+vyslovnost_cs = "mot (krátce klesá) čaj (rovně) biə (rovně)"
+ipa = "mot˨˩ t͡ɕaj˧˧ ɓiə˧˧"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "cay"
+cs = "pálivý"
+vyslovnost_cs = "kaj (rovně)"
+ipa = "kăj˧˧"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "không cay"
+cs = "nepálivé, bez chilli"
+vyslovnost_cs = "chong (rovně) kaj (rovně)"
+ipa = "xoŋ͡m˧˧ kăj˧˧"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "không cho rau mùi"
+cs = "bez koriandru"
+vyslovnost_cs = "chong (rovně) čo (rovně) zau (rovně) muj (klesá)"
+ipa = "xoŋ͡m˧˧ t͡ɕɔ˧˧ zăw˧˧ muj˧˨"
+poznamka = "doslova „nedávat koriandr“; rau mùi = koriandr (na severu)"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "món này là món gì?"
+cs = "co je tohle za jídlo?"
+vyslovnost_cs = "mon (stoupá) naj (klesá) la (klesá) mon (stoupá) zi (klesá)"
+ipa = "mɔn˨˦ năj˧˨ la˧˨ mɔn˨˦ zi˧˨"
+poznamka = "món = jídlo, chod"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "ngon quá!"
+cs = "to je výborné!"
+vyslovnost_cs = "ngon (rovně) kua (stoupá)"
+ipa = "ŋɔn˧˧ kʷa˨˦"
+poznamka = "quá = moc, velmi (dává se za přídavné jméno)"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "tôi ăn chay"
+cs = "jsem vegetarián"
+vyslovnost_cs = "toj (rovně) an (rovně) čaj (rovně)"
+ipa = "toj˧˧ ʔăn˧˧ t͡ɕăj˧˧"
+poznamka = "doslova „jím postní jídlo“"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "nước đá"
+cs = "led (do pití)"
+vyslovnost_cs = "nɨək (stoupá) da (stoupá)"
+ipa = "nɯək˦˥ ɗa˨˦"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "bao nhiêu tiền?"
+cs = "kolik to stojí?"
+vyslovnost_cs = "bau (rovně) ňiəu (rovně) tiən (klesá)"
+ipa = "ɓaw˧˧ ɲiəw˧˧ tiən˧˨"
+poznamka = "tiền = peníze"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "tính tiền"
+cs = "zaplatím / účet, prosím"
+vyslovnost_cs = "ting (stoupá) tiən (klesá)"
+ipa = "tiŋ̟˨˦ tiən˧˨"
+poznamka = "např. em ơi, tính tiền! (doslova „spočítat peníze“)"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "cho tôi xin hóa đơn"
+cs = "můžu dostat účtenku?"
+vyslovnost_cs = "čo (rovně) toj (rovně) sin (rovně) hua (stoupá) dən (rovně)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ sin˧˧ hʷa˨˦ ɗɤn˧˧"
+poznamka = "xin = zdvořile poprosit"
+stitky = ["restaurace"]

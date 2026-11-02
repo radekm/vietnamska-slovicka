@@ -1,0 +1,150 @@
+nazev = "Základní fráze a otázky"
+popis = "Tázací slova a fráze, které se hodí, když nerozumíte"
+
+[[slovicka]]
+vi = "có"
+cs = "ano / mít, existovat"
+vyslovnost_cs = "ko (stoupá)"
+ipa = "kɔ˨˦"
+poznamka = "na otázku có … không? se odpovídá có (ano) nebo không (ne)"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "cái gì?"
+cs = "co?"
+vyslovnost_cs = "kaj (stoupá) zi (klesá)"
+ipa = "kaj˨˦ zi˧˨"
+poznamka = "často jen gì na konci věty"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "ai?"
+cs = "kdo?"
+vyslovnost_cs = "aj (rovně)"
+ipa = "ʔaj˧˧"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "ở đâu?"
+cs = "kde?"
+vyslovnost_cs = "ə (klesá hluboko) dəu (rovně)"
+ipa = "ʔɤ˧˩˨ ɗɤ̆w˧˧"
+poznamka = "dává se na konec věty"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "bao nhiêu?"
+cs = "kolik?"
+vyslovnost_cs = "bau (rovně) ňiəu (rovně)"
+ipa = "ɓaw˧˧ ɲiəw˧˧"
+poznamka = "u malých počtů se ptá mấy"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "khi nào?"
+cs = "kdy?"
+vyslovnost_cs = "chi (rovně) nau (klesá)"
+ipa = "xi˧˧ naw˧˨"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "tại sao?"
+cs = "proč?"
+vyslovnost_cs = "taj (krátce klesá, ráz) sau (rovně)"
+ipa = "taj˨˩ˀ saw˧˧"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "thế nào?"
+cs = "jak?"
+vyslovnost_cs = "the (stoupá) nau (klesá)"
+ipa = "tʰe˨˦ naw˧˨"
+poznamka = "na jihu spíš sao"
+stitky = ["otázka"]
+
+[[slovicka]]
+vi = "cái này"
+cs = "tohle"
+vyslovnost_cs = "kaj (stoupá) naj (klesá)"
+ipa = "kaj˨˦ năj˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ở đây"
+cs = "tady"
+vyslovnost_cs = "ə (klesá hluboko) dəj (rovně)"
+ipa = "ʔɤ˧˩˨ ɗɤ̆j˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "được"
+cs = "dobře / jde to"
+vyslovnost_cs = "dɨək (krátce klesá)"
+ipa = "ɗɯək˨˩"
+poznamka = "také „moci, smět“"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "không được"
+cs = "nejde to / to ne"
+vyslovnost_cs = "chong (rovně) dɨək (krátce klesá)"
+ipa = "xoŋ͡m˧˧ ɗɯək˨˩"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "đúng rồi"
+cs = "přesně tak / správně"
+vyslovnost_cs = "dung (stoupá) zoj (klesá)"
+ipa = "ɗuŋ͡m˨˦ zoj˧˨"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "tôi không hiểu"
+cs = "nerozumím"
+vyslovnost_cs = "toj (rovně) chong (rovně) hiəu (klesá hluboko)"
+ipa = "toj˧˧ xoŋ͡m˧˧ hiəw˧˩˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi không biết"
+cs = "nevím"
+vyslovnost_cs = "toj (rovně) chong (rovně) biət (stoupá)"
+ipa = "toj˧˧ xoŋ͡m˧˧ ɓiət˦˥"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn nói lại được không?"
+cs = "můžeš to zopakovat?"
+vyslovnost_cs = "ban (krátce klesá, ráz) noj (stoupá) laj (krátce klesá, ráz) dɨək (krátce klesá) chong (rovně)"
+ipa = "ɓan˨˩ˀ nɔj˨˦ laj˨˩ˀ ɗɯək˨˩ xoŋ͡m˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn nói chậm được không?"
+cs = "můžeš mluvit pomaleji?"
+vyslovnost_cs = "ban (krátce klesá, ráz) noj (stoupá) čəm (krátce klesá, ráz) dɨək (krátce klesá) chong (rovně)"
+ipa = "ɓan˨˩ˀ nɔj˨˦ t͡ɕɤ̆m˨˩ˀ ɗɯək˨˩ xoŋ͡m˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn có nói tiếng Anh không?"
+cs = "mluvíš anglicky?"
+vyslovnost_cs = "ban (krátce klesá, ráz) ko (stoupá) noj (stoupá) tiəng (stoupá) ajng (rovně) chong (rovně)"
+ipa = "ɓan˨˩ˀ kɔ˨˦ nɔj˨˦ tiəŋ˨˦ ʔɛŋ̟˧˧ xoŋ͡m˧˧"
+poznamka = "tiếng = jazyk, Anh = Anglie"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi nói một chút tiếng Việt"
+cs = "mluvím trochu vietnamsky"
+vyslovnost_cs = "toj (rovně) noj (stoupá) mot (krátce klesá) čut (stoupá) tiəng (stoupá) viət (krátce klesá)"
+ipa = "toj˧˧ nɔj˨˦ mot˨˩ t͡ɕut˦˥ tiəŋ˨˦ viət˨˩"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi là người Séc"
+cs = "jsem Čech / Češka"
+vyslovnost_cs = "toj (rovně) la (klesá) ngɨəj (klesá) sek (stoupá)"
+ipa = "toj˧˧ la˧˨ ŋɯəj˧˨ sɛk˦˥"
+poznamka = "Séc = Česko, Cộng hòa Séc = Česká republika"
+stitky = ["fráze"]

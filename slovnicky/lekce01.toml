@@ -1,0 +1,163 @@
+nazev = "Pozdravy a zdvořilost"
+popis = "Pozdravy, poděkování, omluva a základní zdvořilostní fráze"
+
+[[slovicka]]
+vi = "xin chào"
+cs = "dobrý den / ahoj"
+vyslovnost_cs = "sin (rovně) čau (klesá)"
+ipa = "sin˧˧ t͡ɕaw˧˨"
+poznamka = "univerzální zdvořilý pozdrav, hodí se kdykoli a ke komukoli"
+stitky = ["pozdrav"]
+
+[[slovicka]]
+vi = "chào anh"
+cs = "ahoj (muži o něco staršímu)"
+vyslovnost_cs = "čau (klesá) ajng (rovně)"
+ipa = "t͡ɕaw˧˨ ʔɛŋ̟˧˧"
+poznamka = "místo anh se dosazuje oslovení podle věku a pohlaví (viz lekce 2)"
+stitky = ["pozdrav"]
+
+[[slovicka]]
+vi = "chào chị"
+cs = "ahoj (ženě o něco starší)"
+vyslovnost_cs = "čau (klesá) či (krátce klesá, ráz)"
+ipa = "t͡ɕaw˧˨ t͡ɕi˨˩ˀ"
+stitky = ["pozdrav"]
+
+[[slovicka]]
+vi = "cảm ơn"
+cs = "děkuji"
+vyslovnost_cs = "kam (klesá hluboko) ən (rovně)"
+ipa = "kam˧˩˨ ʔɤn˧˧"
+poznamka = "běžné poděkování"
+stitky = ["zdvořilost"]
+
+[[slovicka]]
+vi = "cảm ơn nhiều"
+cs = "děkuji mnohokrát"
+vyslovnost_cs = "kam (klesá hluboko) ən (rovně) ňiəu (klesá)"
+ipa = "kam˧˩˨ ʔɤn˧˧ ɲiəw˧˨"
+stitky = ["zdvořilost"]
+
+[[slovicka]]
+vi = "không có gì"
+cs = "není zač"
+vyslovnost_cs = "chong (rovně) ko (stoupá) zi (klesá)"
+ipa = "xoŋ͡m˧˧ kɔ˨˦ zi˧˨"
+poznamka = "doslova „není nic“"
+stitky = ["zdvořilost"]
+
+[[slovicka]]
+vi = "xin lỗi"
+cs = "promiňte / omlouvám se"
+vyslovnost_cs = "sin (rovně) loj (stoupá se zlomem)"
+ipa = "sin˧˧ loj˧ˀ˥"
+poznamka = "i na upoutání pozornosti"
+stitky = ["zdvořilost"]
+
+[[slovicka]]
+vi = "không sao"
+cs = "to nevadí / nic se nestalo"
+vyslovnost_cs = "chong (rovně) sau (rovně)"
+ipa = "xoŋ͡m˧˧ saw˧˧"
+stitky = ["zdvořilost"]
+
+[[slovicka]]
+vi = "tạm biệt"
+cs = "na shledanou"
+vyslovnost_cs = "tam (krátce klesá, ráz) biət (krátce klesá)"
+ipa = "tam˨˩ˀ ɓiət˨˩"
+stitky = ["pozdrav"]
+
+[[slovicka]]
+vi = "hẹn gặp lại"
+cs = "na viděnou / uvidíme se"
+vyslovnost_cs = "hen (krátce klesá, ráz) gap (krátce klesá) laj (krátce klesá, ráz)"
+ipa = "hɛn˨˩ˀ ɣăp˨˩ laj˨˩ˀ"
+stitky = ["pozdrav"]
+
+[[slovicka]]
+vi = "chúc ngủ ngon"
+cs = "dobrou noc"
+vyslovnost_cs = "čuk (stoupá) ngu (klesá hluboko) ngon (rovně)"
+ipa = "t͡ɕuk͡p˦˥ ŋu˧˩˨ ŋɔn˧˧"
+stitky = ["pozdrav"]
+
+[[slovicka]]
+vi = "vâng"
+cs = "ano (zdvořile)"
+vyslovnost_cs = "vəng (rovně)"
+ipa = "vɤ̆ŋ˧˧"
+poznamka = "zdvořilé „ano“ na severu, na jihu se říká dạ"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "dạ"
+cs = "ano / prosím (zdvořilá částice)"
+vyslovnost_cs = "za (krátce klesá, ráz)"
+ipa = "za˨˩ˀ"
+poznamka = "zdvořile odpovídá staršímu, na severu často před vâng (dạ vâng)"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "không"
+klic = "không (ne)"
+cs = "ne"
+vyslovnost_cs = "chong (rovně)"
+ipa = "xoŋ͡m˧˧"
+poznamka = "stejné slovo znamená i „nula“ a na konci věty dělá otázku"
+stitky = ["odpověď"]
+
+[[slovicka]]
+vi = "bạn khỏe không?"
+cs = "jak se máš?"
+vyslovnost_cs = "ban (krátce klesá, ráz) chue (klesá hluboko) chong (rovně)"
+ipa = "ɓan˨˩ˀ xʷɛ˧˩˨ xoŋ͡m˧˧"
+poznamka = "doslova „jsi zdravý?“"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi khỏe, cảm ơn"
+cs = "mám se dobře, děkuji"
+vyslovnost_cs = "toj (rovně) chue (klesá hluboko) kam (klesá hluboko) ən (rovně)"
+ipa = "toj˧˧ xʷɛ˧˩˨ kam˧˩˨ ʔɤn˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "rất vui được gặp bạn"
+cs = "těší mě"
+vyslovnost_cs = "zət (stoupá) vuj (rovně) dɨək (krátce klesá) gap (krátce klesá) ban (krátce klesá, ráz)"
+ipa = "zɤ̆t˦˥ vuj˧˧ ɗɯək˨˩ ɣăp˨˩ ɓan˨˩ˀ"
+poznamka = "doslova „velmi rád, že tě mohu potkat“"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn tên là gì?"
+cs = "jak se jmenuješ?"
+vyslovnost_cs = "ban (krátce klesá, ráz) ten (rovně) la (klesá) zi (klesá)"
+ipa = "ɓan˨˩ˀ ten˧˧ la˧˨ zi˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi tên là"
+cs = "jmenuji se …"
+vyslovnost_cs = "toj (rovně) ten (rovně) la (klesá)"
+ipa = "toj˧˧ ten˧˧ la˧˨"
+poznamka = "za větu se doplní jméno: tôi tên là Pavel"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "làm ơn"
+cs = "prosím (při žádosti)"
+vyslovnost_cs = "lam (klesá) ən (rovně)"
+ipa = "lam˧˨ ʔɤn˧˧"
+poznamka = "zdvořilá žádost, např. làm ơn cho tôi … (prosím, dejte mi …)"
+stitky = ["zdvořilost"]
+
+[[slovicka]]
+vi = "xin mời"
+cs = "prosím, račte"
+vyslovnost_cs = "sin (rovně) məj (klesá)"
+ipa = "sin˧˧ mɤj˧˨"
+poznamka = "nabídka nebo pozvání, např. ke stolu nebo dál"
+stitky = ["zdvořilost"]

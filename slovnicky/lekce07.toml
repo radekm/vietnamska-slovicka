@@ -1,0 +1,162 @@
+nazev = "Ptaní se na cestu ve městě"
+popis = "Místa ve městě, směry a fráze pro ptaní se na cestu"
+
+[[slovicka]]
+vi = "nhà vệ sinh ở đâu?"
+cs = "kde je záchod?"
+vyslovnost_cs = "ňa (klesá) ve (krátce klesá, ráz) sing (rovně) ə (klesá hluboko) dəu (rovně)"
+ipa = "ɲa˧˨ ve˨˩ˀ siŋ̟˧˧ ʔɤ˧˩˨ ɗɤ̆w˧˧"
+stitky = ["cesta"]
+
+[[slovicka]]
+vi = "khách sạn"
+cs = "hotel"
+vyslovnost_cs = "chajk (stoupá) san (krátce klesá, ráz)"
+ipa = "xɛk̟˦˥ san˨˩ˀ"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "nhà ga"
+cs = "nádraží"
+vyslovnost_cs = "ňa (klesá) ga (rovně)"
+ipa = "ɲa˧˨ ɣa˧˧"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "sân bay"
+cs = "letiště"
+vyslovnost_cs = "sən (rovně) baj (rovně)"
+ipa = "sɤ̆n˧˧ ɓăj˧˧"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "xe buýt"
+cs = "autobus"
+vyslovnost_cs = "se (rovně) buit (stoupá)"
+ipa = "sɛ˧˧ ɓʷit˦˥"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "xe ôm"
+cs = "motorkové taxi"
+vyslovnost_cs = "se (rovně) om (rovně)"
+ipa = "sɛ˧˧ ʔom˧˧"
+poznamka = "doslova „vozidlo, které objímáš“"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "chợ"
+cs = "tržiště"
+vyslovnost_cs = "čə (krátce klesá, ráz)"
+ipa = "t͡ɕɤ˨˩ˀ"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "bệnh viện"
+cs = "nemocnice"
+vyslovnost_cs = "beng (krátce klesá, ráz) viən (krátce klesá, ráz)"
+ipa = "ɓeŋ̟˨˩ˀ viən˨˩ˀ"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "hiệu thuốc"
+cs = "lékárna"
+vyslovnost_cs = "hiəu (krátce klesá, ráz) thuək (stoupá)"
+ipa = "hiəw˨˩ˀ tʰuək˦˥"
+poznamka = "na severu hiệu thuốc, na jihu nhà thuốc"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "ngân hàng"
+cs = "banka"
+vyslovnost_cs = "ngən (rovně) hang (klesá)"
+ipa = "ŋɤ̆n˧˧ haŋ˧˨"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "đường"
+klic = "đường (cesta)"
+cs = "cesta, silnice, ulice"
+vyslovnost_cs = "dɨəng (klesá)"
+ipa = "ɗɯəŋ˧˨"
+poznamka = "stejně psané đường znamená i „cukr“"
+stitky = ["cesta"]
+
+[[slovicka]]
+vi = "ngã tư"
+cs = "křižovatka"
+vyslovnost_cs = "nga (stoupá se zlomem) tɨ (rovně)"
+ipa = "ŋa˧ˀ˥ tɯ˧˧"
+poznamka = "doslova „čtyři směry“"
+stitky = ["cesta"]
+
+[[slovicka]]
+vi = "đi thẳng"
+cs = "jděte rovně"
+vyslovnost_cs = "di (rovně) thang (klesá hluboko)"
+ipa = "ɗi˧˧ tʰăŋ˧˩˨"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "rẽ trái"
+cs = "zahněte doleva"
+vyslovnost_cs = "ze (stoupá se zlomem) čaj (stoupá)"
+ipa = "zɛ˧ˀ˥ t͡ɕaj˨˦"
+poznamka = "na severu rẽ, na jihu quẹo"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "rẽ phải"
+cs = "zahněte doprava"
+vyslovnost_cs = "ze (stoupá se zlomem) faj (klesá hluboko)"
+ipa = "zɛ˧ˀ˥ faj˧˩˨"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "bên trái"
+cs = "vlevo, nalevo"
+vyslovnost_cs = "ben (rovně) čaj (stoupá)"
+ipa = "ɓen˧˧ t͡ɕaj˨˦"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "bên phải"
+cs = "vpravo, napravo"
+vyslovnost_cs = "ben (rovně) faj (klesá hluboko)"
+ipa = "ɓen˧˧ faj˧˩˨"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "xa"
+cs = "daleko"
+vyslovnost_cs = "sa (rovně)"
+ipa = "sa˧˧"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "gần"
+cs = "blízko"
+vyslovnost_cs = "gən (klesá)"
+ipa = "ɣɤ̆n˧˨"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "có xa không?"
+cs = "je to daleko?"
+vyslovnost_cs = "ko (stoupá) sa (rovně) chong (rovně)"
+ipa = "kɔ˨˦ sa˧˧ xoŋ͡m˧˧"
+stitky = ["cesta"]
+
+[[slovicka]]
+vi = "tôi bị lạc"
+cs = "zabloudil jsem"
+vyslovnost_cs = "toj (rovně) bi (krátce klesá, ráz) lak (krátce klesá)"
+ipa = "toj˧˧ ɓi˨˩ˀ lak˨˩"
+stitky = ["cesta"]
+
+[[slovicka]]
+vi = "bản đồ"
+cs = "mapa"
+vyslovnost_cs = "ban (klesá hluboko) do (klesá)"
+ipa = "ɓan˧˩˨ ɗo˧˨"
+stitky = ["cesta"]

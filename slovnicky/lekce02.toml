@@ -1,0 +1,152 @@
+nazev = "Zájmena a oslovení"
+popis = "Jak říct já, ty, on a jak oslovit lidi podle věku a pohlaví"
+
+[[slovicka]]
+vi = "tôi"
+cs = "já"
+vyslovnost_cs = "toj (rovně)"
+ipa = "toj˧˧"
+poznamka = "neutrální „já“, zdvořilé k cizím lidem"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "bạn"
+cs = "ty / vy (kamarád, vrstevník)"
+vyslovnost_cs = "ban (krátce klesá, ráz)"
+ipa = "ɓan˨˩ˀ"
+poznamka = "také „přítel, kamarád“"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "anh"
+cs = "ty / vy (muži o něco staršímu), starší bratr"
+vyslovnost_cs = "ajng (rovně)"
+ipa = "ʔɛŋ̟˧˧"
+poznamka = "o sobě říká anh i starší muž mladšímu"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "chị"
+cs = "ty / vy (ženě o něco starší), starší sestra"
+vyslovnost_cs = "či (krátce klesá, ráz)"
+ipa = "t͡ɕi˨˩ˀ"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "em"
+cs = "ty (mladšímu), mladší sourozenec"
+vyslovnost_cs = "em (rovně)"
+ipa = "ʔɛm˧˧"
+poznamka = "oslovuje se tak i obsluha v restauraci, o sobě říká em mladší"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "ông"
+cs = "pán, vy (staršímu muži), dědeček"
+vyslovnost_cs = "ong (rovně)"
+ipa = "ʔoŋ͡m˧˧"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "bà"
+cs = "paní, vy (starší ženě), babička"
+vyslovnost_cs = "ba (klesá)"
+ipa = "ɓa˧˨"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "cô"
+cs = "slečno, paní (mladší než rodiče), teta, učitelka"
+vyslovnost_cs = "ko (rovně)"
+ipa = "ko˧˧"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "chú"
+cs = "pane (muži mladšímu než otec), strýc"
+vyslovnost_cs = "ču (stoupá)"
+ipa = "t͡ɕu˨˦"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "cháu"
+cs = "vnouče, synovec, neteř"
+vyslovnost_cs = "čau (stoupá)"
+ipa = "t͡ɕăw˨˦"
+poznamka = "o sobě to říká dítě nebo mladý člověk vůči ông, bà, cô, chú"
+stitky = ["oslovení"]
+
+[[slovicka]]
+vi = "bố"
+cs = "táta"
+vyslovnost_cs = "bo (stoupá)"
+ipa = "ɓo˨˦"
+poznamka = "na severu, na jihu ba"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "mẹ"
+cs = "máma"
+vyslovnost_cs = "me (krátce klesá, ráz)"
+ipa = "mɛ˨˩ˀ"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "con"
+cs = "dítě (syn, dcera)"
+vyslovnost_cs = "kon (rovně)"
+ipa = "kɔn˧˧"
+poznamka = "o sobě to říká dítě rodičům"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "anh ấy"
+cs = "on (mladý muž)"
+vyslovnost_cs = "ajng (rovně) əj (stoupá)"
+ipa = "ʔɛŋ̟˧˧ ʔɤ̆j˨˦"
+poznamka = "ấy = ten, onen; podobně chị ấy, ông ấy, bà ấy"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "chị ấy"
+cs = "ona (mladá žena)"
+vyslovnost_cs = "či (krátce klesá, ráz) əj (stoupá)"
+ipa = "t͡ɕi˨˩ˀ ʔɤ̆j˨˦"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "chúng tôi"
+cs = "my (bez toho, komu to říkám)"
+vyslovnost_cs = "čung (stoupá) toj (rovně)"
+ipa = "t͡ɕuŋ͡m˨˦ toj˧˧"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "chúng ta"
+cs = "my (včetně toho, komu to říkám)"
+vyslovnost_cs = "čung (stoupá) ta (rovně)"
+ipa = "t͡ɕuŋ͡m˨˦ ta˧˧"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "các bạn"
+cs = "vy (přátelé, kamarádi)"
+vyslovnost_cs = "kak (stoupá) ban (krátce klesá, ráz)"
+ipa = "kak˦˥ ɓan˨˩ˀ"
+poznamka = "các = množné číslo"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "họ"
+cs = "oni"
+vyslovnost_cs = "ho (krátce klesá, ráz)"
+ipa = "hɔ˨˩ˀ"
+stitky = ["zájmeno"]
+
+[[slovicka]]
+vi = "nó"
+cs = "ono, on, ona (o dítěti nebo zvířeti)"
+vyslovnost_cs = "no (stoupá)"
+ipa = "nɔ˨˦"
+poznamka = "o dospělém je hrubé"
+stitky = ["zájmeno"]
