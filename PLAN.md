@@ -181,9 +181,8 @@ IPA potřebné pro vietnamštinu, včetně ɕ, ̚, ̰, spojovacího obloučku ͡
 
 - Noto Sans nemá šipku → a další symboly. Výchozí fonty egui proto zůstanou v seznamu
   jako záložní, až za Noto Sans.
-- Riziko: egui nepoužívá plnohodnotný OpenType shaping, takže kombinující znaménka
-  (͡ v t͡ɕ, ̚) se nemusí umístit přesně. Ověří se vizuálně v etapě 1. Kdyby to vypadalo
-  špatně, řešení se domluví s autorem.
+- Vykreslení v egui je ověřené (etapa 1): vietnamská diakritika, čeština, šipka → (ze
+  záložního fontu), spojovací oblouček v t͡ɕ, ̚ i tónová písmena se zobrazují správně.
 
 ## Logování
 
@@ -196,8 +195,10 @@ při načítání a ukládání a souhrn sezení.
 ```
 Cargo.toml
 rust-toolchain.toml
+README.md
 src/
   main.rs        # spuštění eframe, inicializace logování
+  fonts.rs       # nastavení fontů
   app.rs         # stav aplikace, přepínání obrazovek
   ui/            # jednotlivé obrazovky
   model.rs       # slovíčko, kartička, směr
@@ -223,7 +224,7 @@ slovnicky/
 | # | Etapa | Stav |
 |---|-------|------|
 | 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | hotovo |
-| 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | čeká |
+| 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | hotovo |
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | čeká |
 | 3 | FSRS + testy | čeká |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | čeká |
