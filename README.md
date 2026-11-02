@@ -20,7 +20,10 @@ cargo run --release
 
 Aplikace si vytváří dvě složky v pracovním adresáři, ze kterého ji spustíš:
 
-- `data/` obsahuje postup učení, historii a nastavení,
+- `data/` obsahuje postup učení (`postup.toml`), historii hodnocení (`historie.toml`)
+  a nastavení (`nastaveni.toml`). Jsou to čitelné TOML soubory, formát popisuje
+  [PLAN.md](PLAN.md). Když je některý poškozený, aplikace ho nepřepíše a ohlásí chybu,
+  aby nepřišel postup učení,
 - `logs/` obsahuje logy ve formátu JSON, jeden soubor na den, drží se posledních 7.
 
 Spouštěj ji proto vždy ze stejného adresáře, jinak nenajde svůj postup učení.
