@@ -18,15 +18,12 @@ cargo run --release
 
 ## Kde jsou data
 
-Postup učení, nastavení a logy se ukládají do datové složky aplikace:
+Aplikace si vytváří dvě složky v pracovním adresáři, ze kterého ji spustíš:
 
-| Systém  | Složka                                                   |
-|---------|----------------------------------------------------------|
-| Linux   | `~/.local/share/vietnamska-slovicka/` (nebo `$XDG_DATA_HOME`) |
-| macOS   | `~/Library/Application Support/vietnamska-slovicka/`     |
-| Windows | `%APPDATA%\vietnamska-slovicka\`                          |
+- `data/` obsahuje postup učení, historii a nastavení,
+- `logs/` obsahuje logy ve formátu JSON, jeden soubor na den, drží se posledních 7.
 
-Logy jsou ve formátu JSON v podsložce `logy/`, jeden soubor na den, drží se posledních 7.
+Spouštěj ji proto vždy ze stejného adresáře, jinak nenajde svůj postup učení.
 
 ## Licence fontu
 

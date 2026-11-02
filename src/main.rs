@@ -9,13 +9,15 @@ use anyhow::Result;
 use eframe::egui;
 
 fn main() -> Result<()> {
-    let data_dir = paths::data_dir()?;
+    let dirs = paths::AppDirs::in_working_dir()?;
     // Strážce logování musí žít až do konce `main`, jinak by se ztratily poslední záznamy.
-    let _log_guard = logging::init(&paths::log_dir(&data_dir))?;
+    // Složku `logs/` vytvoří `logging::init`.
+    let _log_guard = logging::init(&dirs.logs)?;
 
     tracing::info!(
         version = env!("CARGO_PKG_VERSION"),
-        data_dir = %data_dir.display(),
+        data_dir = %dirs.data.display(),
+        log_dir = %dirs.logs.display(),
         "aplikace spuštěna"
     );
 

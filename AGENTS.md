@@ -72,15 +72,17 @@ Zatím žádné. V `Cargo.toml` se nepřidávají vlastní profily ani `[lints]`
   homonyma** (stejně psaná slova s jiným významem, např. *đường* = cesta / cukr), aby každé
   mělo vlastní postup učení. Klíč musí být unikátní napříč všemi lekcemi. **Změna `vi` nebo `klic` u existujícího slovíčka
   znamená ztrátu jeho postupu**, proto se dělá jen vědomě a po dohodě s autorem.
-- Postup učení, nastavení a logy se ukládají mimo složku se slovníčky, do datové složky
-  aplikace (viz `PLAN.md`).
+- Postup učení a nastavení se ukládají do složky `data/`, logy do složky `logs/`.
+  Obě jsou v pracovním adresáři, ze kterého se aplikace spouští, mimo složku se slovníčky.
+  Do gitu se necommitují.
 - Ukládání musí být bezpečné: zápis do dočasného souboru a pak přejmenování.
 
 ## Logování
 
 - Strukturované logování přes `tracing` (pole místo skládání textu, např.
   `info!(lesson = %name, count = n, "lekce načtena")`). Názvy polí anglicky, zprávy česky.
-- Logy se ukládají jako JSON do datové složky aplikace, rotují se po dnech a drží se posledních 7.
+- Logy se ukládají jako JSON do složky `logs/` v pracovním adresáři, rotují se po dnech
+  a drží se posledních 7.
 
 ## Git
 

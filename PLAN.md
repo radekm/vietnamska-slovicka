@@ -116,26 +116,26 @@ vyslovnost_cs = "dɨəng (nízko klesá)"
 ipa = "ɗɨəŋ˨˩"
 ```
 
-## Datová složka aplikace
+## Datová složka a logy
 
-Postup učení, nastavení a logy jsou **mimo složku se slovníčky**, v datové složce aplikace:
+Obě složky jsou v **pracovním adresáři**, ze kterého se aplikace spouští, mimo složku
+se slovníčky:
 
-- Linux: `$XDG_DATA_HOME/vietnamska-slovicka/`, výchozí `~/.local/share/vietnamska-slovicka/`
-- macOS: `~/Library/Application Support/vietnamska-slovicka/`
-- Windows: `%APPDATA%\vietnamska-slovicka\`
+- `data/` je datová složka. Obsahuje:
+  - `postup.toml` se stavem FSRS pro každou kartičku (klíč + směr): stabilitu, obtížnost,
+    datum posledního a příštího opakování, počet opakování a počet zapomenutí. Kartičky,
+    které v souboru nejsou, jsou nové.
+  - `historie.toml` s historií hodnocení (čas, kartička, hodnocení). Slouží pro statistiky
+    a pro budoucí doladění parametrů FSRS.
+  - `nastaveni.toml` s cestou ke slovníčkům, denním limitem nových kartiček, cílovou retencí
+    a směry procvičování.
 
-Obsah:
+  Vytvoří se při prvním ukládání.
+- `logs/` obsahuje JSON logy, jeden soubor na den, drží se posledních 7.
+  Vytváří se při startu aplikace.
 
-- `postup.toml` obsahuje pro každou kartičku (klíč + směr) stav FSRS: stabilitu, obtížnost,
-  datum posledního a příštího opakování, počet opakování a počet zapomenutí. Kartičky, které
-  v souboru nejsou, jsou nové.
-- `historie.toml` obsahuje historii hodnocení (čas, kartička, hodnocení). Slouží pro statistiky
-  a pro budoucí doladění parametrů FSRS.
-- `nastaveni.toml` obsahuje cestu ke slovníčkům, denní limit nových kartiček, cílovou retenci
-  a směry procvičování.
-- `logy/` obsahuje JSON logy, drží se posledních 7.
-
-Zápis je vždy bezpečný: nejdřív do dočasného souboru, pak přejmenování.
+Obě složky jsou v `.gitignore`. Zápis dat je vždy bezpečný: nejdřív do dočasného souboru,
+pak přejmenování.
 
 ## Algoritmus: FSRS
 
@@ -187,7 +187,7 @@ IPA potřebné pro vietnamštinu, včetně ɕ, ̚, ̰, spojovacího obloučku ͡
 ## Logování
 
 `tracing` + `tracing-subscriber` (feature `json`) + `tracing-appender`
-(denní rotace, `max_log_files(7)`). Loguje se start aplikace, načtení lekcí, chyby
+(denní rotace, `max_log_files(7)`), zápis do složky `logs/` v pracovním adresáři. Loguje se start aplikace, načtení lekcí, chyby
 při načítání a ukládání a souhrn sezení.
 
 ## Struktura projektu (návrh)
@@ -205,7 +205,7 @@ src/
   lessons.rs     # načítání lekcí z TOML + kontrola (duplicitní klíče, prázdná pole)
   progress.rs    # načítání/ukládání postupu a historie
   settings.rs    # nastavení
-  paths.rs       # datová složka aplikace podle OS
+  paths.rs       # umístění složek data/ a logs/
   logging.rs     # nastavení tracing
   fsrs.rs        # algoritmus FSRS
   scheduler.rs   # sestavení fronty na dnešek
