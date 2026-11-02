@@ -73,6 +73,21 @@ impl Direction {
             Direction::ViToCs => "VI → CS",
         }
     }
+
+    /// Kód směru v datových souborech.
+    pub fn code(self) -> &'static str {
+        match self {
+            Direction::CsToVi => "cs-vi",
+            Direction::ViToCs => "vi-cs",
+        }
+    }
+
+    /// Směr podle kódu z datového souboru, viz [`Direction::code`].
+    pub fn from_code(code: &str) -> Option<Direction> {
+        Direction::ALL
+            .into_iter()
+            .find(|direction| direction.code() == code)
+    }
 }
 
 /// Identifikátor kartičky: klíč slovíčka a směr.
@@ -123,6 +138,15 @@ mod tests {
     #[test]
     fn key_override_wins() {
         assert_eq!(word("đường", Some("đường (cukr)")).key(), "đường (cukr)");
+    }
+
+    #[test]
+    fn direction_codes_round_trip() {
+        for direction in Direction::ALL {
+            assert_eq!(Direction::from_code(direction.code()), Some(direction));
+        }
+        assert_eq!(Direction::from_code("CS-VI"), None);
+        assert_eq!(Direction::from_code(""), None);
     }
 
     #[test]

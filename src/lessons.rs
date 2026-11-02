@@ -294,33 +294,7 @@ fn is_combining_mark(c: char) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use std::path::PathBuf;
-
-    /// Dočasná složka pro test, po skončení testu se smaže.
-    struct TempDir(PathBuf);
-
-    impl TempDir {
-        fn new(name: &str) -> Self {
-            let path = std::env::temp_dir().join(format!(
-                "vietnamska-slovicka-test-{}-{name}",
-                std::process::id()
-            ));
-            // Pozůstatek po předchozím přerušeném běhu odstraníme.
-            let _ = std::fs::remove_dir_all(&path);
-            std::fs::create_dir_all(&path).unwrap();
-            TempDir(path)
-        }
-
-        fn write(&self, file_name: &str, content: &str) {
-            std::fs::write(self.0.join(file_name), content).unwrap();
-        }
-    }
-
-    impl Drop for TempDir {
-        fn drop(&mut self) {
-            let _ = std::fs::remove_dir_all(&self.0);
-        }
-    }
+    use crate::test_util::TempDir;
 
     const LESSON_1: &str = r#"
 nazev = "Pozdravy"

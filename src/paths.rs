@@ -38,6 +38,21 @@ impl AppDirs {
             logs: base.join(LOG_DIR_NAME),
         }
     }
+
+    /// Soubor s postupem učení.
+    pub fn progress_file(&self) -> PathBuf {
+        self.data.join("postup.toml")
+    }
+
+    /// Soubor s historií hodnocení.
+    pub fn history_file(&self) -> PathBuf {
+        self.data.join("historie.toml")
+    }
+
+    /// Soubor s nastavením.
+    pub fn settings_file(&self) -> PathBuf {
+        self.data.join("nastaveni.toml")
+    }
 }
 
 #[cfg(test)]
@@ -49,6 +64,17 @@ mod tests {
         let dirs = AppDirs::in_dir(Path::new("/home/radek/slovicka"));
         assert_eq!(dirs.data, PathBuf::from("/home/radek/slovicka/data"));
         assert_eq!(dirs.logs, PathBuf::from("/home/radek/slovicka/logs"));
+    }
+
+    #[test]
+    fn data_files_are_in_data_dir() {
+        let dirs = AppDirs::in_dir(Path::new("/x"));
+        assert_eq!(dirs.progress_file(), PathBuf::from("/x/data/postup.toml"));
+        assert_eq!(dirs.history_file(), PathBuf::from("/x/data/historie.toml"));
+        assert_eq!(
+            dirs.settings_file(),
+            PathBuf::from("/x/data/nastaveni.toml")
+        );
     }
 
     #[test]
