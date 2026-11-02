@@ -1,11 +1,11 @@
 //! Stav aplikace: načtení dat, přepínání obrazovek a chybová lišta.
 
 use std::collections::HashMap;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::time::Duration;
 
 use anyhow::{Context, Result};
-use eframe::egui::{self, RichText};
+use eframe::egui::{self, Key, Layout, Modifiers, RichText};
 use time::{Date, OffsetDateTime, UtcOffset};
 use vietnamska_slovicka::fsrs::study_day;
 use vietnamska_slovicka::lessons;
@@ -28,8 +28,14 @@ pub struct App {
 /// Stav podle toho, jestli se data podařilo načíst.
 enum State {
     /// Načtení selhalo, zobrazí se hláška a tlačítko „Zkusit znovu“.
-    /// Data se v tomto stavu nikdy nezapisují.
-    Failed(String),
+    /// Postup a historie se v tomto stavu nikdy nezapisují, změnit jde jen složku
+    /// se slovníčky v nastavení.
+    Failed {
+        /// Proč se data nenačetla.
+        message: String,
+        /// Chyba při změně složky se slovníčky, pokud nastala.
+        folder_error: Option<String>,
+    },
     /// Data jsou načtená.
     Ready(Box<Loaded>),
 }
@@ -50,6 +56,10 @@ pub struct Loaded {
     pub screen: Screen,
     /// Chyba, která se zobrazí v liště nahoře (např. nepovedené uložení).
     pub error: Option<String>,
+    /// Stav obrazovky Lekce (vybraná lekce a hledání), zachová se i po odchodu z ní.
+    pub lessons_view: ui::lessons::LessonsView,
+    /// Je otevřená legenda tónů?
+    pub legend_open: bool,
     /// Fronta na dnešek spočítaná pro úvodní obrazovku a den, pro který platí.
     queue_cache: Option<(Date, Queue)>,
 }
@@ -58,6 +68,10 @@ pub struct Loaded {
 pub enum Screen {
     /// Úvod s přehledem a výběrem lekcí.
     Home,
+    /// Procházení lekcí a hledání.
+    Lessons,
+    /// Nastavení.
+    Settings(ui::settings::SettingsState),
     /// Probíhající sezení.
     Review(ui::review::ReviewState),
     /// Shrnutí dokončeného sezení.
@@ -102,7 +116,10 @@ fn load_state(dirs: &AppDirs) -> State {
         Err(err) => {
             let message = format!("{err:#}");
             tracing::error!(error = %message, "data se nepodařilo načíst");
-            State::Failed(message)
+            State::Failed {
+                message,
+                folder_error: None,
+            }
         }
     }
 }
@@ -117,11 +134,7 @@ impl Loaded {
             .unwrap_or_else(|| dirs.default_lessons.clone());
         let lessons = lessons::load_dir(&lessons_dir)
             .with_context(|| format!("složka se slovníčky {}", lessons_dir.display()))?;
-        let words = lessons
-            .iter()
-            .flat_map(|lesson| &lesson.words)
-            .map(|word| (word.key().to_owned(), word.clone()))
-            .collect();
+        let words = words_by_key(&lessons);
         let study = Study::load(dirs, settings.fsrs()?)?;
         Ok(Self {
             settings,
@@ -131,8 +144,54 @@ impl Loaded {
             study,
             screen: Screen::Home,
             error: None,
+            lessons_view: ui::lessons::LessonsView::default(),
+            legend_open: false,
             queue_cache: None,
         })
+    }
+
+    /// Uloží nové nastavení a použije ho.
+    ///
+    /// Když se mění složka se slovníčky, lekce z ní se nejdřív zkusmo načtou. Pokud se to
+    /// nepovede, nastavení se neuloží a nic se nezmění. Nová cílová retence platí jen pro
+    /// další hodnocení.
+    pub fn apply_settings(&mut self, settings: Settings, dirs: &AppDirs) -> Result<()> {
+        let fsrs = settings.fsrs()?;
+        let lessons_dir = settings
+            .lessons_dir
+            .clone()
+            .unwrap_or_else(|| dirs.default_lessons.clone());
+        let new_lessons = if lessons_dir == self.lessons_dir {
+            None
+        } else {
+            let lessons = lessons::load_dir(&lessons_dir)
+                .with_context(|| format!("složka se slovníčky {}", lessons_dir.display()))?;
+            Some(lessons)
+        };
+        settings.save(&dirs.settings_file())?;
+        tracing::info!(
+            lessons_dir = %lessons_dir.display(),
+            new_cards_per_day = settings.new_cards_per_day,
+            desired_retention = settings.desired_retention,
+            directions = ?settings.directions,
+            "nastavení uloženo"
+        );
+        if let Some(lessons) = new_lessons {
+            tracing::info!(
+                lessons_dir = %lessons_dir.display(),
+                lessons = lessons.len(),
+                "lekce načteny z nové složky"
+            );
+            // Lekce se stejným číslem v nové složce nemusí existovat.
+            self.lessons_view = ui::lessons::LessonsView::default();
+            self.words = words_by_key(&lessons);
+            self.lessons = lessons;
+            self.lessons_dir = lessons_dir;
+        }
+        self.study.set_fsrs(fsrs);
+        self.settings = settings;
+        self.invalidate_queue();
+        Ok(())
     }
 
     /// Fronta na studijní den `today`. Počítá se znovu jen při změně dne nebo dat.
@@ -156,7 +215,7 @@ impl Loaded {
     }
 
     /// Uloží nastavení. Chybu zobrazí v liště.
-    pub fn save_settings(&mut self, settings_file: &std::path::Path) {
+    pub fn save_settings(&mut self, settings_file: &Path) {
         if let Err(err) = self.settings.save(settings_file) {
             self.report_error(format!("{err:#}"));
         }
@@ -211,18 +270,37 @@ impl eframe::App for App {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let now = self.now();
         let action = match &mut self.state {
-            State::Failed(message) => failed_ui(ui, message),
+            State::Failed {
+                message,
+                folder_error,
+            } => failed_ui(ui, message, folder_error, &self.dirs),
             State::Ready(loaded) => {
+                if ui.input_mut(|input| input.consume_key(Modifiers::NONE, Key::F1)) {
+                    loaded.legend_open = !loaded.legend_open;
+                }
+                // Během opakování se záložky schovají, aby se sezení neopustilo omylem.
+                // Tlačítko legendy má obrazovka opakování ve své liště.
+                if !matches!(loaded.screen, Screen::Review(_)) {
+                    nav_bar(ui, loaded);
+                }
                 error_bar(ui, loaded);
                 let settings_file = self.dirs.settings_file();
-                match &loaded.screen {
-                    Screen::Home => ui::home::show(ui, loaded, study_day(now), &settings_file),
+                let today = study_day(now);
+                let action = match &loaded.screen {
+                    Screen::Home => ui::home::show(ui, loaded, today, &settings_file),
+                    Screen::Lessons => {
+                        ui::lessons::show(ui, loaded, today);
+                        Action::None
+                    }
+                    Screen::Settings(_) => ui::settings::show(ui, loaded, &self.dirs),
                     Screen::Review(_) => ui::review::show(ui, loaded, now),
                     Screen::Finished(summary) => {
                         let summary = *summary;
                         ui::finished::show(ui, loaded, summary)
                     }
-                }
+                };
+                ui::legend::show(ui.ctx(), &mut loaded.legend_open);
+                action
             }
         };
         if let Action::Reload = action {
@@ -233,8 +311,99 @@ impl eframe::App for App {
     }
 }
 
+/// Záložky obrazovek.
+#[derive(Clone, Copy, PartialEq, Eq)]
+enum Tab {
+    Home,
+    Lessons,
+    Settings,
+}
+
+/// Horní lišta se záložkami a tlačítkem legendy tónů.
+fn nav_bar(ui: &mut egui::Ui, loaded: &mut Loaded) {
+    let active = match loaded.screen {
+        Screen::Lessons => Some(Tab::Lessons),
+        Screen::Settings(_) => Some(Tab::Settings),
+        Screen::Home | Screen::Finished(_) => Some(Tab::Home),
+        Screen::Review(_) => None,
+    };
+    let mut chosen = None;
+    egui::Panel::top("nav_bar").show(ui, |ui| {
+        ui.add_space(4.0);
+        ui.horizontal(|ui| {
+            for (tab, title) in [
+                (Tab::Home, "Úvod"),
+                (Tab::Lessons, "Lekce"),
+                (Tab::Settings, "Nastavení"),
+            ] {
+                let text = RichText::new(title).size(17.0);
+                if ui.selectable_label(active == Some(tab), text).clicked() {
+                    chosen = Some(tab);
+                }
+            }
+            ui.with_layout(Layout::right_to_left(egui::Align::Center), |ui| {
+                legend_button(ui, &mut loaded.legend_open);
+            });
+        });
+        ui.add_space(4.0);
+    });
+    match chosen {
+        Some(tab) if Some(tab) != active => {
+            // Odchodem z Nastavení se neuložené změny zahodí.
+            loaded.screen = match tab {
+                Tab::Home => Screen::Home,
+                Tab::Lessons => Screen::Lessons,
+                Tab::Settings => {
+                    Screen::Settings(ui::settings::SettingsState::new(&loaded.settings))
+                }
+            };
+        }
+        _ => {}
+    }
+}
+
+/// Tlačítko „?“, které přepíná legendu tónů.
+pub fn legend_button(ui: &mut egui::Ui, open: &mut bool) {
+    let button =
+        egui::Button::new(RichText::new(" ? ").size(17.0).family(fonts::bold())).selected(*open);
+    if ui.add(button).on_hover_text("Legenda tónů (F1)").clicked() {
+        *open = !*open;
+    }
+}
+
+/// Slovíčka podle klíče, pro zobrazení kartiček.
+fn words_by_key(lessons: &[Lesson]) -> HashMap<String, Word> {
+    lessons
+        .iter()
+        .flat_map(|lesson| &lesson.words)
+        .map(|word| (word.key().to_owned(), word.clone()))
+        .collect()
+}
+
+/// Změní složku se slovníčky přímo v souboru s nastavením (z chybové obrazovky).
+///
+/// Ostatní nastavení zůstane, jak bylo. Když je poškozený samotný soubor s nastavením,
+/// nic se nezapíše.
+fn change_lessons_dir(dirs: &AppDirs, lessons_dir: PathBuf) -> Result<()> {
+    let settings_file = dirs.settings_file();
+    let mut settings = Settings::load(&settings_file)
+        .context("složku nelze změnit, protože se nepodařilo načíst nastavení")?;
+    settings.lessons_dir = Some(lessons_dir);
+    settings.save(&settings_file)?;
+    tracing::info!(
+        lessons_dir = ?settings.lessons_dir,
+        "složka se slovníčky změněna z chybové obrazovky"
+    );
+    Ok(())
+}
+
 /// Obrazovka, když se data nepodařilo načíst.
-fn failed_ui(ui: &mut egui::Ui, message: &str) -> Action {
+fn failed_ui(
+    ui: &mut egui::Ui,
+    message: &str,
+    folder_error: &mut Option<String>,
+    dirs: &AppDirs,
+) -> Action {
     let mut action = Action::None;
     egui::CentralPanel::default().show(ui, |ui| {
         ui.label(
@@ -246,16 +415,31 @@ fn failed_ui(ui: &mut egui::Ui, message: &str) -> Action {
         ui.label("Opravte prosím problémy níže a zkuste to znovu. Postup učení se nezměnil.");
         ui.add_space(12.0);
         egui::ScrollArea::vertical()
-            .max_height(ui.available_height() - 60.0)
+            .max_height(ui.available_height() - 90.0)
             .show(ui, |ui| {
                 ui.label(RichText::new(message).size(15.0).monospace());
             });
         ui.add_space(12.0);
-        if ui
-            .button(RichText::new("Zkusit znovu").size(18.0))
-            .clicked()
-        {
-            action = Action::Reload;
+        ui.horizontal(|ui| {
+            if ui
+                .button(RichText::new("Zkusit znovu").size(18.0))
+                .clicked()
+            {
+                action = Action::Reload;
+            }
+            if ui
+                .button(RichText::new("Změnit složku se slovníčky…").size(18.0))
+                .clicked()
+                && let Some(path) = ui::settings::pick_folder(&dirs.default_lessons)
+            {
+                match change_lessons_dir(dirs, path) {
+                    Ok(()) => action = Action::Reload,
+                    Err(err) => *folder_error = Some(format!("{err:#}")),
+                }
+            }
+        });
+        if let Some(error) = folder_error {
+            ui.label(RichText::new(error.as_str()).color(ui.visuals().error_fg_color));
         }
     });
     action

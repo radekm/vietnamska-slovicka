@@ -101,6 +101,9 @@ pub fn show(ui: &mut egui::Ui, loaded: &mut Loaded, now: OffsetDateTime) -> Acti
             ));
             ui.separator();
             ui.label(RichText::new(card.direction.label()).family(fonts::bold()));
+            ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
+                crate::app::legend_button(ui, &mut loaded.legend_open);
+            });
         });
         ui.add_space(4.0);
     });

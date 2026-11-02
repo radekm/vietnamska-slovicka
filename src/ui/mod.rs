@@ -2,7 +2,10 @@
 
 pub mod finished;
 pub mod home;
+pub mod legend;
+pub mod lessons;
 pub mod review;
+pub mod settings;
 
 use eframe::egui::{Color32, Key};
 use vietnamska_slovicka::fsrs::Rating;
