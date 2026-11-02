@@ -34,39 +34,36 @@ pub fn show(ctx: &egui::Context, open: &mut bool) {
                         ui.label(RichText::new(header).family(fonts::bold()));
                     }
                     ui.end_row();
-                    for (tone, (example, meaning)) in Tone::ALL.into_iter().zip(EXAMPLES) {
-                        ui.label(tone.name());
-                        ui.label(RichText::new(tone.mark()).size(20.0).family(fonts::bold()));
-                        ui.label(tone.description(false));
-                        ui.label(RichText::new(tone.chao(false)).size(18.0));
-                        ui.label(format!("{example} – {meaning}"));
-                        ui.end_row();
+                    let open_syllables = Tone::ALL
+                        .into_iter()
+                        .zip(EXAMPLES)
+                        .map(|(tone, (example, meaning))| (tone, false, example, meaning));
+                    for (tone, checked, example, meaning) in open_syllables {
+                        tone_row(ui, tone, checked, example, meaning);
                     }
-                });
-            ui.add_space(8.0);
-            ui.label(RichText::new("Zavřené slabiky (končí na -p, -t, -c, -ch)").family(fonts::bold()));
-            egui::Grid::new("checked_tones")
-                .striped(true)
-                .spacing([18.0, 6.0])
-                .show(ui, |ui| {
-                    for (tone, example, meaning) in
-                        [(Tone::Sac, "mát", "chladný"), (Tone::Nang, "mạt", "veš")]
-                    {
-                        ui.label(tone.name());
-                        ui.label(RichText::new(tone.mark()).size(20.0).family(fonts::bold()));
-                        ui.label(tone.description(true));
-                        ui.label(RichText::new(tone.chao(true)).size(18.0));
-                        ui.label(format!("{example} – {meaning}"));
-                        ui.end_row();
-                    }
+                    // Jedna mřížka, aby se sloupce zarovnaly s tóny v otevřených slabikách.
+                    ui.label(RichText::new("zavřené:").family(fonts::bold()));
+                    ui.end_row();
+                    tone_row(ui, Tone::Sac, true, "mát", "chladný");
+                    tone_row(ui, Tone::Nang, true, "mạt", "veš");
                 });
             ui.add_space(8.0);
             ui.label(
                 RichText::new(
-                    "Popis tónu je v závorce za každou slabikou výslovnosti, např. „kam (klesá hluboko)“.\nOstatní tóny se v zavřených slabikách nevyskytují. Tóny podle Kirby (2011).\nOkno přepíná tlačítko „?“ nebo klávesa F1.",
+                    "Popis tónu je v závorce za každou slabikou výslovnosti, např. „kam (klesá hluboko)“.\nZavřená slabika končí na -p, -t, -c nebo -ch, jiné tóny v ní nejsou. Tóny podle Kirby (2011).\nOkno přepíná tlačítko „?“ nebo klávesa F1.",
                 )
                 .weak()
                 .size(13.0),
             );
         });
+}
+
+/// Jeden řádek tabulky tónů.
+fn tone_row(ui: &mut egui::Ui, tone: Tone, checked: bool, example: &str, meaning: &str) {
+    ui.label(tone.name());
+    ui.label(RichText::new(tone.mark()).size(20.0).family(fonts::bold()));
+    ui.label(tone.description(checked));
+    ui.label(RichText::new(tone.chao(checked)).size(18.0));
+    ui.label(format!("{example} – {meaning}"));
+    ui.end_row();
 }

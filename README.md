@@ -42,8 +42,13 @@ cargo run --release
 Lekce (`lekce01.toml`, `lekce02.toml`, …) aplikace hledá ve složce `slovnicky/`
 v pracovním adresáři, ze kterého ji spustíš. V repozitáři je to složka `slovnicky/`,
 takže stačí spouštět aplikaci z kořene repozitáře. Jinou složku jde vybrat v Nastavení.
-Po ruční úpravě lekcí je načte znovu tlačítko **Načíst lekce znovu** v Nastavení. (První lekce přibudou v etapě 8,
-do té doby aplikace ohlásí, že složka chybí.)
+Po ruční úpravě lekcí je načte znovu tlačítko **Načíst lekce znovu** v Nastavení.
+
+V repozitáři je zatím 7 lekcí (144 slovíček): pozdravy, zájmena a oslovení, čísla,
+základní fráze a otázky, jídlo a pití, objednávání v restauraci a ptaní se na cestu.
+Výslovnost odpovídá hanojskému dialektu, IPA se řídí článkem Kirby (2011). Pravidla
+českého popisu výslovnosti a zápisu IPA jsou v [PLAN.md](PLAN.md). Po úpravě lekcí v repozitáři
+spusť `cargo test`: zkontroluje, že sedí počet slabik a tóny ve výslovnosti a v IPA.
 
 ## Kde jsou data
 

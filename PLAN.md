@@ -335,7 +335,8 @@ Upřesnění (etapa 6):
   neopustilo omylem, tlačítko „?“ zůstane.
 - **Legenda tónů** je plovoucí okno, které nic neblokuje, přepíná ho tlačítko „?“ nebo F1.
   Kromě tabulky tónů ukazuje i Chaova tónová písmena (viz „Konvence IPA“) a příklad
-  *ma, mà, má, mả, mã, mạ* s významy. Po ověření hodnot tónů v etapě 8 se upraví i tady.
+  *ma, mà, má, mả, mã, mạ* s významy. Od etapy 8 bere tóny z `src/phonetics.rs` (Kirby 2011)
+  a ukazuje i tóny v zavřených slabikách.
 - **Lekce:** vlevo seznam lekcí a pole pro hledání, vpravo tabulka slovíček (VI, CS,
   výslovnost, IPA, poznámka a štítky) se stavem obou kartiček („nová“, „dnes“ nebo datum
   příštího opakování). Vyplněné hledání prohledává všechny lekce (VI, CS, výslovnost,
@@ -391,8 +392,19 @@ Schválená témata, každá lekce zhruba 20 slovíček:
 6. Objednávání v restauraci
 7. Ptaní se na cestu ve městě
 
-IPA se píše ručně podle „Konvence IPA“ a porovnává se s výstupem nástroje vPhon (Kirby),
-který běží jen dočasně mimo repozitář (licence GPL, do projektu se nepřidává).
+Upřesnění (etapa 8):
+
+- IPA a český popis se připravily pomocným skriptem podle pravidel z oddílů „Český popis
+  výslovnosti“ a „Konvence IPA“ a všechny slabiky (163) se porovnaly s nástrojem vPhon
+  (Kirby). Shodují se v souhláskách, samohláskách, délce i tónech. Pak prošlo vše ruční
+  kontrolou. Skript ani vPhon (licence GPL) v repozitáři nejsou, pravidla jsou v tomto plánu.
+- Slovní zásoba je severní (hanojská), u slov, která se na jihu říkají jinak, je to
+  v poznámce (např. *bát* / jih *chén*).
+- Homonyma *không* (ne / nula) mají `klic`. *đường* má `klic = "đường (cesta)"` už teď,
+  aby později přidané *đường* (cukr) nezměnilo klíč a nepřipravilo cestu o postup.
+- Fráze mají ve `vi` interpunkci (otazník, vykřičník), kontrola výslovnosti ji ignoruje.
+- Noto Sans spojuje posloupnost tónových písmen do jednoho obrysu (např. ˧˩˨), jen ˧˧ se
+  zobrazí jako dva stejné znaky.
 
 ## Font
 
@@ -460,10 +472,12 @@ slovnicky/
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
 | 7 | Statistiky | hotovo |
-| 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | rozpracováno |
+| 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo, restaurace, cesta) | hotovo |
 
 ## Otevřené otázky
 
+- Pomocný skript na IPA a český popis je jen v Pythonu mimo repozitář. Pro další lekce
+  by se mohl přepsat do Rustu (např. jako test, který přepis rovnou vygeneruje a porovná).
 - Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
   upozornění). Případně doplnit potvrzovací dotaz.
 - V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.
