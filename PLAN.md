@@ -304,6 +304,7 @@ Upřesnění (etapa 6):
   opakování v `postup.toml` se nepřepočítávají, data se tím nemění (stejně jako v Anki).
 - **Chybová obrazovka** (data se nepodařilo načíst) nabízí kromě „Zkusit znovu“ i změnu
   složky se slovníčky.
+- V Nastavení je i tlačítko „Načíst lekce znovu“ pro načtení ručně upravených lekcí.
 
 ## Font
 
@@ -336,8 +337,9 @@ src/
   lib.rs         # knihovna: logika oddělená od GUI (testovatelná bez okna)
   fonts.rs       # nastavení fontů
   app.rs         # stav aplikace, přepínání obrazovek
-  ui/            # jednotlivé obrazovky (úvod, opakování, shrnutí sezení)
+  ui/            # obrazovky: úvod, opakování, shrnutí, lekce, nastavení, legenda tónů
   model.rs       # slovíčko, kartička, směr
+  browse.rs      # hledání slovíček bez diakritiky, stav kartičky pro seznam lekcí
   lessons.rs     # načítání lekcí z TOML + kontrola (duplicitní klíče, prázdná pole)
   progress.rs    # načítání/ukládání postupu a historie
   settings.rs    # nastavení
@@ -367,7 +369,7 @@ slovnicky/
 | 3 | FSRS + testy | hotovo |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | hotovo |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
-| 6 | GUI: seznam lekcí, nastavení, legenda tónů | rozpracováno |
+| 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
 | 7 | Statistiky | čeká |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
 

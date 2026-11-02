@@ -18,17 +18,26 @@ cargo run --release
 
 ## Ovládání
 
+- Nahoře jsou záložky **Úvod**, **Lekce** a **Nastavení**. Tlačítko **?** (nebo klávesa
+  **F1**) otevře legendu tónů, i během opakování.
 - Na úvodu zaškrtni lekce, ze kterých se mají brát nové kartičky, a spusť sezení
   tlačítkem **Začít** (nebo Enterem).
 - Kartičku otočíš **mezerníkem** a ohodnotíš klávesami **1–4**
   (Znovu / Těžké / Dobré / Snadné). U každého tlačítka je vidět, kdy kartička přijde znovu.
 - **Esc** sezení předčasně ukončí. Postup se ukládá po každém hodnocení.
+- V **Lekcích** se dají procházet všechna slovíčka a u každého je vidět, kdy přijdou
+  na řadu jeho kartičky. Hledání prohledává všechny lekce a na diakritice nezáleží
+  („cam on“ najde „cảm ơn“).
+- V **Nastavení** jde změnit složku se slovníčky, denní limit nových kartiček, cílovou
+  retenci a směry procvičování. Změny se projeví až po stisknutí **Uložit**. Nová cílová
+  retence platí jen pro další hodnocení, už naplánovaná opakování se nemění.
 
 ## Kde jsou lekce
 
 Lekce (`lekce01.toml`, `lekce02.toml`, …) aplikace hledá ve složce `slovnicky/`
 v pracovním adresáři, ze kterého ji spustíš. V repozitáři je to složka `slovnicky/`,
-takže stačí spouštět aplikaci z kořene repozitáře. (První lekce přibudou v etapě 8,
+takže stačí spouštět aplikaci z kořene repozitáře. Jinou složku jde vybrat v Nastavení.
+Po ruční úpravě lekcí je načte znovu tlačítko **Načíst lekce znovu** v Nastavení. (První lekce přibudou v etapě 8,
 do té doby aplikace ohlásí, že složka chybí.)
 
 ## Kde jsou data
