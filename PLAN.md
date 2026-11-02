@@ -284,6 +284,27 @@ Pořadí kartiček v sezení:
 - **Nastavení:** složka se slovníčky, denní limit nových kartiček, cílová retence, směry procvičování.
 - **Legenda tónů:** vždy po ruce (např. tlačítko „?“), obsahuje tabulku tónů z tohoto plánu.
 
+Upřesnění (etapa 6):
+
+- **Navigace:** nahoře lišta se záložkami Úvod · Lekce · Nastavení (v etapě 7 přibudou
+  Statistiky) a vpravo tlačítko „?“. Během opakování se záložky schovají, aby se sezení
+  neopustilo omylem, tlačítko „?“ zůstane.
+- **Legenda tónů** je plovoucí okno, které nic neblokuje, přepíná ho tlačítko „?“ nebo F1.
+  Kromě tabulky tónů ukazuje i Chaova tónová písmena (viz „Konvence IPA“) a příklad
+  *ma, mà, má, mả, mã, mạ* s významy. Po ověření hodnot tónů v etapě 8 se upraví i tady.
+- **Lekce:** vlevo seznam lekcí a pole pro hledání, vpravo tabulka slovíček (VI, CS,
+  výslovnost, IPA, poznámka a štítky) se stavem obou kartiček („nová“, „dnes“ nebo datum
+  příštího opakování). Vyplněné hledání prohledává všechny lekce (VI, CS, výslovnost,
+  poznámku a štítky), nerozlišuje velikost písmen a **ignoruje diakritiku** („cam on“
+  najde „cảm ơn“, „dekuji“ najde „děkuji“).
+- **Nastavení** se ukládá tlačítkem Uložit, ne hned. Před uložením nové složky se slovníčky
+  se lekce z ní zkusmo načtou, a pokud jsou v nich chyby, ukážou se a nic se neuloží.
+  Po změně složky se lekce načtou znovu.
+- **Změna cílové retence platí jen pro další hodnocení.** Už naplánovaná data příštího
+  opakování v `postup.toml` se nepřepočítávají, data se tím nemění (stejně jako v Anki).
+- **Chybová obrazovka** (data se nepodařilo načíst) nabízí kromě „Zkusit znovu“ i změnu
+  složky se slovníčky.
+
 ## Font
 
 Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
@@ -346,7 +367,7 @@ slovnicky/
 | 3 | FSRS + testy | hotovo |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | hotovo |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
-| 6 | GUI: seznam lekcí, nastavení, legenda tónů | čeká |
+| 6 | GUI: seznam lekcí, nastavení, legenda tónů | rozpracováno |
 | 7 | Statistiky | čeká |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
 
