@@ -375,4 +375,12 @@ slovnicky/
 
 ## Otevřené otázky
 
-- Přepis hlásek, které čeština nemá, do českého popisu výslovnosti (etapa 8).
+- Přepis hlásek, které čeština nemá (ơ, ư, â, ă, koncové -ng/-nh/-ch…), do českého popisu
+  výslovnosti (etapa 8).
+- Ověřit konvenci IPA, hlavně přesné hodnoty tónů, podle odborných zdrojů (např. Kirby 2011).
+  Po ověření upravit i tabulku tónů v `src/ui/legend.rs` (etapa 8).
+- Etapa 7: `egui_plot = "=0.38.0"` je povolený, ale zatím není v `Cargo.toml`. Ověřit, že je
+  kompatibilní s `eframe 0.37.0`, a když ne, domluvit se s autorem.
+- Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
+  upozornění). Případně doplnit potvrzovací dotaz.
+- V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.

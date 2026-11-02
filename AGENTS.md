@@ -84,6 +84,36 @@ Zatím žádné. V `Cargo.toml` se nepřidávají vlastní profily ani `[lints]`
 - Logy se ukládají jako JSON do složky `logs/` v pracovním adresáři, rotují se po dnech
   a drží se posledních 7.
 
+## Postup práce na etapě
+
+- Na začátku etapy autorovi stručně navrhni řešení (u GUI rozvržení obrazovek, u statistik
+  co a jak grafy ukazují) a nech si ho schválit. Rozhodnutí zapiš do `PLAN.md`.
+- Na konci etapy aktualizuj `README.md` (ovládání) a `PLAN.md` (stav, upřesnění, otevřené
+  otázky) a autorovi napiš krátké shrnutí, co je hotové a na co si dát pozor.
+
+## Prostředí pro AI agenta
+
+Tipy pro práci v cloudovém prostředí (Linux bez displeje):
+
+- **Repozitář:** na začátku si vyžádej zápisový přístup (budeš commitovat a pushovat
+  do `main`). PyPI je zablokované, GitHub a crates.io fungují.
+- **Testovací data** připravuj v dočasné složce mimo repozitář: lekce jako
+  `slovnicky/lekce01.toml` (např. ukázka z `PLAN.md`), případně `data/postup.toml`
+  a `data/historie.toml`. Aplikaci spouštěj s pracovním adresářem v této složce
+  a s `TZ=Europe/Prague`, aby měla správný místní čas.
+- **GUI** ověřuj na virtuálním displeji: `Xvfb :99 -screen 0 1100x750x24`, aplikace
+  s `DISPLAY=:99`, snímek obrazovky přes `import -window root soubor.png`.
+- **Klikání a klávesy:** `xdotool` (`apt-get update && apt-get install -y xdotool`).
+  Okno najdeš přes `xdotool search --name Vietnam`, posuň ho na 0,0
+  (`xdotool windowmove <id> 0 0`), aby souřadnice seděly se snímkem, a před posíláním
+  kláves ho zaměř (`xdotool windowfocus --sync <id>`).
+- Kliknutí xdotoolem na posuvník (`Slider`) se neprojeví. Hodnotu zadej do políčka vedle něj.
+- **Dialog pro výběr složky:** bez xdg-portalu použije `rfd` program `zenity`
+  (`apt-get install -y zenity`). Cestu do dialogu nepiš, GTK ji automatickým doplňováním
+  pokazí. Složku vyber klikáním v postranním panelu a tlačítkem OK.
+- **Ukončení aplikace:** `pgrep -x vietnamska-slov | xargs -r kill`. Nepoužívej
+  `pkill -f`, shoda na příkazový řádek zabije i vlastní shell.
+
 ## Git
 
 - Malé, samostatné commity, které se dají přeložit.
