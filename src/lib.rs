@@ -8,6 +8,7 @@ pub mod lessons;
 pub mod model;
 pub mod paths;
 pub mod progress;
+pub mod scheduler;
 pub mod settings;
 pub mod storage;
 
