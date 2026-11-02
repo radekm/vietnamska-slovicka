@@ -6,9 +6,15 @@ mod logging;
 
 use anyhow::Result;
 use eframe::egui;
-use vietnamska_slovicka::paths;
+use time::{OffsetDateTime, UtcOffset};
+use vietnamska_slovicka::{fsrs, paths};
 
 fn main() -> Result<()> {
+    // Místní časový posun musí být zjištěn jako úplně první věc, dokud program běží
+    // v jednom vlákně. Ve vícevláknovém programu ho `time` na Linuxu nevrátí.
+    // Logování i eframe spouštějí další vlákna. Viz PLAN.md, oddíl „Místní čas“.
+    let local_offset = UtcOffset::current_local_offset();
+
     let dirs = paths::AppDirs::in_working_dir()?;
     // Strážce logování musí žít až do konce `main`, jinak by se ztratily poslední záznamy.
     // Složku `logs/` vytvoří `logging::init`.
@@ -19,6 +25,21 @@ fn main() -> Result<()> {
         data_dir = %dirs.data.display(),
         log_dir = %dirs.logs.display(),
         "aplikace spuštěna"
+    );
+
+    let local_offset = match local_offset {
+        Ok(offset) => offset,
+        Err(err) => {
+            tracing::warn!(error = %err, "nelze zjistit místní časový posun, použije se UTC");
+            UtcOffset::UTC
+        }
+    };
+    let local_now = OffsetDateTime::now_utc().to_offset(local_offset);
+    tracing::info!(
+        local_offset = %local_offset,
+        local_time = %local_now,
+        study_day = %fsrs::study_day(local_now),
+        "místní čas"
     );
 
     let options = eframe::NativeOptions {
