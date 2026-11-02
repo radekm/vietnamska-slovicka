@@ -259,7 +259,7 @@ pub fn interval_label(days: u32) -> String {
 }
 
 /// Český tvar podstatného jména podle počtu: 1 den, 2–4 dny, 0 a 5+ dní.
-fn czech_plural<'a>(count: u32, one: &'a str, few: &'a str, many: &'a str) -> &'a str {
+pub fn czech_plural<'a>(count: u32, one: &'a str, few: &'a str, many: &'a str) -> &'a str {
     match count {
         1 => one,
         2..=4 => few,

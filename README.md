@@ -16,6 +16,21 @@ sám podle souboru `rust-toolchain.toml`.
 cargo run --release
 ```
 
+## Ovládání
+
+- Na úvodu zaškrtni lekce, ze kterých se mají brát nové kartičky, a spusť sezení
+  tlačítkem **Začít** (nebo Enterem).
+- Kartičku otočíš **mezerníkem** a ohodnotíš klávesami **1–4**
+  (Znovu / Těžké / Dobré / Snadné). U každého tlačítka je vidět, kdy kartička přijde znovu.
+- **Esc** sezení předčasně ukončí. Postup se ukládá po každém hodnocení.
+
+## Kde jsou lekce
+
+Lekce (`lekce01.toml`, `lekce02.toml`, …) aplikace hledá ve složce `slovnicky/`
+v pracovním adresáři, ze kterého ji spustíš. V repozitáři je to složka `slovnicky/`,
+takže stačí spouštět aplikaci z kořene repozitáře. (První lekce přibudou v etapě 8,
+do té doby aplikace ohlásí, že složka chybí.)
+
 ## Kde jsou data
 
 Aplikace si vytváří dvě složky v pracovním adresáři, ze kterého ji spustíš:

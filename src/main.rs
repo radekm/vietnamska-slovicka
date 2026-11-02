@@ -3,6 +3,7 @@
 mod app;
 mod fonts;
 mod logging;
+mod ui;
 
 use anyhow::Result;
 use eframe::egui;
@@ -53,7 +54,7 @@ fn main() -> Result<()> {
     let result = eframe::run_native(
         "vietnamska-slovicka",
         options,
-        Box::new(|cc| Ok(Box::new(app::App::new(cc)))),
+        Box::new(move |cc| Ok(Box::new(app::App::new(cc, dirs, local_offset)))),
     );
 
     match &result {

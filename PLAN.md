@@ -315,7 +315,7 @@ src/
   lib.rs         # knihovna: logika oddělená od GUI (testovatelná bez okna)
   fonts.rs       # nastavení fontů
   app.rs         # stav aplikace, přepínání obrazovek
-  ui/            # jednotlivé obrazovky
+  ui/            # jednotlivé obrazovky (úvod, opakování, shrnutí sezení)
   model.rs       # slovíčko, kartička, směr
   lessons.rs     # načítání lekcí z TOML + kontrola (duplicitní klíče, prázdná pole)
   progress.rs    # načítání/ukládání postupu a historie
@@ -345,7 +345,7 @@ slovnicky/
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | hotovo |
 | 3 | FSRS + testy | hotovo |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | hotovo |
-| 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | probíhá |
+| 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | čeká |
 | 7 | Statistiky | čeká |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
