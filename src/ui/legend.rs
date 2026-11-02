@@ -2,75 +2,18 @@
 
 use eframe::egui::{self, RichText};
 
+use vietnamska_slovicka::phonetics::Tone;
+
 use crate::fonts;
 
-/// Jeden tón v legendě.
-struct Tone {
-    /// Vietnamský název tónu.
-    name: &'static str,
-    /// Značka nad samohláskou.
-    mark: &'static str,
-    /// Popis v závorce v českém popisu výslovnosti.
-    description: &'static str,
-    /// Chaova tónová písmena (viz PLAN.md, „Konvence IPA“).
-    chao: &'static str,
-    /// Příkladová slabika s tímto tónem.
-    example: &'static str,
-    /// Význam příkladu.
-    meaning: &'static str,
-}
-
-/// Tóny podle PLAN.md. Hodnoty tónů se ještě ověří v etapě 8, pak je potřeba
-/// upravit i tuto tabulku.
-const TONES: [Tone; 6] = [
-    Tone {
-        name: "ngang",
-        mark: "a",
-        description: "rovně",
-        chao: "˧˧",
-        example: "ma",
-        meaning: "duch",
-    },
-    Tone {
-        name: "huyền",
-        mark: "à",
-        description: "nízko klesá",
-        chao: "˨˩",
-        example: "mà",
-        meaning: "ale",
-    },
-    Tone {
-        name: "sắc",
-        mark: "á",
-        description: "stoupá",
-        chao: "˧˥",
-        example: "má",
-        meaning: "tvář",
-    },
-    Tone {
-        name: "hỏi",
-        mark: "ả",
-        description: "klesá a stoupá",
-        chao: "˧˩˧",
-        example: "mả",
-        meaning: "hrob",
-    },
-    Tone {
-        name: "ngã",
-        mark: "ã",
-        description: "stoupá se zlomem",
-        chao: "˧ˀ˥",
-        example: "mã",
-        meaning: "kůň",
-    },
-    Tone {
-        name: "nặng",
-        mark: "ạ",
-        description: "krátce klesá, ráz",
-        chao: "˨˩ˀ",
-        example: "mạ",
-        meaning: "sazenice rýže",
-    },
+/// Příklady k tónům v pořadí [`Tone::ALL`]: slabika a její význam.
+const EXAMPLES: [(&str, &str); 6] = [
+    ("ma", "duch"),
+    ("mà", "ale"),
+    ("má", "tvář"),
+    ("mả", "hrob"),
+    ("mã", "kód"),
+    ("mạ", "sazenice rýže"),
 ];
 
 /// Vykreslí okno s legendou, pokud je otevřené. Křížek okno zavře.
@@ -91,19 +34,36 @@ pub fn show(ctx: &egui::Context, open: &mut bool) {
                         ui.label(RichText::new(header).family(fonts::bold()));
                     }
                     ui.end_row();
-                    for tone in &TONES {
-                        ui.label(tone.name);
-                        ui.label(RichText::new(tone.mark).size(20.0).family(fonts::bold()));
-                        ui.label(tone.description);
-                        ui.label(RichText::new(tone.chao).size(18.0));
-                        ui.label(format!("{} – {}", tone.example, tone.meaning));
+                    for (tone, (example, meaning)) in Tone::ALL.into_iter().zip(EXAMPLES) {
+                        ui.label(tone.name());
+                        ui.label(RichText::new(tone.mark()).size(20.0).family(fonts::bold()));
+                        ui.label(tone.description(false));
+                        ui.label(RichText::new(tone.chao(false)).size(18.0));
+                        ui.label(format!("{example} – {meaning}"));
+                        ui.end_row();
+                    }
+                });
+            ui.add_space(8.0);
+            ui.label(RichText::new("Zavřené slabiky (končí na -p, -t, -c, -ch)").family(fonts::bold()));
+            egui::Grid::new("checked_tones")
+                .striped(true)
+                .spacing([18.0, 6.0])
+                .show(ui, |ui| {
+                    for (tone, example, meaning) in
+                        [(Tone::Sac, "mát", "chladný"), (Tone::Nang, "mạt", "veš")]
+                    {
+                        ui.label(tone.name());
+                        ui.label(RichText::new(tone.mark()).size(20.0).family(fonts::bold()));
+                        ui.label(tone.description(true));
+                        ui.label(RichText::new(tone.chao(true)).size(18.0));
+                        ui.label(format!("{example} – {meaning}"));
                         ui.end_row();
                     }
                 });
             ui.add_space(8.0);
             ui.label(
                 RichText::new(
-                    "Popis tónu je v závorce za každou slabikou výslovnosti, např. „kam (klesá a stoupá)“.\nOkno přepíná tlačítko „?“ nebo klávesa F1.",
+                    "Popis tónu je v závorce za každou slabikou výslovnosti, např. „kam (klesá hluboko)“.\nOstatní tóny se v zavřených slabikách nevyskytují. Tóny podle Kirby (2011).\nOkno přepíná tlačítko „?“ nebo klávesa F1.",
                 )
                 .weak()
                 .size(13.0),
