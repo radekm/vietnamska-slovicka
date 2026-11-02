@@ -53,27 +53,66 @@ Slabiky se oddělují mezerou a za každou slabikou je v závorce slovní popis 
 | Tón (vietnamsky) | Značka | Popis v závorce        |
 |------------------|--------|------------------------|
 | ngang            | a      | rovně                  |
-| huyền            | à      | nízko klesá            |
+| huyền            | à      | klesá                  |
 | sắc              | á      | stoupá                 |
-| hỏi              | ả      | klesá a stoupá         |
+| hỏi              | ả      | klesá hluboko          |
 | ngã              | ã      | stoupá se zlomem       |
 | nặng             | ạ      | krátce klesá, ráz      |
 
-Přesný přepis hlásek, které čeština nemá (ơ, ư, â, ă, koncové -ng/-nh/-ch…), se ustálí
-při přípravě první lekce (etapa 8) a doplní se sem.
+V zavřené slabice (končí na -p, -t, -c, -ch) má nặng popis **„krátce klesá“** (bez rázu,
+viz IPA). Přepis hlásek (schváleno v etapě 8):
+
+| Pravopis | Popis | Pravopis | Popis |
+|----------|-------|----------|-------|
+| ơ, â | ə | ư | ɨ |
+| ê, e | e | ô, o | o |
+| a, ă | a | i, y | i |
+| iê, ia, yê, ya | iə | ươ, ưa | ɨə |
+| uô, ua | uə | koncové -i, -y | j (*ai* → aj, *ơi* → əj) |
+| koncové -o, -u | u (*ao* → au, *êu* → eu) | vložené o, u (*hoa*, *quá*) | u (hua, kua) |
+| ch, tr | č | d, gi, r | z |
+| x, s | s | kh | ch |
+| nh | ň | ng, ngh | ng |
+| ph | f | th | th (t s přídechem) |
+| đ | d | g, gh | g |
+| c, k, q | k | -anh, -ách | ajng, ajk |
+
+Ostatní písmena se čtou jako v češtině. Ráz na začátku slabiky (*ơn* = [ʔɤn]) se v popisu
+nepíše, rozdíl ê/e a ô/o a sevření rtů v koncovém -ng/-c po u, ô, o je vidět jen v IPA.
 
 ### Konvence IPA
 
-Cílem je **přesný** fonetický přepis hanojské výslovnosti, bez zjednodušování kvůli fontu.
+Přepis hanojské výslovnosti podle **Kirby (2011)**, *Vietnamese (Hanoi Vietnamese)*,
+Journal of the IPA 41/3 (schváleno v etapě 8). Hodnoty tónů v číslech potvrzuje i nástroj
+vPhon téhož autora.
 
-- Slabiky se oddělují mezerou.
-- Tóny se zapisují Chaovými tónovými písmeny za slabikou: ngang ˧˧, huyền ˨˩, sắc ˧˥,
-  hỏi ˧˩˧, ngã ˧ˀ˥, nặng ˨˩ˀ.
-- *ch* a *tr*, které v Hanoji splývají, se zapisují jako **t͡ɕ** (např. *chào* → `t͡ɕaːw˨˩`).
-- Nevypuštěné koncové souhlásky se značí ̚ (např. *một* → `mot̚˨˩ˀ`).
-- Při přípravě první lekce (etapa 8) se konvence ověří podle odborných zdrojů
-  (např. Kirby 2011, *Vietnamese (Hanoi Vietnamese)*, Journal of the IPA) a případně
-  upřesní. Hlavně jde o přesné hodnoty tónů.
+- Slabiky se oddělují mezerou, tón se píše Chaovými tónovými písmeny za slabikou.
+- **Tóny:**
+
+  | Tón | Otevřená slabika | Zavřená slabika (-p -t -c -ch) | Příklad |
+  |-----|------------------|--------------------------------|---------|
+  | ngang | ˧˧ | – | *ma* → `ma˧˧` |
+  | huyền | ˧˨ | – | *mà* → `ma˧˨` |
+  | sắc | ˨˦ | ˦˥ | *má* → `ma˨˦`, *mát* → `mat˦˥` |
+  | hỏi | ˧˩˨ | – | *mả* → `ma˧˩˨` |
+  | ngã | ˧ˀ˥ | – | *mã* → `ma˧ˀ˥` |
+  | nặng | ˨˩ˀ | ˨˩ | *mạ* → `ma˨˩ˀ`, *mạt* → `mat˨˩` |
+
+  Kirby píše každý tón jedním obrysovým znakem, my stejný obrys rozepisujeme do posloupnosti
+  tónových písmen. Jiná kvalita hlasu než ráz (ˀ) se nepřepisuje.
+- **Samohlásky:** i/y `i`, ê `e`, e `ɛ`, ư `ɯ`, ơ `ɤ`, â `ɤ̆`, a `a`, ă `ă`, u `u`, ô `o`,
+  o `ɔ`. Délka se jinak neznačí. Dvojhlásky `iə`, `ɯə`, `uə`. Koncové -i/-y `j`, -o/-u `w`
+  (*ai* `aj`, *ay* `ăj`, *ao* `aw`, *au* `ăw`, *ây* `ɤ̆j`, *âu* `ɤ̆w`).
+- **Počáteční souhlásky:** b `ɓ`, đ `ɗ`, t `t`, th `tʰ`, ch/tr `t͡ɕ`, c/k/q `k`, ph `f`,
+  v `v`, x/s `s`, d/gi/r `z`, kh `x`, g/gh `ɣ`, h `h`, m `m`, n `n`, nh `ɲ`, ng/ngh `ŋ`,
+  l `l`. Slabika bez souhlásky začíná rázem `ʔ` (*ăn* → `ʔăn˧˧`). Vložené o/u se píše jako
+  `ʷ` za souhláskou (*hoa* → `hʷa˧˧`, *quá* → `kʷa˨˦`), bez souhlásky jako `w`
+  (*oan* → `wan˧˧`).
+- **Koncové souhlásky:** `p t k m n ŋ` bez značky ̚ (koncové p, t, k jsou vždy
+  nevypuštěné). Po i, ê, e se k a ŋ posouvají dopředu: *-inh* `iŋ̟`, *-ich* `ik̟`,
+  *-ênh* `eŋ̟`, *-êch* `ek̟`, *-anh* `ɛŋ̟`, *-ach* `ɛk̟`. Po u, ô, o jsou retně-zadopatrové:
+  *-ung* `uŋ͡m`, *-ông* `oŋ͡m`, *-ong* `ɔŋ͡m`, *-uc* `uk͡p`, *-ôc* `ok͡p`, *-oc* `ɔk͡p`
+  (po dvojhlásce *uô* ne: *xuống* → `suəŋ˨˦`).
 
 ## Složka se slovníčky
 
@@ -90,15 +129,15 @@ popis = "Základní pozdravy a zdvořilostní fráze"
 [[slovicka]]
 vi = "xin chào"
 cs = "dobrý den / ahoj"
-vyslovnost_cs = "sin (rovně) čao (nízko klesá)"
-ipa = "sin˧˧ t͡ɕaːw˨˩"
+vyslovnost_cs = "sin (rovně) čau (klesá)"
+ipa = "sin˧˧ t͡ɕaw˧˨"
 stitky = ["pozdrav"]
 
 [[slovicka]]
 vi = "cảm ơn"
 cs = "děkuji"
-vyslovnost_cs = "kam (klesá a stoupá) ən (rovně)"
-ipa = "kaːm˧˩˧ ʔəːn˧˧"
+vyslovnost_cs = "kam (klesá hluboko) ən (rovně)"
+ipa = "kam˧˩˨ ʔɤn˧˧"
 poznamka = "běžné poděkování"
 
 # Homonyma: stejné vi, různý význam, proto má každé svůj klic.
@@ -106,15 +145,15 @@ poznamka = "běžné poděkování"
 vi = "đường"
 klic = "đường (cesta)"
 cs = "cesta, silnice"
-vyslovnost_cs = "dɨəng (nízko klesá)"
-ipa = "ɗɨəŋ˨˩"
+vyslovnost_cs = "dɨəng (klesá)"
+ipa = "ɗɯəŋ˧˨"
 
 [[slovicka]]
 vi = "đường"
 klic = "đường (cukr)"
 cs = "cukr"
-vyslovnost_cs = "dɨəng (nízko klesá)"
-ipa = "ɗɨəŋ˨˩"
+vyslovnost_cs = "dɨəng (klesá)"
+ipa = "ɗɯəŋ˧˨"
 ```
 
 ### Kontrola lekcí
@@ -135,6 +174,12 @@ každý s názvem souboru a pořadím slovíčka:
   + kombinující diakritiku. Na pohled se neliší, ale klíče by se lišily. V `ipa` jsou
   kombinující znaménka (t͡ɕ, ̚) v pořádku.
 - Klíče musí být unikátní napříč všemi lekcemi. Hláška u duplicity radí doplnit `klic`.
+
+Lekce v repozitáři navíc kontroluje test (`cargo test`, modul `src/phonetics.rs`, etapa 8):
+počet slabik ve `vi`, `ipa` a `vyslovnost_cs` musí souhlasit, tónová písmena v IPA a popis
+tónu v závorce musí odpovídat diakritice ve `vi` (včetně zavřených slabik). Interpunkce
+ve `vi` (např. otazník u frází) se přitom ignoruje. Aplikace tuto kontrolu při načítání
+nedělá, ručně upravená lekce s jiným popisem tónu se tedy načte.
 
 ## Datová složka a logy
 
@@ -334,6 +379,21 @@ Upřesnění (etapa 7, schváleno autorem):
 - Legenda grafů je vlastní, v řádku s nadpisem (legenda `egui_plot` řadí položky abecedně
   a překrývá graf).
 
+## První sada lekcí (etapa 8)
+
+Schválená témata, každá lekce zhruba 20 slovíček:
+
+1. Pozdravy a zdvořilost
+2. Zájmena a oslovení (anh, chị, em, ông, bà, tôi…)
+3. Čísla
+4. Základní fráze a otázky (có, không, bao nhiêu, ở đâu…)
+5. Jídlo a pití
+6. Objednávání v restauraci
+7. Ptaní se na cestu ve městě
+
+IPA se píše ručně podle „Konvence IPA“ a porovnává se s výstupem nástroje vPhon (Kirby),
+který běží jen dočasně mimo repozitář (licence GPL, do projektu se nepřidává).
+
 ## Font
 
 Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
@@ -400,14 +460,10 @@ slovnicky/
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | hotovo |
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
 | 7 | Statistiky | hotovo |
-| 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | čeká |
+| 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo…) | rozpracováno |
 
 ## Otevřené otázky
 
-- Přepis hlásek, které čeština nemá (ơ, ư, â, ă, koncové -ng/-nh/-ch…), do českého popisu
-  výslovnosti (etapa 8).
-- Ověřit konvenci IPA, hlavně přesné hodnoty tónů, podle odborných zdrojů (např. Kirby 2011).
-  Po ověření upravit i tabulku tónů v `src/ui/legend.rs` (etapa 8).
 - Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
   upozornění). Případně doplnit potvrzovací dotaz.
 - V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.
