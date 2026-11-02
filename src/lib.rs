@@ -12,6 +12,7 @@ pub mod progress;
 pub mod scheduler;
 pub mod session;
 pub mod settings;
+pub mod stats;
 pub mod storage;
 
 #[cfg(test)]
