@@ -116,6 +116,25 @@ vyslovnost_cs = "dɨəng (nízko klesá)"
 ipa = "ɗɨəŋ˨˩"
 ```
 
+### Kontrola lekcí
+
+Při načtení složky se slovníčky se kontroluje a **všechny problémy se ohlásí najednou**,
+každý s názvem souboru a pořadím slovíčka:
+
+- Soubory se jmenují `lekce<číslo>.toml`. Jiné soubory se ignorují (a zalogují).
+  Dva soubory se stejným číslem (např. `lekce1.toml` a `lekce01.toml`) jsou chyba.
+- Zápis TOML musí být platný. Neznámé pole (např. překlep `poznamka` → `poznámka`) je chyba,
+  aby se tiše neztratilo.
+- Lekce musí mít `nazev` a aspoň jedno slovíčko.
+- Pole `vi`, `cs`, `vyslovnost_cs` a `ipa` nesmí být prázdná. Pokud je uvedený `klic`,
+  nesmí být prázdný.
+- `vi` a `klic` nesmí mít mezeru na začátku ani na konci. Vznikl by jiný klíč, který vypadá
+  stejně.
+- `vi`, `klic`, `cs` a `vyslovnost_cs` musí používat složené znaky (Unicode NFC), ne písmeno
+  + kombinující diakritiku. Na pohled se neliší, ale klíče by se lišily. V `ipa` jsou
+  kombinující znaménka (t͡ɕ, ̚) v pořádku.
+- Klíče musí být unikátní napříč všemi lekcemi. Hláška u duplicity radí doplnit `klic`.
+
 ## Datová složka a logy
 
 Obě složky jsou v **pracovním adresáři**, ze kterého se aplikace spouští, mimo složku
@@ -197,7 +216,8 @@ Cargo.toml
 rust-toolchain.toml
 README.md
 src/
-  main.rs        # spuštění eframe, inicializace logování
+  main.rs        # binárka: spuštění eframe, inicializace logování, GUI
+  lib.rs         # knihovna: logika oddělená od GUI (testovatelná bez okna)
   fonts.rs       # nastavení fontů
   app.rs         # stav aplikace, přepínání obrazovek
   ui/            # jednotlivé obrazovky
@@ -225,7 +245,7 @@ slovnicky/
 |---|-------|------|
 | 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | hotovo |
 | 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Noto Sans a vizuální ověření IPA | hotovo |
-| 2 | Datový model a načítání lekcí z TOML, validace, testy | čeká |
+| 2 | Datový model a načítání lekcí z TOML, validace, testy | hotovo |
 | 3 | FSRS + testy | čeká |
 | 4 | Postup učení a nastavení: ukládání, načítání, sestavení fronty, testy | čeká |
 | 5 | GUI: úvod a opakování kartiček (to hlavní, s čím už se dá učit) | čeká |

@@ -3,10 +3,10 @@
 mod app;
 mod fonts;
 mod logging;
-mod paths;
 
 use anyhow::Result;
 use eframe::egui;
+use vietnamska_slovicka::paths;
 
 fn main() -> Result<()> {
     let dirs = paths::AppDirs::in_working_dir()?;
