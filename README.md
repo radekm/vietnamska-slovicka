@@ -50,6 +50,12 @@ Výslovnost odpovídá hanojskému dialektu, IPA se řídí článkem Kirby (201
 českého popisu výslovnosti a zápisu IPA jsou v [PLAN.md](PLAN.md). Po úpravě lekcí v repozitáři
 spusť `cargo test`: zkontroluje, že sedí počet slabik a tóny ve výslovnosti a v IPA.
 
+> **Pomocník pro nová slovíčka:** `python3 tools/pronunciation.py "cảm ơn"` vypíše hotové
+> řádky `vyslovnost_cs` a `ipa` podle pravidel z PLAN.md. `python3 tools/pronunciation.py --check`
+> porovná s pravidly všechna slovíčka ve `slovnicky/` (na rozdíl od `cargo test` hlídá
+> i hlásky, nejen tóny). Stačí Python 3.11+, bez dalších balíčků. Výstup je návrh,
+> přejímky a vzácné zápisy je potřeba zkontrolovat ručně.
+
 ## Kde jsou data
 
 Aplikace si vytváří dvě složky v pracovním adresáři, ze kterého ji spustíš:

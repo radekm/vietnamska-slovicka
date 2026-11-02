@@ -72,6 +72,12 @@ Zatím žádné. V `Cargo.toml` se nepřidávají vlastní profily ani `[lints]`
   homonyma** (stejně psaná slova s jiným významem, např. *đường* = cesta / cukr), aby každé
   mělo vlastní postup učení. Klíč musí být unikátní napříč všemi lekcemi. **Změna `vi` nebo `klic` u existujícího slovíčka
   znamená ztrátu jeho postupu**, proto se dělá jen vědomě a po dohodě s autorem.
+- **Výslovnost nových slovíček** připravuj skriptem `tools/pronunciation.py` (Python 3.11+,
+  jen standardní knihovna): `python3 tools/pronunciation.py "slovo"` vypíše `vyslovnost_cs`
+  a `ipa` podle pravidel v `PLAN.md`, `--check` zkontroluje všechny lekce. Výstup vždy
+  zkontroluj, přejímky a vzácné zápisy pravidla nepokrývají. Když se pravidla v `PLAN.md`
+  změní, uprav i skript (a tóny v `src/phonetics.rs`). Python je povolený jen pro tento
+  pomocný nástroj, aplikace zůstává v Rustu.
 - Postup učení a nastavení se ukládají do složky `data/`, logy do složky `logs/`.
   Obě jsou v pracovním adresáři, ze kterého se aplikace spouští, mimo složku se slovníčky.
   Do gitu se necommitují.

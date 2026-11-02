@@ -397,7 +397,13 @@ Upřesnění (etapa 8):
 - IPA a český popis se připravily pomocným skriptem podle pravidel z oddílů „Český popis
   výslovnosti“ a „Konvence IPA“ a všechny slabiky (163) se porovnaly s nástrojem vPhon
   (Kirby). Shodují se v souhláskách, samohláskách, délce i tónech. Pak prošlo vše ruční
-  kontrolou. Skript ani vPhon (licence GPL) v repozitáři nejsou, pravidla jsou v tomto plánu.
+  kontrolou. vPhon (licence GPL) v repozitáři není.
+- **Pomocný skript `tools/pronunciation.py`** (Python 3.11+, jen standardní knihovna,
+  schváleno autorem) je v repozitáři. Vypíše `vyslovnost_cs` a `ipa` pro nové slovíčko
+  (`python3 tools/pronunciation.py "cảm ơn"`) a s volbou `--check` porovná všechny lekce
+  s pravidly. Hlídá i hlásky, test v Rustu (`src/phonetics.rs`) jen tóny a počet slabik.
+  Výstup je návrh, přejímky a vzácné zápisy se kontrolují ručně. Při změně pravidel v tomto
+  plánu je potřeba upravit skript i `src/phonetics.rs`.
 - Slovní zásoba je severní (hanojská), u slov, která se na jihu říkají jinak, je to
   v poznámce (např. *bát* / jih *chén*).
 - Homonyma *không* (ne / nula) mají `klic`. *đường* má `klic = "đường (cesta)"` už teď,
@@ -450,6 +456,8 @@ src/
   scheduler.rs   # sestavení fronty na dnešek
   session.rs     # průběh sezení, uložení hodnocení
   stats.rs       # výpočty pro statistiky (opakování za den, předpověď, naučené)
+tools/
+  pronunciation.py  # pomocník pro lekce: IPA a český popis podle pravidel, kontrola lekcí
 assets/
   fonts/
     NotoSans-Regular.ttf
@@ -476,8 +484,6 @@ slovnicky/
 
 ## Otevřené otázky
 
-- Pomocný skript na IPA a český popis je jen v Pythonu mimo repozitář. Pro další lekce
-  by se mohl přepsat do Rustu (např. jako test, který přepis rovnou vygeneruje a porovná).
 - Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
   upozornění). Případně doplnit potvrzovací dotaz.
 - V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.

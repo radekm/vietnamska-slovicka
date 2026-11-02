@@ -5,6 +5,9 @@
 //! ve vietnamštině, v IPA a v českém popisu souhlasí a že tóny v IPA a v popisu odpovídají
 //! diakritice. Pravidla popisuje `PLAN.md`, oddíly „Český popis výslovnosti“
 //! a „Konvence IPA“.
+//!
+//! Stejná pravidla (a navíc přepis hlásek) má pomocný skript `tools/pronunciation.py`.
+//! Při změně tónů nebo popisů je potřeba upravit obojí.
 
 use crate::model::Word;
 
