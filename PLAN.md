@@ -54,8 +54,13 @@ při přípravě první lekce (etapa 8) a doplní se sem.
 
 ### Konvence IPA
 
-Hanojská výslovnost, tóny zapsané Chaovými tónovými písmeny
-(ngang ˧˧, huyền ˨˩, sắc ˧˥, hỏi ˧˩˧, ngã ˧ˀ˥, nặng ˨˩ˀ), slabiky oddělené mezerou.
+- Hanojská výslovnost, slabiky oddělené mezerou.
+- Tóny Chaovými tónovými písmeny: ngang ˧˧, huyền ˨˩, sắc ˧˥, hỏi ˧˩˧, ngã ˧ˀ˥, nặng ˨˩ˀ.
+- *ch* a *tr* (v Hanoji splývají) se zapisují jako **c** (např. *chào* → `caːw˨˩`),
+  ne jako t͡ɕ. Znak ɕ font Inter nemá.
+- Nepoužívají se kombinující diakritická znaménka IPA (např. ̚ pro nevypuštěné koncové
+  souhlásky nebo ̰ pro skřípavý hlas). Font Inter je nemá a egui je spolehlivě nevykreslí.
+  Rázy a skřípavost tónů ngã a nặng vyjadřuje ˀ v tónové značce.
 
 ## Složka se slovníčky
 
@@ -72,7 +77,7 @@ popis = "Základní pozdravy a zdvořilostní fráze"
 vi = "xin chào"
 cs = "dobrý den / ahoj"
 vyslovnost_cs = "sin (rovně) čao (nízko klesá)"
-ipa = "sin˧˧ t͡ɕaːw˨˩"
+ipa = "sin˧˧ caːw˨˩"
 stitky = ["pozdrav"]
 
 [[slovicka]]
@@ -139,15 +144,18 @@ Zápis je vždy bezpečný: nejdřív do dočasného souboru, pak přejmenován�
 
 ## Font
 
-Použije se **Inter**, soubor fontu dodá autor a bude přibalen do binárky.
-Inter pokrývá vietnamskou diakritiku. Pokud v něm budou chybět znaky IPA
-(ɗ, ɲ, ŋ, ʔ, ˀ, tónová písmena ˧˨˩˥), domluvíme záložní font pro tyto znaky.
-Pokrytí se ověří v etapě 1.
+Použije se **Inter** (licence OFL), statické řezy `Inter_18pt-Regular.ttf`
+a `Inter_18pt-Bold.ttf` ve složce `assets/fonts/`, přibalené do binárky (`include_bytes!`).
+Variabilní verze se nepoužívá.
+
+Ověřené pokrytí: celá vietnamská abeceda (malá i velká písmena), čeština a znaky IPA
+potřebné pro vietnamštinu (ɗ, ɓ, ɲ, ŋ, ʔ, ɣ, ɛ, ɔ, ə, ɤ, ɨ, ɯ, ː, ˀ, tónová písmena ˥˦˧˨˩).
+Chybí ɕ, ̚ a ̰, proto je konvence IPA upravená (viz výše) a záložní font není potřeba.
 
 ## Logování
 
-`tracing` + `tracing-subscriber` (JSON výstup) + `tracing-appender`
-(rotace souborů, `max_log_files(7)`). Loguje se start aplikace, načtení lekcí, chyby
+`tracing` + `tracing-subscriber` (feature `json`) + `tracing-appender`
+(denní rotace, `max_log_files(7)`). Loguje se start aplikace, načtení lekcí, chyby
 při načítání a ukládání a souhrn sezení.
 
 ## Struktura projektu (návrh)
@@ -168,7 +176,10 @@ src/
   fsrs.rs        # algoritmus FSRS
   scheduler.rs   # sestavení fronty na dnešek
 assets/
-  Inter-*.ttf
+  fonts/
+    Inter_18pt-Regular.ttf
+    Inter_18pt-Bold.ttf
+    OFL.txt
 slovnicky/
   lekce01.toml
   ...
@@ -178,7 +189,7 @@ slovnicky/
 
 | # | Etapa | Stav |
 |---|-------|------|
-| 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | rozpracováno |
+| 0 | Pravidla (`AGENTS.md`), plán (`PLAN.md`), zafixovaný toolchain | hotovo |
 | 1 | Kostra projektu: `Cargo.toml`, prázdné okno eframe, logování, font Inter a ověření IPA | čeká |
 | 2 | Datový model a načítání lekcí z TOML, validace, testy | čeká |
 | 3 | FSRS + testy | čeká |
@@ -190,6 +201,4 @@ slovnicky/
 
 ## Otevřené otázky
 
-- Feature `json` u `tracing-subscriber` (potřebná pro JSON logy) čeká na schválení.
-- Rotace logů: denně, nebo jeden soubor na každé spuštění?
 - Přepis hlásek, které čeština nemá, do českého popisu výslovnosti (etapa 8).

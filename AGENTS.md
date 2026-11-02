@@ -46,7 +46,7 @@ serde = { version = "=1.0.229", default-features = false, features = ["std", "de
 
 tokio = { version = "=1.54.1", default-features = false, features = ["rt", "macros", "time"] }
 tracing = "=0.1.44"
-tracing-subscriber = "=0.3.23"  # feature "json" čeká na schválení
+tracing-subscriber = { version = "=0.3.23", features = ["json"] }
 tracing-appender = "=0.2.5"
 
 eframe = "=0.37.0"
@@ -79,7 +79,7 @@ Zatím žádné. V `Cargo.toml` se nepřidávají vlastní profily ani `[lints]`
 
 - Strukturované logování přes `tracing` (pole místo skládání textu, např.
   `info!(lesson = %name, count = n, "lekce načtena")`). Názvy polí anglicky, zprávy česky.
-- Logy se ukládají jako JSON do datové složky aplikace, drží se posledních 7 souborů.
+- Logy se ukládají jako JSON do datové složky aplikace, rotují se po dnech a drží se posledních 7.
 
 ## Git
 
