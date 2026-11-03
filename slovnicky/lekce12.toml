@@ -1,0 +1,218 @@
+nazev = "Nakupování a smlouvání"
+popis = "Obchody, ceny, placení, oblečení a počítací slova"
+
+[[slovicka]]
+vi = "cửa hàng"
+cs = "obchod"
+vyslovnost_cs = "kɨə (klesá hluboko) hang (klesá)"
+ipa = "kɯə˧˩˨ haŋ˧˨"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "siêu thị"
+cs = "supermarket"
+vyslovnost_cs = "siəu (rovně) thi (krátce klesá, ráz)"
+ipa = "siəw˧˧ tʰi˨˩ˀ"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "tiền"
+cs = "peníze"
+vyslovnost_cs = "tiən (klesá)"
+ipa = "tiən˧˨"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "đồng"
+cs = "dong (vietnamská měna)"
+vyslovnost_cs = "dong (klesá)"
+ipa = "ɗoŋ͡m˧˨"
+poznamka = "v řeči se často vynechává: hai trăm nghìn = 200 000 dongů"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "bán"
+cs = "prodávat"
+vyslovnost_cs = "ban (stoupá)"
+ipa = "ɓan˨˦"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "giá"
+cs = "cena"
+vyslovnost_cs = "za (stoupá)"
+ipa = "za˨˦"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "giảm giá"
+cs = "sleva"
+vyslovnost_cs = "zam (klesá hluboko) za (stoupá)"
+ipa = "zam˧˩˨ za˨˦"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "trả"
+cs = "platit"
+vyslovnost_cs = "ča (klesá hluboko)"
+ipa = "t͡ɕa˧˩˨"
+poznamka = "trả tiền = zaplatit"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "tiền mặt"
+cs = "hotovost"
+vyslovnost_cs = "tiən (klesá) mat (krátce klesá)"
+ipa = "tiən˧˨ măt˨˩"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "thẻ"
+cs = "karta"
+vyslovnost_cs = "the (klesá hluboko)"
+ipa = "tʰɛ˧˩˨"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "cỡ"
+cs = "velikost"
+vyslovnost_cs = "kə (stoupá se zlomem)"
+ipa = "kɤ˧ˀ˥"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "thử"
+cs = "zkusit"
+vyslovnost_cs = "thɨ (klesá hluboko)"
+ipa = "tʰɯ˧˩˨"
+poznamka = "mặc thử = vyzkoušet si (oblečení)"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "áo"
+cs = "tričko, košile, halenka"
+vyslovnost_cs = "au (stoupá)"
+ipa = "ʔaw˨˦"
+stitky = ["nakupování", "oblečení"]
+
+[[slovicka]]
+vi = "quần"
+cs = "kalhoty"
+vyslovnost_cs = "kuən (klesá)"
+ipa = "kʷɤ̆n˧˨"
+stitky = ["nakupování", "oblečení"]
+
+[[slovicka]]
+vi = "giày"
+cs = "boty"
+vyslovnost_cs = "zaj (klesá)"
+ipa = "zăj˧˨"
+stitky = ["nakupování", "oblečení"]
+
+[[slovicka]]
+vi = "túi"
+cs = "taška"
+vyslovnost_cs = "tuj (stoupá)"
+ipa = "tuj˨˦"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "cái"
+cs = "(počítací slovo pro věci)"
+vyslovnost_cs = "kaj (stoupá)"
+ipa = "kaj˨˦"
+poznamka = "mezi číslo a podstatné jméno: hai cái áo = dvě trička"
+stitky = ["počítací slovo"]
+
+[[slovicka]]
+vi = "con"
+klic = "con (počítací slovo)"
+cs = "(počítací slovo pro zvířata)"
+vyslovnost_cs = "kon (rovně)"
+ipa = "kɔn˧˧"
+poznamka = "stejně psané con znamená i „dítě“: một con cá = jedna ryba"
+stitky = ["počítací slovo"]
+
+[[slovicka]]
+vi = "chiếc"
+cs = "(počítací slovo pro kusy, vozidla)"
+vyslovnost_cs = "čiək (stoupá)"
+ipa = "t͡ɕiək˦˥"
+poznamka = "một chiếc xe máy = jedna motorka; na jihu se místo chiếc často říká cái"
+stitky = ["počítací slovo"]
+
+[[slovicka]]
+vi = "quả"
+cs = "(počítací slovo pro ovoce)"
+vyslovnost_cs = "kua (klesá hluboko)"
+ipa = "kʷa˧˩˨"
+poznamka = "ba quả xoài = tři manga; na jihu trái"
+stitky = ["počítací slovo"]
+
+[[slovicka]]
+vi = "đôi"
+cs = "pár"
+vyslovnost_cs = "doj (rovně)"
+ipa = "ɗoj˧˧"
+poznamka = "một đôi giày = jeden pár bot, một đôi đũa = jedny hůlky"
+stitky = ["počítací slovo"]
+
+[[slovicka]]
+vi = "cân"
+cs = "kilo"
+vyslovnost_cs = "kən (rovně)"
+ipa = "kɤ̆n˧˧"
+poznamka = "na severu cân, na jihu ký: một cân = kilo"
+stitky = ["nakupování"]
+
+[[slovicka]]
+vi = "đắt quá!"
+cs = "to je moc drahé!"
+vyslovnost_cs = "dat (stoupá) kua (stoupá)"
+ipa = "ɗăt˦˥ kʷa˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bớt một chút được không?"
+cs = "můžete trochu slevit?"
+vyslovnost_cs = "bət (stoupá) mot (krátce klesá) čut (stoupá) dɨək (krátce klesá) chong (rovně)"
+ipa = "ɓɤt˦˥ mot˨˩ t͡ɕut˦˥ ɗɯək˨˩ xoŋ͡m˧˧"
+poznamka = "bớt = ubrat"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi chỉ xem thôi"
+cs = "jen se dívám"
+vyslovnost_cs = "toj (rovně) či (klesá hluboko) sem (rovně) thoj (rovně)"
+ipa = "toj˧˧ t͡ɕi˧˩˨ sɛm˧˧ tʰoj˧˧"
+poznamka = "chỉ … thôi = jen"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi muốn mua cái này"
+cs = "chci koupit tohle"
+vyslovnost_cs = "toj (rovně) muən (stoupá) muə (rovně) kaj (stoupá) naj (klesá)"
+ipa = "toj˧˧ muən˨˦ muə˧˧ kaj˨˦ năj˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi lấy cái này"
+cs = "vezmu si tohle"
+vyslovnost_cs = "toj (rovně) ləj (stoupá) kaj (stoupá) naj (klesá)"
+ipa = "toj˧˧ lɤ̆j˨˦ kaj˨˦ năj˧˨"
+poznamka = "lấy = vzít"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "có cỡ to hơn không?"
+cs = "máte větší velikost?"
+vyslovnost_cs = "ko (stoupá) kə (stoupá se zlomem) to (rovně) hən (rovně) chong (rovně)"
+ipa = "kɔ˨˦ kɤ˧ˀ˥ tɔ˧˧ hɤn˧˧ xoŋ͡m˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "trả bằng thẻ được không?"
+cs = "můžu platit kartou?"
+vyslovnost_cs = "ča (klesá hluboko) bang (klesá) the (klesá hluboko) dɨək (krátce klesá) chong (rovně)"
+ipa = "t͡ɕa˧˩˨ ɓăŋ˧˨ tʰɛ˧˩˨ ɗɯək˨˩ xoŋ͡m˧˧"
+stitky = ["fráze"]

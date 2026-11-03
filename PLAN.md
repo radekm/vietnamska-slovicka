@@ -459,6 +459,20 @@ Homonyma a slova, která už v lekcích jsou:
 - Stejné `vi` (bez nového významu) se podruhé nepřidává. Před psaním lekce se projdou
   klíče všech lekcí, duplicitu by odhalilo i načtení a `cargo test`.
 
+Upřesnění (etapa 9, hotovo):
+
+- Lekce 8–15 mají 231 slovíček (27–30 v lekci), v repozitáři je jich teď 375. Výslovnost
+  vznikla skriptem `tools/pronunciation.py` a prošla ruční kontrolou, `--check` je bez
+  rozdílů. Přejímky jsou ve vietnamském pravopisu (*tắc xi*, *ô tô*), pravidla je pokrývají.
+- Lekce 10 (čas) má víc jednotlivých slov (dny v týdnu) a jen tři fráze, poměr 2/3 : 1/3
+  je orientační.
+- Nové klíče s `klic`: `"phải (muset)"`, `"năm (rok)"`, `"con (počítací slovo)"`,
+  `"nước (země)"`. Starší *năm* (pět), *con* (dítě) a *nước* (voda) si ponechaly klíč `vi`.
+  *phải* dostalo `klic` hned, aby pozdější *phải* (vpravo) nezměnilo klíč.
+- Pravopis tónů zůstává jako v první sadě, tedy po staru (*hóa đơn*, *khỏe*, *chìa khóa*,
+  *điều hòa*, *tàu hỏa*).
+- Tísňové linky v poznámkách lekce 15: policie 113, hasiči 114, záchranka 115.
+
 ## Font
 
 Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
@@ -528,7 +542,7 @@ slovnicky/
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
 | 7 | Statistiky | hotovo |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo, restaurace, cesta) | hotovo |
-| 9 | Lekce: druhá sada (slovesa, stavba věty, čas, přídavná jména, nakupování, doprava, rodina, zdraví) | probíhá |
+| 9 | Lekce: druhá sada (slovesa, stavba věty, čas, přídavná jména, nakupování, doprava, rodina, zdraví) | hotovo |
 
 ## Otevřené otázky
 

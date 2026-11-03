@@ -1,0 +1,215 @@
+nazev = "Přídavná jména a barvy"
+popis = "Nejběžnější vlastnosti, stupňování a barvy"
+
+[[slovicka]]
+vi = "to"
+cs = "velký"
+vyslovnost_cs = "to (rovně)"
+ipa = "tɔ˧˧"
+poznamka = "stejně se říká lớn, na jihu i bự"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "nhỏ"
+cs = "malý"
+vyslovnost_cs = "ňo (klesá hluboko)"
+ipa = "ɲɔ˧˩˨"
+poznamka = "na severu i bé"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "đẹp"
+cs = "hezký, krásný"
+vyslovnost_cs = "dep (krátce klesá)"
+ipa = "ɗɛp˨˩"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "xấu"
+cs = "ošklivý, špatný"
+vyslovnost_cs = "səu (stoupá)"
+ipa = "sɤ̆w˨˦"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "đắt"
+cs = "drahý"
+vyslovnost_cs = "dat (stoupá)"
+ipa = "ɗăt˦˥"
+poznamka = "na severu đắt, na jihu mắc"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "rẻ"
+cs = "levný"
+vyslovnost_cs = "ze (klesá hluboko)"
+ipa = "zɛ˧˩˨"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "nóng"
+cs = "horký, horko"
+vyslovnost_cs = "nong (stoupá)"
+ipa = "nɔŋ͡m˨˦"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "lạnh"
+cs = "studený, zima"
+vyslovnost_cs = "lajng (krátce klesá, ráz)"
+ipa = "lɛŋ̟˨˩ˀ"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "mới"
+cs = "nový"
+vyslovnost_cs = "məj (stoupá)"
+ipa = "mɤj˨˦"
+poznamka = "také „teprve, právě“"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "cũ"
+cs = "starý (o věcech)"
+vyslovnost_cs = "ku (stoupá se zlomem)"
+ipa = "ku˧ˀ˥"
+poznamka = "o lidech se říká già"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "tốt"
+cs = "dobrý"
+vyslovnost_cs = "tot (stoupá)"
+ipa = "tot˦˥"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "nhanh"
+cs = "rychlý, rychle"
+vyslovnost_cs = "ňajng (rovně)"
+ipa = "ɲɛŋ̟˧˧"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "chậm"
+cs = "pomalý, pomalu"
+vyslovnost_cs = "čəm (krátce klesá, ráz)"
+ipa = "t͡ɕɤ̆m˨˩ˀ"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "dễ"
+cs = "snadný"
+vyslovnost_cs = "ze (stoupá se zlomem)"
+ipa = "ze˧ˀ˥"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "khó"
+cs = "těžký, obtížný"
+vyslovnost_cs = "cho (stoupá)"
+ipa = "xɔ˨˦"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "mệt"
+cs = "unavený"
+vyslovnost_cs = "met (krátce klesá)"
+ipa = "met˨˩"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "vui"
+cs = "veselý, rád"
+vyslovnost_cs = "vuj (rovně)"
+ipa = "vuj˧˧"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "buồn"
+cs = "smutný"
+vyslovnost_cs = "buən (klesá)"
+ipa = "ɓuən˧˨"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "hơn"
+cs = "víc (než)"
+vyslovnost_cs = "hən (rovně)"
+ipa = "hɤn˧˧"
+poznamka = "2. stupeň: to hơn = větší, đắt hơn = dražší"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "nhất"
+cs = "nej-"
+vyslovnost_cs = "ňət (stoupá)"
+ipa = "ɲɤ̆t˦˥"
+poznamka = "3. stupeň: to nhất = největší, tốt nhất = nejlepší"
+stitky = ["přídavné jméno"]
+
+[[slovicka]]
+vi = "màu"
+cs = "barva"
+vyslovnost_cs = "mau (klesá)"
+ipa = "măw˧˨"
+stitky = ["barva"]
+
+[[slovicka]]
+vi = "đỏ"
+cs = "červený"
+vyslovnost_cs = "do (klesá hluboko)"
+ipa = "ɗɔ˧˩˨"
+stitky = ["barva"]
+
+[[slovicka]]
+vi = "xanh"
+cs = "modrý, zelený"
+vyslovnost_cs = "sajng (rovně)"
+ipa = "sɛŋ̟˧˧"
+poznamka = "xanh dương = modrý, xanh lá cây = zelený"
+stitky = ["barva"]
+
+[[slovicka]]
+vi = "trắng"
+cs = "bílý"
+vyslovnost_cs = "čang (stoupá)"
+ipa = "t͡ɕăŋ˨˦"
+stitky = ["barva"]
+
+[[slovicka]]
+vi = "đen"
+cs = "černý"
+vyslovnost_cs = "den (rovně)"
+ipa = "ɗɛn˧˧"
+stitky = ["barva"]
+
+[[slovicka]]
+vi = "vàng"
+cs = "žlutý"
+vyslovnost_cs = "vang (klesá)"
+ipa = "vaŋ˧˨"
+poznamka = "také „zlato“"
+stitky = ["barva"]
+
+[[slovicka]]
+vi = "màu gì?"
+cs = "jaké barvy?"
+vyslovnost_cs = "mau (klesá) zi (klesá)"
+ipa = "măw˧˨ zi˧˨"
+poznamka = "např. cái áo màu gì? = jakou barvu má to tričko?"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "đẹp quá!"
+cs = "to je krásné!"
+vyslovnost_cs = "dep (krátce klesá) kua (stoupá)"
+ipa = "ɗɛp˨˩ kʷa˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi mệt quá"
+cs = "jsem hrozně unavený"
+vyslovnost_cs = "toj (rovně) met (krátce klesá) kua (stoupá)"
+ipa = "toj˧˧ met˨˩ kʷa˨˦"
+stitky = ["fráze"]

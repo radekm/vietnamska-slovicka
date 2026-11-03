@@ -1,0 +1,214 @@
+nazev = "O sobě a rodina"
+popis = "Rodina, věk, práce a odkud kdo je"
+
+[[slovicka]]
+vi = "gia đình"
+cs = "rodina"
+vyslovnost_cs = "za (rovně) ding (klesá)"
+ipa = "za˧˧ ɗiŋ̟˧˨"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "bố mẹ"
+cs = "rodiče"
+vyslovnost_cs = "bo (stoupá) me (krátce klesá, ráz)"
+ipa = "ɓo˨˦ mɛ˨˩ˀ"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "vợ"
+cs = "manželka"
+vyslovnost_cs = "və (krátce klesá, ráz)"
+ipa = "vɤ˨˩ˀ"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "chồng"
+cs = "manžel"
+vyslovnost_cs = "čong (klesá)"
+ipa = "t͡ɕoŋ͡m˧˨"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "anh trai"
+cs = "starší bratr"
+vyslovnost_cs = "ajng (rovně) čaj (rovně)"
+ipa = "ʔɛŋ̟˧˧ t͡ɕaj˧˧"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "chị gái"
+cs = "starší sestra"
+vyslovnost_cs = "či (krátce klesá, ráz) gaj (stoupá)"
+ipa = "t͡ɕi˨˩ˀ ɣaj˨˦"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "em trai"
+cs = "mladší bratr"
+vyslovnost_cs = "em (rovně) čaj (rovně)"
+ipa = "ʔɛm˧˧ t͡ɕaj˧˧"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "em gái"
+cs = "mladší sestra"
+vyslovnost_cs = "em (rovně) gaj (stoupá)"
+ipa = "ʔɛm˧˧ ɣaj˨˦"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "con trai"
+cs = "syn"
+vyslovnost_cs = "kon (rovně) čaj (rovně)"
+ipa = "kɔn˧˧ t͡ɕaj˧˧"
+poznamka = "také „chlapec“"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "con gái"
+cs = "dcera"
+vyslovnost_cs = "kon (rovně) gaj (stoupá)"
+ipa = "kɔn˧˧ ɣaj˨˦"
+poznamka = "také „dívka“"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "bạn trai"
+cs = "přítel (partner)"
+vyslovnost_cs = "ban (krátce klesá, ráz) čaj (rovně)"
+ipa = "ɓan˨˩ˀ t͡ɕaj˧˧"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "bạn gái"
+cs = "přítelkyně (partnerka)"
+vyslovnost_cs = "ban (krátce klesá, ráz) gaj (stoupá)"
+ipa = "ɓan˨˩ˀ ɣaj˨˦"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "độc thân"
+cs = "svobodný, svobodná"
+vyslovnost_cs = "dok (krátce klesá) thən (rovně)"
+ipa = "ɗok͡p˨˩ tʰɤ̆n˧˧"
+stitky = ["rodina"]
+
+[[slovicka]]
+vi = "người"
+cs = "člověk"
+vyslovnost_cs = "ngɨəj (klesá)"
+ipa = "ŋɯəj˧˨"
+poznamka = "người Việt = Vietnamec"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "nhà"
+cs = "dům, domov"
+vyslovnost_cs = "ňa (klesá)"
+ipa = "ɲa˧˨"
+poznamka = "ở nhà = doma"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "nước"
+klic = "nước (země)"
+cs = "země, stát"
+vyslovnost_cs = "nɨək (stoupá)"
+ipa = "nɯək˦˥"
+poznamka = "stejně psané nước znamená i „voda“"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "tuổi"
+cs = "věk, rok (věku)"
+vyslovnost_cs = "tuəj (klesá hluboko)"
+ipa = "tuəj˧˩˨"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "nghề"
+cs = "povolání"
+vyslovnost_cs = "nge (klesá)"
+ipa = "ŋe˧˨"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "làm việc"
+cs = "pracovat"
+vyslovnost_cs = "lam (klesá) viək (krátce klesá)"
+ipa = "lam˧˨ viək˨˩"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "công ty"
+cs = "firma"
+vyslovnost_cs = "kong (rovně) ti (rovně)"
+ipa = "koŋ͡m˧˧ ti˧˧"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "giáo viên"
+cs = "učitel, učitelka"
+vyslovnost_cs = "zau (stoupá) viən (rovně)"
+ipa = "zaw˨˦ viən˧˧"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "sinh viên"
+cs = "student, studentka (VŠ)"
+vyslovnost_cs = "sing (rovně) viən (rovně)"
+ipa = "siŋ̟˧˧ viən˧˧"
+stitky = ["o sobě"]
+
+[[slovicka]]
+vi = "bạn bao nhiêu tuổi?"
+cs = "kolik ti je let?"
+vyslovnost_cs = "ban (krátce klesá, ráz) bau (rovně) ňiəu (rovně) tuəj (klesá hluboko)"
+ipa = "ɓan˨˩ˀ ɓaw˧˧ ɲiəw˧˧ tuəj˧˩˨"
+poznamka = "dítěte se ptá cháu mấy tuổi?"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi ba mươi tuổi"
+cs = "je mi třicet let"
+vyslovnost_cs = "toj (rovně) ba (rovně) mɨəj (rovně) tuəj (klesá hluboko)"
+ipa = "toj˧˧ ɓa˧˧ mɯəj˧˧ tuəj˧˩˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn làm nghề gì?"
+cs = "co děláš za práci?"
+vyslovnost_cs = "ban (krátce klesá, ráz) lam (klesá) nge (klesá) zi (klesá)"
+ipa = "ɓan˨˩ˀ lam˧˨ ŋe˧˨ zi˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn có gia đình chưa?"
+cs = "jsi ženatý / vdaná?"
+vyslovnost_cs = "ban (krátce klesá, ráz) ko (stoupá) za (rovně) ding (klesá) čɨə (rovně)"
+ipa = "ɓan˨˩ˀ kɔ˨˦ za˧˧ ɗiŋ̟˧˨ t͡ɕɯə˧˧"
+poznamka = "doslova „máš už rodinu?“"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi có hai con"
+cs = "mám dvě děti"
+vyslovnost_cs = "toj (rovně) ko (stoupá) haj (rovně) kon (rovně)"
+ipa = "toj˧˧ kɔ˨˦ haj˧˧ kɔn˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn là người nước nào?"
+cs = "odkud jsi? (z jaké země)"
+vyslovnost_cs = "ban (krátce klesá, ráz) la (klesá) ngɨəj (klesá) nɨək (stoupá) nau (klesá)"
+ipa = "ɓan˨˩ˀ la˧˨ ŋɯəj˧˨ nɯək˦˥ naw˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi đến từ Séc"
+cs = "jsem z Česka"
+vyslovnost_cs = "toj (rovně) den (stoupá) tɨ (klesá) sek (stoupá)"
+ipa = "toj˧˧ ɗen˨˦ tɯ˧˨ sɛk˦˥"
+poznamka = "từ = z, od"
+stitky = ["fráze"]

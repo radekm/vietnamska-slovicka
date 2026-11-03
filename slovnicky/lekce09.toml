@@ -1,0 +1,210 @@
+nazev = "Stavba věty: čas a zápor"
+popis = "Částice pro minulost, budoucnost a zápor, spojky a další drobná slova"
+
+[[slovicka]]
+vi = "đã"
+cs = "(minulost)"
+vyslovnost_cs = "da (stoupá se zlomem)"
+ipa = "ɗa˧ˀ˥"
+poznamka = "před slovesem: tôi đã ăn = jedl jsem; když je minulost jasná, často se vynechá"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "đang"
+cs = "právě (probíhá)"
+vyslovnost_cs = "dang (rovně)"
+ipa = "ɗaŋ˧˧"
+poznamka = "tôi đang ăn = právě jím"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "sẽ"
+cs = "(budoucnost)"
+vyslovnost_cs = "se (stoupá se zlomem)"
+ipa = "sɛ˧ˀ˥"
+poznamka = "tôi sẽ đi = půjdu"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "vừa"
+cs = "právě (před chvílí)"
+vyslovnost_cs = "vɨə (klesá)"
+ipa = "vɯə˧˨"
+poznamka = "tôi vừa đến = právě jsem přišel; často vừa mới"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "sắp"
+cs = "brzy, za chvíli"
+vyslovnost_cs = "sap (stoupá)"
+ipa = "săp˦˥"
+poznamka = "tôi sắp đi = za chvíli půjdu"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "rồi"
+cs = "už (hotovo)"
+vyslovnost_cs = "zoj (klesá)"
+ipa = "zoj˧˨"
+poznamka = "dává se na konec věty: tôi ăn rồi = už jsem jedl; samotné rồi = už ano"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "chưa"
+cs = "ještě ne"
+vyslovnost_cs = "čɨə (rovně)"
+ipa = "t͡ɕɯə˧˧"
+poznamka = "otázka … chưa? = už …?, záporná odpověď chưa = ještě ne"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "cũng"
+cs = "také"
+vyslovnost_cs = "kung (stoupá se zlomem)"
+ipa = "kuŋ͡m˧ˀ˥"
+poznamka = "dává se před sloveso: tôi cũng thích = mně se to taky líbí"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "rất"
+cs = "velmi"
+vyslovnost_cs = "zət (stoupá)"
+ipa = "zɤ̆t˦˥"
+poznamka = "dává se před přídavné jméno: rất ngon"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "lắm"
+cs = "moc, velmi"
+vyslovnost_cs = "lam (stoupá)"
+ipa = "lăm˨˦"
+poznamka = "dává se za přídavné jméno: ngon lắm"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "quá"
+cs = "moc, příliš"
+vyslovnost_cs = "kua (stoupá)"
+ipa = "kʷa˨˦"
+poznamka = "za přídavným jménem vyjadřuje obdiv (ngon quá!), před ním „příliš“ (quá đắt)"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "nhiều"
+cs = "hodně, mnoho"
+vyslovnost_cs = "ňiəu (klesá)"
+ipa = "ɲiəw˧˨"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "ít"
+cs = "málo"
+vyslovnost_cs = "it (stoupá)"
+ipa = "ʔit˦˥"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "một chút"
+cs = "trochu, chvilku"
+vyslovnost_cs = "mot (krátce klesá) čut (stoupá)"
+ipa = "mot˨˩ t͡ɕut˦˥"
+stitky = ["částice"]
+
+[[slovicka]]
+vi = "và"
+cs = "a"
+vyslovnost_cs = "va (klesá)"
+ipa = "va˧˨"
+stitky = ["spojka"]
+
+[[slovicka]]
+vi = "nhưng"
+cs = "ale"
+vyslovnost_cs = "ňɨng (rovně)"
+ipa = "ɲɯŋ˧˧"
+stitky = ["spojka"]
+
+[[slovicka]]
+vi = "hoặc"
+cs = "nebo"
+vyslovnost_cs = "huak (krátce klesá)"
+ipa = "hʷăk˨˩"
+poznamka = "v otázce se říká hay: trà hay cà phê?"
+stitky = ["spojka"]
+
+[[slovicka]]
+vi = "với"
+cs = "s, spolu s"
+vyslovnost_cs = "vəj (stoupá)"
+ipa = "vɤj˨˦"
+poznamka = "đi với tôi = pojď se mnou"
+stitky = ["předložka"]
+
+[[slovicka]]
+vi = "của"
+cs = "(přivlastnění)"
+vyslovnost_cs = "kuə (klesá hluboko)"
+ipa = "kuə˧˩˨"
+poznamka = "nhà của tôi = můj dům, doslova „dům mě“"
+stitky = ["předložka"]
+
+[[slovicka]]
+vi = "vì"
+cs = "protože"
+vyslovnost_cs = "vi (klesá)"
+ipa = "vi˧˨"
+stitky = ["spojka"]
+
+[[slovicka]]
+vi = "nếu"
+cs = "jestli, když (podmínka)"
+vyslovnost_cs = "neu (stoupá)"
+ipa = "new˨˦"
+stitky = ["spojka"]
+
+[[slovicka]]
+vi = "bạn ăn cơm chưa?"
+cs = "už jsi jedl?"
+vyslovnost_cs = "ban (krátce klesá, ráz) an (rovně) kəm (rovně) čɨə (rovně)"
+ipa = "ɓan˨˩ˀ ʔăn˧˧ kɤm˧˧ t͡ɕɯə˧˧"
+poznamka = "běžný pozdrav, odpovídá se ăn rồi (už) nebo chưa (ještě ne)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi ăn rồi"
+cs = "už jsem jedl"
+vyslovnost_cs = "toj (rovně) an (rovně) zoj (klesá)"
+ipa = "toj˧˧ ʔăn˧˧ zoj˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi cũng vậy"
+cs = "já taky"
+vyslovnost_cs = "toj (rovně) kung (stoupá se zlomem) vəj (krátce klesá, ráz)"
+ipa = "toj˧˧ kuŋ͡m˧ˀ˥ vɤ̆j˨˩ˀ"
+poznamka = "vậy = tak"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "không phải"
+cs = "ne, tak to není"
+vyslovnost_cs = "chong (rovně) faj (klesá hluboko)"
+ipa = "xoŋ͡m˧˧ faj˧˩˨"
+poznamka = "opravuje omyl: không phải là … = to není …"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi đang bận"
+cs = "teď nemám čas"
+vyslovnost_cs = "toj (rovně) dang (rovně) bən (krátce klesá, ráz)"
+ipa = "toj˧˧ ɗaŋ˧˧ ɓɤ̆n˨˩ˀ"
+poznamka = "bận = zaneprázdněný"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi sẽ quay lại"
+cs = "vrátím se"
+vyslovnost_cs = "toj (rovně) se (stoupá se zlomem) kuaj (rovně) laj (krátce klesá, ráz)"
+ipa = "toj˧˧ sɛ˧ˀ˥ kʷăj˧˧ laj˨˩ˀ"
+poznamka = "quay lại = vrátit se (na místo)"
+stitky = ["fráze"]

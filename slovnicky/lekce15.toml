@@ -1,0 +1,215 @@
+nazev = "Zdraví a nouze"
+popis = "U lékaře, části těla a co říct, když se něco stane"
+
+[[slovicka]]
+vi = "bác sĩ"
+cs = "lékař, lékařka"
+vyslovnost_cs = "bak (stoupá) si (stoupá se zlomem)"
+ipa = "ɓak˦˥ si˧ˀ˥"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "thuốc"
+cs = "lék"
+vyslovnost_cs = "thuək (stoupá)"
+ipa = "tʰuək˦˥"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "đau"
+cs = "bolet, bolest"
+vyslovnost_cs = "dau (rovně)"
+ipa = "ɗăw˧˧"
+poznamka = "đau đầu = bolí hlava"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "ốm"
+cs = "nemocný"
+vyslovnost_cs = "om (stoupá)"
+ipa = "ʔom˨˦"
+poznamka = "na severu ốm, na jihu bệnh"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "sốt"
+cs = "horečka"
+vyslovnost_cs = "sot (stoupá)"
+ipa = "sot˦˥"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "ho"
+cs = "kašel, kašlat"
+vyslovnost_cs = "ho (rovně)"
+ipa = "hɔ˧˧"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "dị ứng"
+cs = "alergie"
+vyslovnost_cs = "zi (krátce klesá, ráz) ɨng (stoupá)"
+ipa = "zi˨˩ˀ ʔɯŋ˨˦"
+poznamka = "tôi bị dị ứng … = jsem alergický na …"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "bảo hiểm"
+cs = "pojištění"
+vyslovnost_cs = "bau (klesá hluboko) hiəm (klesá hluboko)"
+ipa = "ɓaw˧˩˨ hiəm˧˩˨"
+stitky = ["zdraví"]
+
+[[slovicka]]
+vi = "đầu"
+cs = "hlava"
+vyslovnost_cs = "dəu (klesá)"
+ipa = "ɗɤ̆w˧˨"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "bụng"
+cs = "břicho"
+vyslovnost_cs = "bung (krátce klesá, ráz)"
+ipa = "ɓuŋ͡m˨˩ˀ"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "họng"
+cs = "krk (hrdlo)"
+vyslovnost_cs = "hong (krátce klesá, ráz)"
+ipa = "hɔŋ͡m˨˩ˀ"
+poznamka = "đau họng = bolí v krku"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "răng"
+cs = "zub"
+vyslovnost_cs = "zang (rovně)"
+ipa = "zăŋ˧˧"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "mắt"
+cs = "oko"
+vyslovnost_cs = "mat (stoupá)"
+ipa = "măt˦˥"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "tay"
+cs = "ruka"
+vyslovnost_cs = "taj (rovně)"
+ipa = "tăj˧˧"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "chân"
+cs = "noha"
+vyslovnost_cs = "čən (rovně)"
+ipa = "t͡ɕɤ̆n˧˧"
+stitky = ["tělo"]
+
+[[slovicka]]
+vi = "công an"
+cs = "policie"
+vyslovnost_cs = "kong (rovně) an (rovně)"
+ipa = "koŋ͡m˧˧ ʔan˧˧"
+poznamka = "dopravní policie je cảnh sát giao thông"
+stitky = ["nouze"]
+
+[[slovicka]]
+vi = "xe cấp cứu"
+cs = "sanitka"
+vyslovnost_cs = "se (rovně) kəp (stoupá) kɨu (stoupá)"
+ipa = "sɛ˧˧ kɤ̆p˦˥ kɯw˨˦"
+stitky = ["nouze"]
+
+[[slovicka]]
+vi = "nguy hiểm"
+cs = "nebezpečný"
+vyslovnost_cs = "ngui (rovně) hiəm (klesá hluboko)"
+ipa = "ŋʷi˧˧ hiəm˧˩˨"
+stitky = ["nouze"]
+
+[[slovicka]]
+vi = "mất"
+cs = "ztratit"
+vyslovnost_cs = "mət (stoupá)"
+ipa = "mɤ̆t˦˥"
+stitky = ["nouze"]
+
+[[slovicka]]
+vi = "ví"
+cs = "peněženka"
+vyslovnost_cs = "vi (stoupá)"
+ipa = "vi˨˦"
+stitky = ["nouze"]
+
+[[slovicka]]
+vi = "đại sứ quán"
+cs = "velvyslanectví"
+vyslovnost_cs = "daj (krátce klesá, ráz) sɨ (stoupá) kuan (stoupá)"
+ipa = "ɗaj˨˩ˀ sɯ˨˦ kʷan˨˦"
+stitky = ["nouze"]
+
+[[slovicka]]
+vi = "tôi bị ốm"
+cs = "jsem nemocný"
+vyslovnost_cs = "toj (rovně) bi (krátce klesá, ráz) om (stoupá)"
+ipa = "toj˧˧ ɓi˨˩ˀ ʔom˨˦"
+poznamka = "bị = postihne mě (něco nepříjemného)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi đau bụng"
+cs = "bolí mě břicho"
+vyslovnost_cs = "toj (rovně) dau (rovně) bung (krátce klesá, ráz)"
+ipa = "toj˧˧ ɗăw˧˧ ɓuŋ͡m˨˩ˀ"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cứu tôi với!"
+cs = "pomoc!"
+vyslovnost_cs = "kɨu (stoupá) toj (rovně) vəj (stoupá)"
+ipa = "kɯw˨˦ toj˧˧ vɤj˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "gọi công an!"
+cs = "zavolejte policii!"
+vyslovnost_cs = "goj (krátce klesá, ráz) kong (rovně) an (rovně)"
+ipa = "ɣɔj˨˩ˀ koŋ͡m˧˧ ʔan˧˧"
+poznamka = "tísňová linka policie je 113"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "gọi xe cấp cứu!"
+cs = "zavolejte sanitku!"
+vyslovnost_cs = "goj (krátce klesá, ráz) se (rovně) kəp (stoupá) kɨu (stoupá)"
+ipa = "ɣɔj˨˩ˀ sɛ˧˧ kɤ̆p˦˥ kɯw˨˦"
+poznamka = "tísňová linka záchranky je 115"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cháy!"
+cs = "hoří!"
+vyslovnost_cs = "čaj (stoupá)"
+ipa = "t͡ɕăj˨˦"
+poznamka = "tísňová linka hasičů je 114"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cẩn thận!"
+cs = "pozor!"
+vyslovnost_cs = "kən (klesá hluboko) thən (krátce klesá, ráz)"
+ipa = "kɤ̆n˧˩˨ tʰɤ̆n˨˩ˀ"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi bị mất ví"
+cs = "ztratil jsem peněženku"
+vyslovnost_cs = "toj (rovně) bi (krátce klesá, ráz) mət (stoupá) vi (stoupá)"
+ipa = "toj˧˧ ɓi˨˩ˀ mɤ̆t˦˥ vi˨˦"
+poznamka = "podobně tôi bị mất hộ chiếu = ztratil jsem pas"
+stitky = ["fráze"]

@@ -44,8 +44,10 @@ v pracovním adresáři, ze kterého ji spustíš. V repozitáři je to složka 
 takže stačí spouštět aplikaci z kořene repozitáře. Jinou složku jde vybrat v Nastavení.
 Po ruční úpravě lekcí je načte znovu tlačítko **Načíst lekce znovu** v Nastavení.
 
-V repozitáři je zatím 7 lekcí (144 slovíček): pozdravy, zájmena a oslovení, čísla,
-základní fráze a otázky, jídlo a pití, objednávání v restauraci a ptaní se na cestu.
+V repozitáři je 15 lekcí (375 slovíček): pozdravy, zájmena a oslovení, čísla,
+základní fráze a otázky, jídlo a pití, objednávání v restauraci, ptaní se na cestu,
+základní slovesa, stavba věty (čas a zápor), čas a kalendář, přídavná jména a barvy,
+nakupování, doprava a ubytování, o sobě a rodina a zdraví a nouze.
 Výslovnost odpovídá hanojskému dialektu, IPA se řídí článkem Kirby (2011). Pravidla
 českého popisu výslovnosti a zápisu IPA jsou v [PLAN.md](PLAN.md). Po úpravě lekcí v repozitáři
 spusť `cargo test`: zkontroluje, že sedí počet slabik a tóny ve výslovnosti a v IPA.

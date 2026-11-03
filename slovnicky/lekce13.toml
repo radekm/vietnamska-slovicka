@@ -1,0 +1,215 @@
+nazev = "Doprava a ubytování"
+popis = "Dopravní prostředky, jízdenky a ubytování v hotelu"
+
+[[slovicka]]
+vi = "tắc xi"
+cs = "taxi"
+vyslovnost_cs = "tak (stoupá) si (rovně)"
+ipa = "tăk˦˥ si˧˧"
+poznamka = "píše se i taxi"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "xe máy"
+cs = "motorka, skútr"
+vyslovnost_cs = "se (rovně) maj (stoupá)"
+ipa = "sɛ˧˧ măj˨˦"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "ô tô"
+cs = "auto"
+vyslovnost_cs = "o (rovně) to (rovně)"
+ipa = "ʔo˧˧ to˧˧"
+poznamka = "na severu ô tô, na jihu xe hơi"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "xe đạp"
+cs = "kolo"
+vyslovnost_cs = "se (rovně) dap (krátce klesá)"
+ipa = "sɛ˧˧ ɗap˨˩"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "tàu hỏa"
+cs = "vlak"
+vyslovnost_cs = "tau (klesá) hua (klesá hluboko)"
+ipa = "tăw˧˨ hʷa˧˩˨"
+poznamka = "často jen tàu"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "máy bay"
+cs = "letadlo"
+vyslovnost_cs = "maj (stoupá) baj (rovně)"
+ipa = "măj˨˦ ɓăj˧˧"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "vé"
+cs = "jízdenka, lístek"
+vyslovnost_cs = "ve (stoupá)"
+ipa = "vɛ˨˦"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "bến xe"
+cs = "autobusové nádraží"
+vyslovnost_cs = "ben (stoupá) se (rovně)"
+ipa = "ɓen˨˦ sɛ˧˧"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "chạy"
+cs = "jet (o vozidle), běžet"
+vyslovnost_cs = "čaj (krátce klesá, ráz)"
+ipa = "t͡ɕăj˨˩ˀ"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "lên"
+cs = "nastoupit, nahoru"
+vyslovnost_cs = "len (rovně)"
+ipa = "len˧˧"
+poznamka = "lên xe = nastoupit"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "xuống"
+cs = "vystoupit, dolů"
+vyslovnost_cs = "suəng (stoupá)"
+ipa = "suəŋ˨˦"
+poznamka = "xuống xe = vystoupit"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "gọi"
+cs = "zavolat"
+vyslovnost_cs = "goj (krátce klesá, ráz)"
+ipa = "ɣɔj˨˩ˀ"
+poznamka = "gọi tắc xi = zavolat taxi; gọi món = objednat jídlo"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "địa chỉ"
+cs = "adresa"
+vyslovnost_cs = "diə (krátce klesá, ráz) či (klesá hluboko)"
+ipa = "ɗiə˨˩ˀ t͡ɕi˧˩˨"
+stitky = ["doprava"]
+
+[[slovicka]]
+vi = "đặt"
+cs = "rezervovat, objednat"
+vyslovnost_cs = "dat (krátce klesá)"
+ipa = "ɗăt˨˩"
+poznamka = "đặt vé = rezervovat jízdenku, đặt bàn = rezervovat stůl"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "phòng"
+cs = "pokoj"
+vyslovnost_cs = "fong (klesá)"
+ipa = "fɔŋ͡m˧˨"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "đêm"
+cs = "noc"
+vyslovnost_cs = "dem (rovně)"
+ipa = "ɗem˧˧"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "chìa khóa"
+cs = "klíč"
+vyslovnost_cs = "čiə (klesá) chua (stoupá)"
+ipa = "t͡ɕiə˧˨ xʷa˨˦"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "hộ chiếu"
+cs = "pas"
+vyslovnost_cs = "ho (krátce klesá, ráz) čiəu (stoupá)"
+ipa = "ho˨˩ˀ t͡ɕiəw˨˦"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "hành lý"
+cs = "zavazadla"
+vyslovnost_cs = "hajng (klesá) li (stoupá)"
+ipa = "hɛŋ̟˧˨ li˨˦"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "điều hòa"
+cs = "klimatizace"
+vyslovnost_cs = "diəu (klesá) hua (klesá)"
+ipa = "ɗiəw˧˨ hʷa˧˨"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "mật khẩu"
+cs = "heslo"
+vyslovnost_cs = "mət (krátce klesá) chəu (klesá hluboko)"
+ipa = "mɤ̆t˨˩ xɤ̆w˧˩˨"
+poznamka = "mật khẩu wifi là gì? = jaké je heslo na wifi?"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "nhận phòng"
+cs = "ubytovat se (check-in)"
+vyslovnost_cs = "ňən (krátce klesá, ráz) fong (klesá)"
+ipa = "ɲɤ̆n˨˩ˀ fɔŋ͡m˧˨"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "trả phòng"
+cs = "odhlásit se z hotelu (check-out)"
+vyslovnost_cs = "ča (klesá hluboko) fong (klesá)"
+ipa = "t͡ɕa˧˩˨ fɔŋ͡m˧˨"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "mấy giờ tàu chạy?"
+cs = "v kolik jede vlak?"
+vyslovnost_cs = "məj (stoupá) zə (klesá) tau (klesá) čaj (krátce klesá, ráz)"
+ipa = "mɤ̆j˨˦ zɤ˧˨ tăw˧˨ t͡ɕăj˨˩ˀ"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi đến địa chỉ này"
+cs = "zavezte mě na tuhle adresu"
+vyslovnost_cs = "čo (rovně) toj (rovně) den (stoupá) diə (krátce klesá, ráz) či (klesá hluboko) naj (klesá)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ ɗen˨˦ ɗiə˨˩ˀ t͡ɕi˧˩˨ năj˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi xuống ở đây"
+cs = "vystoupím tady"
+vyslovnost_cs = "čo (rovně) toj (rovně) suəng (stoupá) ə (klesá hluboko) dəj (rovně)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ suəŋ˨˦ ʔɤ˧˩˨ ɗɤ̆j˧˧"
+poznamka = "taxikáři nebo řidiči xe ôm: zastavte tady"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "còn phòng không?"
+cs = "máte volný pokoj?"
+vyslovnost_cs = "kon (klesá) fong (klesá) chong (rovně)"
+ipa = "kɔn˧˨ fɔŋ͡m˧˨ xoŋ͡m˧˧"
+poznamka = "còn = ještě zbývat"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi đã đặt phòng"
+cs = "mám rezervaci"
+vyslovnost_cs = "toj (rovně) da (stoupá se zlomem) dat (krátce klesá) fong (klesá)"
+ipa = "toj˧˧ ɗa˧ˀ˥ ɗăt˨˩ fɔŋ͡m˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "một đêm bao nhiêu tiền?"
+cs = "kolik stojí jedna noc?"
+vyslovnost_cs = "mot (krátce klesá) dem (rovně) bau (rovně) ňiəu (rovně) tiən (klesá)"
+ipa = "mot˨˩ ɗem˧˧ ɓaw˧˧ ɲiəw˧˧ tiən˧˨"
+stitky = ["fráze"]

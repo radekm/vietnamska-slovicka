@@ -1,0 +1,229 @@
+nazev = "Základní slovesa"
+popis = "Nejčastější slovesa, ze kterých se skládají vlastní věty"
+
+[[slovicka]]
+vi = "là"
+cs = "být (někým, něčím)"
+vyslovnost_cs = "la (klesá)"
+ipa = "la˧˨"
+poznamka = "spojuje podmět s podstatným jménem: tôi là người Séc; před přídavným jménem se nedává (tôi khỏe = mám se dobře)"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "ở"
+cs = "být (někde), bydlet"
+vyslovnost_cs = "ə (klesá hluboko)"
+ipa = "ʔɤ˧˩˨"
+poznamka = "tôi ở khách sạn = jsem v hotelu; stojí i ve významu „v, na“ (ở đây = tady)"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "đi"
+cs = "jít, jet"
+vyslovnost_cs = "di (rovně)"
+ipa = "ɗi˧˧"
+poznamka = "đi bộ = jít pěšky"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "đến"
+cs = "přijít, přijet"
+vyslovnost_cs = "den (stoupá)"
+ipa = "ɗen˨˦"
+poznamka = "také „do, k“: đi đến chợ = jít na tržiště"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "về"
+cs = "vrátit se (domů)"
+vyslovnost_cs = "ve (klesá)"
+ipa = "ve˧˨"
+poznamka = "về nhà = jít domů; také „o (něčem)“"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "ăn"
+cs = "jíst"
+vyslovnost_cs = "an (rovně)"
+ipa = "ʔăn˧˧"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "uống"
+cs = "pít"
+vyslovnost_cs = "uəng (stoupá)"
+ipa = "ʔuəŋ˨˦"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "nói"
+cs = "mluvit, říct"
+vyslovnost_cs = "noj (stoupá)"
+ipa = "nɔj˨˦"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "nghe"
+cs = "poslouchat, slyšet"
+vyslovnost_cs = "nge (rovně)"
+ipa = "ŋɛ˧˧"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "xem"
+cs = "dívat se (na něco)"
+vyslovnost_cs = "sem (rovně)"
+ipa = "sɛm˧˧"
+poznamka = "xem phim = dívat se na film"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "đọc"
+cs = "číst"
+vyslovnost_cs = "dok (krátce klesá)"
+ipa = "ɗɔk͡p˨˩"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "viết"
+cs = "psát"
+vyslovnost_cs = "viət (stoupá)"
+ipa = "viət˦˥"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "biết"
+cs = "vědět, umět"
+vyslovnost_cs = "biət (stoupá)"
+ipa = "ɓiət˦˥"
+poznamka = "tôi biết bơi = umím plavat"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "hiểu"
+cs = "rozumět"
+vyslovnost_cs = "hiəu (klesá hluboko)"
+ipa = "hiəw˧˩˨"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "học"
+cs = "učit se, studovat"
+vyslovnost_cs = "hok (krátce klesá)"
+ipa = "hɔk͡p˨˩"
+poznamka = "học tiếng Việt = učit se vietnamsky"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "làm"
+cs = "dělat"
+vyslovnost_cs = "lam (klesá)"
+ipa = "lam˧˨"
+poznamka = "làm việc = pracovat"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "muốn"
+cs = "chtít"
+vyslovnost_cs = "muən (stoupá)"
+ipa = "muən˨˦"
+poznamka = "tôi muốn đi = chci jít"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "thích"
+cs = "mít rád, líbit se"
+vyslovnost_cs = "thik (stoupá)"
+ipa = "tʰik̟˦˥"
+poznamka = "tôi thích phở = mám rád phở"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "cần"
+cs = "potřebovat"
+vyslovnost_cs = "kən (klesá)"
+ipa = "kɤ̆n˧˨"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "phải"
+klic = "phải (muset)"
+cs = "muset"
+vyslovnost_cs = "faj (klesá hluboko)"
+ipa = "faj˧˩˨"
+poznamka = "tôi phải đi = musím jít; stejně psané phải znamená i „pravý, vpravo“ a „správný“"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "mua"
+cs = "koupit, kupovat"
+vyslovnost_cs = "muə (rovně)"
+ipa = "muə˧˧"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "ngủ"
+cs = "spát"
+vyslovnost_cs = "ngu (klesá hluboko)"
+ipa = "ŋu˧˩˨"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "đợi"
+cs = "čekat"
+vyslovnost_cs = "dəj (krátce klesá, ráz)"
+ipa = "ɗɤj˨˩ˀ"
+poznamka = "stejně často se říká chờ"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "giúp"
+cs = "pomoct"
+vyslovnost_cs = "zup (stoupá)"
+ipa = "zup˦˥"
+stitky = ["sloveso"]
+
+[[slovicka]]
+vi = "bạn đi đâu?"
+cs = "kam jdeš?"
+vyslovnost_cs = "ban (krátce klesá, ráz) di (rovně) dəu (rovně)"
+ipa = "ɓan˨˩ˀ ɗi˧˧ ɗɤ̆w˧˧"
+poznamka = "běžná otázka při potkání, často jen jako pozdrav"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi đi làm"
+cs = "jdu do práce"
+vyslovnost_cs = "toj (rovně) di (rovně) lam (klesá)"
+ipa = "toj˧˧ ɗi˧˧ lam˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn sống ở đâu?"
+cs = "kde bydlíš?"
+vyslovnost_cs = "ban (krátce klesá, ráz) song (stoupá) ə (klesá hluboko) dəu (rovně)"
+ipa = "ɓan˨˩ˀ soŋ͡m˨˦ ʔɤ˧˩˨ ɗɤ̆w˧˧"
+poznamka = "sống = žít"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi thích cái này"
+cs = "tohle se mi líbí"
+vyslovnost_cs = "toj (rovně) thik (stoupá) kaj (stoupá) naj (klesá)"
+ipa = "toj˧˧ tʰik̟˦˥ kaj˨˦ năj˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "đợi một chút"
+cs = "počkejte chvilku"
+vyslovnost_cs = "dəj (krátce klesá, ráz) mot (krátce klesá) čut (stoupá)"
+ipa = "ɗɤj˨˩ˀ mot˨˩ t͡ɕut˦˥"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn giúp tôi được không?"
+cs = "můžete mi pomoct?"
+vyslovnost_cs = "ban (krátce klesá, ráz) zup (stoupá) toj (rovně) dɨək (krátce klesá) chong (rovně)"
+ipa = "ɓan˨˩ˀ zup˦˥ toj˧˧ ɗɯək˨˩ xoŋ͡m˧˧"
+poznamka = "… được không? = může(te) …?"
+stitky = ["fráze"]

@@ -1,0 +1,215 @@
+nazev = "Čas a kalendář"
+popis = "Hodiny, části dne, dny v týdnu a slova pro dřív a později"
+
+[[slovicka]]
+vi = "bây giờ"
+cs = "teď"
+vyslovnost_cs = "bəj (rovně) zə (klesá)"
+ipa = "ɓɤ̆j˧˧ zɤ˧˨"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "hôm nay"
+cs = "dnes"
+vyslovnost_cs = "hom (rovně) naj (rovně)"
+ipa = "hom˧˧ năj˧˧"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "ngày mai"
+cs = "zítra"
+vyslovnost_cs = "ngaj (klesá) maj (rovně)"
+ipa = "ŋăj˧˨ maj˧˧"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "hôm qua"
+cs = "včera"
+vyslovnost_cs = "hom (rovně) kua (rovně)"
+ipa = "hom˧˧ kʷa˧˧"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "giờ"
+cs = "hodina"
+vyslovnost_cs = "zə (klesá)"
+ipa = "zɤ˧˨"
+poznamka = "hai giờ = dvě hodiny (čas), hai tiếng = dvě hodiny (doba)"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "phút"
+cs = "minuta"
+vyslovnost_cs = "fut (stoupá)"
+ipa = "fut˦˥"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "rưỡi"
+cs = "půl (u času)"
+vyslovnost_cs = "zɨəj (stoupá se zlomem)"
+ipa = "zɯəj˧ˀ˥"
+poznamka = "hai giờ rưỡi = půl třetí (doslova „dvě hodiny a půl“)"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "lúc"
+cs = "v (časový údaj)"
+vyslovnost_cs = "luk (stoupá)"
+ipa = "luk͡p˦˥"
+poznamka = "lúc ba giờ = ve tři hodiny"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "buổi sáng"
+cs = "ráno, dopoledne"
+vyslovnost_cs = "buəj (klesá hluboko) sang (stoupá)"
+ipa = "ɓuəj˧˩˨ saŋ˨˦"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "buổi chiều"
+cs = "odpoledne"
+vyslovnost_cs = "buəj (klesá hluboko) čiəu (klesá)"
+ipa = "ɓuəj˧˩˨ t͡ɕiəw˧˨"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "buổi tối"
+cs = "večer"
+vyslovnost_cs = "buəj (klesá hluboko) toj (stoupá)"
+ipa = "ɓuəj˧˩˨ toj˨˦"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "ngày"
+cs = "den"
+vyslovnost_cs = "ngaj (klesá)"
+ipa = "ŋăj˧˨"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "tuần"
+cs = "týden"
+vyslovnost_cs = "tuən (klesá)"
+ipa = "tʷɤ̆n˧˨"
+poznamka = "tuần sau = příští týden, tuần trước = minulý týden"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "tháng"
+cs = "měsíc"
+vyslovnost_cs = "thang (stoupá)"
+ipa = "tʰaŋ˨˦"
+poznamka = "měsíce se tvoří tháng + číslo: tháng hai = únor; leden je často tháng giêng, duben tháng tư"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "năm"
+klic = "năm (rok)"
+cs = "rok"
+vyslovnost_cs = "nam (rovně)"
+ipa = "năm˧˧"
+poznamka = "stejně psané năm znamená i „pět“; năm nay = letos"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "trước"
+cs = "před, předtím"
+vyslovnost_cs = "čɨək (stoupá)"
+ipa = "t͡ɕɯək˦˥"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "sau"
+cs = "po, potom"
+vyslovnost_cs = "sau (rovně)"
+ipa = "săw˧˧"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "sớm"
+cs = "brzy"
+vyslovnost_cs = "səm (stoupá)"
+ipa = "sɤm˨˦"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "muộn"
+cs = "pozdě"
+vyslovnost_cs = "muən (krátce klesá, ráz)"
+ipa = "muən˨˩ˀ"
+poznamka = "na severu muộn, na jihu trễ"
+stitky = ["čas"]
+
+[[slovicka]]
+vi = "thứ hai"
+cs = "pondělí"
+vyslovnost_cs = "thɨ (stoupá) haj (rovně)"
+ipa = "tʰɯ˨˦ haj˧˧"
+poznamka = "dny se počítají od neděle: thứ hai = doslova „druhý“"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "thứ ba"
+cs = "úterý"
+vyslovnost_cs = "thɨ (stoupá) ba (rovně)"
+ipa = "tʰɯ˨˦ ɓa˧˧"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "thứ tư"
+cs = "středa"
+vyslovnost_cs = "thɨ (stoupá) tɨ (rovně)"
+ipa = "tʰɯ˨˦ tɯ˧˧"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "thứ năm"
+cs = "čtvrtek"
+vyslovnost_cs = "thɨ (stoupá) nam (rovně)"
+ipa = "tʰɯ˨˦ năm˧˧"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "thứ sáu"
+cs = "pátek"
+vyslovnost_cs = "thɨ (stoupá) sau (stoupá)"
+ipa = "tʰɯ˨˦ săw˨˦"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "thứ bảy"
+cs = "sobota"
+vyslovnost_cs = "thɨ (stoupá) baj (klesá hluboko)"
+ipa = "tʰɯ˨˦ ɓăj˧˩˨"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "chủ nhật"
+cs = "neděle"
+vyslovnost_cs = "ču (klesá hluboko) ňət (krátce klesá)"
+ipa = "t͡ɕu˧˩˨ ɲɤ̆t˨˩"
+stitky = ["den v týdnu"]
+
+[[slovicka]]
+vi = "mấy giờ rồi?"
+cs = "kolik je hodin?"
+vyslovnost_cs = "məj (stoupá) zə (klesá) zoj (klesá)"
+ipa = "mɤ̆j˨˦ zɤ˧˨ zoj˧˨"
+poznamka = "odpověď např. ba giờ rồi = jsou tři hodiny"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "hôm nay là thứ mấy?"
+cs = "jaký je dnes den?"
+vyslovnost_cs = "hom (rovně) naj (rovně) la (klesá) thɨ (stoupá) məj (stoupá)"
+ipa = "hom˧˧ năj˧˧ la˧˨ tʰɯ˨˦ mɤ̆j˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bao lâu?"
+cs = "jak dlouho?"
+vyslovnost_cs = "bau (rovně) ləu (rovně)"
+ipa = "ɓaw˧˧ lɤ̆w˧˧"
+stitky = ["fráze"]
