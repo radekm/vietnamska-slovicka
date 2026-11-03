@@ -412,6 +412,53 @@ Upřesnění (etapa 8):
 - Noto Sans spojuje posloupnost tónových písmen do jednoho obrysu (např. ˧˩˨), jen ˧˧ se
   zobrazí jako dva stejné znaky.
 
+## Druhá sada lekcí (etapa 9)
+
+Schváleno autorem. První sada je situační a mnoho základních slov (slovesa, *là, người,
+rất*…) se v ní objevuje jen uvnitř frází. Druhá sada doplňuje slovní druhy a gramatiku,
+na které stojí stavba vlastních vět, a pak pokračuje dalšími situacemi.
+
+Témata v tomto pořadí, každá lekce **20–30 slovíček**:
+
+8. **Základní slovesa** (là, đi, đến, về, ăn, uống, nói, biết, hiểu, muốn, thích, cần,
+   làm, học, mua, ở…). Odemknou skládání vět, řadu z nich žák zná z frází.
+9. **Stavba věty: čas a zápor** (đã, đang, sẽ, rồi, chưa, cũng, rất, lắm, và, nhưng, với,
+   của…). Vietnamština nečasuje, tyto částice časování nahrazují.
+10. **Čas a kalendář** (hodiny, minuty, dnes, zítra, včera, části dne, dny v týdnu, měsíc,
+    rok). Využije čísla z lekce 3 a částice z lekce 9.
+11. **Přídavná jména a barvy** (velký, malý, hezký, drahý, levný, horký, studený…).
+    Potřebná pro nakupování.
+12. **Nakupování a smlouvání**, včetně počítacích slov (cái, con, chiếc, quả).
+13. **Doprava a ubytování** (taxi, jízdenka, pokoj, rezervace…). Navazuje na lekci 7.
+14. **O sobě a rodina** (manžel, manželka, sourozenci, věk, povolání). Rozšiřuje lekci 2.
+15. **Zdraví a nouze** (bolí, lékař, lék, pomoc!, policie, části těla).
+
+Pravidla pro obsah:
+
+- Zhruba **2/3 jednotlivých slov a 1/3 krátkých frází** (nejvýš asi 6 slabik). Fráze jen
+  tehdy, když jsou užitečné samy o sobě (*đắt quá!*), nebo ukazují gramatiku, kterou samo
+  slovo nepředá (*ăn cơm chưa?*). Skládají se hlavně ze slov, která už v lekcích jsou.
+- **Všechno jsou klasické kartičky**, i gramatické částice. `cs` je krátký význam
+  (např. *đã* = „už (minulost)“), vysvětlení gramatiky a příkladové věty jsou
+  v `poznamka`, ne na kartičce.
+- Štítky navazují na první sadu (`sloveso`, `částice`, `čas`, `přídavné jméno`, `barva`,
+  `nakupování`, `počítací slovo`, `doprava`, `ubytování`, `rodina`, `zdraví`, `nouze`,
+  `fráze`…).
+
+Homonyma a slova, která už v lekcích jsou:
+
+- **Existující klíče se nikdy nemění.** Když přibude homonymum ke slovu bez `klic`,
+  nové slovíčko dostane `klic` a staré si ponechá klíč `vi` (upravit se smí jen jeho
+  `poznamka`, to postup nemaže). Pro *đường* (cukr) je připravený klíč `"đường (cukr)"`.
+- **Samostatnou kartičku dostane jen opravdu jiný význam**, který stojí za to učit se
+  zvlášť: *năm* (rok), *đường* (cukr), *nước* (země, stát), *con* (počítací slovo pro
+  zvířata). Příbuzné významy jednoho slova (*bạn* = ty / kamarád, *có* = ano / mít)
+  zůstávají na jedné kartičce, další význam je v poznámce.
+- Slovo, které už je **uvnitř fráze**, smí dostat samostatnou kartičku (*ăn* vedle
+  *tôi ăn chay*), klíče se liší.
+- Stejné `vi` (bez nového významu) se podruhé nepřidává. Před psaním lekce se projdou
+  klíče všech lekcí, duplicitu by odhalilo i načtení a `cargo test`.
+
 ## Font
 
 Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
@@ -481,6 +528,7 @@ slovnicky/
 | 6 | GUI: seznam lekcí, nastavení, legenda tónů | hotovo |
 | 7 | Statistiky | hotovo |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo, restaurace, cesta) | hotovo |
+| 9 | Lekce: druhá sada (slovesa, stavba věty, čas, přídavná jména, nakupování, doprava, rodina, zdraví) | probíhá |
 
 ## Otevřené otázky
 
