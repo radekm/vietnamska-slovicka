@@ -518,6 +518,16 @@ Rozhodnutí:
 - **Slova se spojovníkem** se zapisují bez něj (*mát xa*), pravopisná varianta je
   v poznámce.
 
+Upřesnění (etapa 10, hotovo):
+
+- Lekce 16–23 mají 214 slovíček (26–29 v lekci), v repozitáři je jich teď 589. Výslovnost
+  vznikla skriptem `tools/pronunciation.py` a prošla ruční kontrolou (přejímky *sim*, *pin*,
+  *mét*, *sạc*, *mát xa* i názvy jídel), `--check` je bez rozdílů.
+- Lekce 23 má víc frází (11 z 27), protože je konverzační.
+- Nové štítky: `chuť`, `vaření`, `ovoce`, `vzdálenost`, `nápis`, `výlet`, `počasí`,
+  `služby`, `konverzace`. *cấm chụp ảnh* v lekci 20 má štítek `nápis`.
+- U *đồng* v lekci 12 se doplnila jen `poznamka` (hovorové ceny), klíč zůstal.
+
 ## Font
 
 Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
@@ -588,7 +598,7 @@ slovnicky/
 | 7 | Statistiky | hotovo |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo, restaurace, cesta) | hotovo |
 | 9 | Lekce: druhá sada (slovesa, stavba věty, čas, přídavná jména, nakupování, doprava, rodina, zdraví) | hotovo |
-| 10 | Lekce: třetí sada pro turistu (kuchyně, ovoce a pití, kde co je, nápisy, památky, počasí, služby, povídání) | rozpracováno |
+| 10 | Lekce: třetí sada pro turistu (kuchyně, ovoce a pití, kde co je, nápisy, památky, počasí, služby, povídání) | hotovo |
 
 ## Otevřené otázky
 
