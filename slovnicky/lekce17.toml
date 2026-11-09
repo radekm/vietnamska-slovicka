@@ -1,0 +1,204 @@
+nazev = "Ovoce, pití a kavárna"
+popis = "Ovoce z trhu, nápoje, kavárna a přípitek"
+
+[[slovicka]]
+vi = "xoài"
+cs = "mango"
+vyslovnost_cs = "suaj (klesá)"
+ipa = "sʷaj˧˨"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "chuối"
+cs = "banán"
+vyslovnost_cs = "čuəj (stoupá)"
+ipa = "t͡ɕuəj˨˦"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "dừa"
+cs = "kokos"
+vyslovnost_cs = "zɨə (klesá)"
+ipa = "zɯə˧˨"
+poznamka = "pozor na podobné dứa = ananas"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "dứa"
+cs = "ananas"
+vyslovnost_cs = "zɨə (stoupá)"
+ipa = "zɯə˨˦"
+poznamka = "jih: thơm nebo khóm; pozor na podobné dừa = kokos"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "thanh long"
+cs = "dračí ovoce (pitahaya)"
+vyslovnost_cs = "thajng (rovně) long (rovně)"
+ipa = "tʰɛŋ̟˧˧ lɔŋ͡m˧˧"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "dưa hấu"
+cs = "vodní meloun"
+vyslovnost_cs = "zɨə (rovně) həu (stoupá)"
+ipa = "zɯə˧˧ hɤ̆w˨˦"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "cam"
+cs = "pomeranč"
+vyslovnost_cs = "kam (rovně)"
+ipa = "kam˧˧"
+poznamka = "nước cam = pomerančový džus"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "chanh"
+cs = "limetka"
+vyslovnost_cs = "čajng (rovně)"
+ipa = "t͡ɕɛŋ̟˧˧"
+poznamka = "nước chanh = limonáda z limetek"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "vải"
+cs = "liči"
+vyslovnost_cs = "vaj (klesá hluboko)"
+ipa = "vaj˧˩˨"
+poznamka = "sezóna je začátkem léta"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "sầu riêng"
+cs = "durian"
+vyslovnost_cs = "səu (klesá) ziəng (rovně)"
+ipa = "sɤ̆w˧˨ ziəŋ˧˧"
+poznamka = "silně páchne, do hotelů a dopravních prostředků se často nesmí"
+stitky = ["ovoce"]
+
+[[slovicka]]
+vi = "nước mía"
+cs = "šťáva z cukrové třtiny"
+vyslovnost_cs = "nɨək (stoupá) miə (stoupá)"
+ipa = "nɯək˦˥ miə˨˦"
+poznamka = "lisuje se na ulici před vámi"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "sinh tố"
+cs = "ovocné smoothie"
+vyslovnost_cs = "sing (rovně) to (stoupá)"
+ipa = "siŋ̟˧˧ to˨˦"
+poznamka = "sinh tố bơ = avokádové, sinh tố xoài = mangové"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "nước dừa"
+cs = "kokosová voda"
+vyslovnost_cs = "nɨək (stoupá) zɨə (klesá)"
+ipa = "nɯək˦˥ zɯə˧˨"
+poznamka = "pije se přímo z kokosu"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "bia hơi"
+cs = "čepované pivo (bia hơi)"
+vyslovnost_cs = "biə (rovně) həj (rovně)"
+ipa = "ɓiə˧˧ hɤj˧˧"
+poznamka = "levné lehké pivo z hanojských pouličních hospůdek"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "cà phê trứng"
+cs = "vaječná káva"
+vyslovnost_cs = "ka (klesá) fe (rovně) čɨng (stoupá)"
+ipa = "ka˧˨ fe˧˧ t͡ɕɯŋ˨˦"
+poznamka = "hanojská specialita, káva s našlehaným žloutkem"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "sữa"
+cs = "mléko"
+vyslovnost_cs = "sɨə (stoupá se zlomem)"
+ipa = "sɯə˧ˀ˥"
+poznamka = "sữa chua = jogurt"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "chè"
+cs = "sladký dezert chè; na severu i čaj"
+vyslovnost_cs = "če (klesá)"
+ipa = "t͡ɕɛ˧˨"
+poznamka = "dezert z fazolí, ovoce a kokosového mléka; čaj: chè xanh = zelený čaj, jinak trà (lekce 5)"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "trà đá"
+cs = "ledový čaj"
+vyslovnost_cs = "ča (klesá) da (stoupá)"
+ipa = "t͡ɕa˧˨ ɗa˨˦"
+poznamka = "levný zelený čaj s ledem z pouličních stánků"
+stitky = ["pití"]
+
+[[slovicka]]
+vi = "quán"
+cs = "podnik, bistro, stánek"
+vyslovnost_cs = "kuan (stoupá)"
+ipa = "kʷan˨˦"
+poznamka = "quán cà phê = kavárna, quán ăn = jídelna"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "một, hai, ba, dô!"
+cs = "raz, dva, tři, na zdraví!"
+vyslovnost_cs = "mot (krátce klesá) haj (rovně) ba (rovně) zo (rovně)"
+ipa = "mot˨˩ haj˧˧ ɓa˧˧ zo˧˧"
+poznamka = "běžný přípitek, za večer se ťuká mnohokrát; píše se i zô"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "chúc sức khỏe!"
+cs = "na zdraví! (přípitek)"
+vyslovnost_cs = "čuk (stoupá) sɨk (stoupá) chue (klesá hluboko)"
+ipa = "t͡ɕuk͡p˦˥ sɯk˦˥ xʷɛ˧˩˨"
+poznamka = "zdvořilejší přípitek, doslova přeji zdraví"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "trăm phần trăm!"
+cs = "do dna!"
+vyslovnost_cs = "čam (rovně) fən (klesá) čam (rovně)"
+ipa = "t͡ɕăm˧˧ fɤ̆n˧˨ t͡ɕăm˧˧"
+poznamka = "doslova sto procent"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi một cốc nước mía"
+cs = "jednu třtinovou šťávu, prosím"
+vyslovnost_cs = "čo (rovně) toj (rovně) mot (krátce klesá) kok (stoupá) nɨək (stoupá) miə (stoupá)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ mot˨˩ kok͡p˦˥ nɯək˦˥ miə˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bao nhiêu tiền một cân?"
+cs = "kolik stojí kilo?"
+vyslovnost_cs = "bau (rovně) ňiəu (rovně) tiən (klesá) mot (krátce klesá) kən (rovně)"
+ipa = "ɓaw˧˧ ɲiəw˧˧ tiən˧˨ mot˨˩ kɤ̆n˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi nửa cân"
+cs = "půl kila, prosím"
+vyslovnost_cs = "čo (rovně) toj (rovně) nɨə (klesá hluboko) kən (rovně)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ nɯə˧˩˨ kɤ̆n˧˧"
+poznamka = "nửa = půl"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "quả này chín chưa?"
+cs = "je to ovoce zralé?"
+vyslovnost_cs = "kua (klesá hluboko) naj (klesá) čin (stoupá) čɨə (rovně)"
+ipa = "kʷa˧˩˨ năj˧˨ t͡ɕin˨˦ t͡ɕɯə˧˧"
+poznamka = "chín = zralý (i devět)"
+stitky = ["fráze"]

@@ -1,0 +1,212 @@
+nazev = "Nápisy a cedule"
+popis = "Nápisy na dveřích, v obchodech, v hotelu a na ulici"
+
+[[slovicka]]
+vi = "cửa"
+cs = "dveře, vchod"
+vyslovnost_cs = "kɨə (klesá hluboko)"
+ipa = "kɯə˧˩˨"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "lối vào"
+cs = "vchod"
+vyslovnost_cs = "loj (stoupá) vau (klesá)"
+ipa = "loj˨˦ vaw˧˨"
+poznamka = "nápis; lối = cesta, průchod"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "lối ra"
+cs = "východ"
+vyslovnost_cs = "loj (stoupá) za (rovně)"
+ipa = "loj˨˦ za˧˧"
+poznamka = "nápis"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "lối thoát hiểm"
+cs = "nouzový východ"
+vyslovnost_cs = "loj (stoupá) thuat (stoupá) hiəm (klesá hluboko)"
+ipa = "loj˨˦ tʰʷat˦˥ hiəm˧˩˨"
+poznamka = "nápis"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "mở cửa"
+cs = "otevřeno; otevřít"
+vyslovnost_cs = "mə (klesá hluboko) kɨə (klesá hluboko)"
+ipa = "mɤ˧˩˨ kɯə˧˩˨"
+poznamka = "nápis na dveřích, doslova otevřít dveře"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "đóng cửa"
+cs = "zavřeno; zavřít"
+vyslovnost_cs = "dong (stoupá) kɨə (klesá hluboko)"
+ipa = "ɗɔŋ͡m˨˦ kɯə˧˩˨"
+poznamka = "nápis na dveřích, doslova zavřít dveře"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "cấm"
+cs = "zákaz, zakázáno"
+vyslovnost_cs = "kəm (stoupá)"
+ipa = "kɤ̆m˨˦"
+poznamka = "nápis; cấm vào = vstup zakázán"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "nam"
+klic = "nam (muži)"
+cs = "muži (WC)"
+vyslovnost_cs = "nam (rovně)"
+ipa = "nam˧˧"
+poznamka = "nápis na WC; nam znamená i jih"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "nữ"
+cs = "ženy (WC)"
+vyslovnost_cs = "nɨ (stoupá se zlomem)"
+ipa = "nɯ˧ˀ˥"
+poznamka = "nápis na WC"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "nhà vệ sinh"
+cs = "záchod, WC"
+vyslovnost_cs = "ňa (klesá) ve (krátce klesá, ráz) sing (rovně)"
+ipa = "ɲa˧˨ ve˨˩ˀ siŋ̟˧˧"
+poznamka = "na nápisech často jen WC; ptaní na cestu viz lekce 7"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "đẩy"
+cs = "tlačit"
+vyslovnost_cs = "dəj (klesá hluboko)"
+ipa = "ɗɤ̆j˧˩˨"
+poznamka = "nápis na dveřích"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "kéo"
+cs = "táhnout"
+vyslovnost_cs = "keu (stoupá)"
+ipa = "kɛw˨˦"
+poznamka = "nápis na dveřích"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "hết"
+cs = "došlo, vyprodáno, konec"
+vyslovnost_cs = "het (stoupá)"
+ipa = "het˦˥"
+poznamka = "hết rồi = už není"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "thang máy"
+cs = "výtah"
+vyslovnost_cs = "thang (rovně) maj (stoupá)"
+ipa = "tʰaŋ˧˧ măj˨˦"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "cầu thang"
+cs = "schodiště"
+vyslovnost_cs = "kəu (klesá) thang (rovně)"
+ipa = "kɤ̆w˧˨ tʰaŋ˧˧"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "chú ý"
+cs = "pozor, upozornění"
+vyslovnost_cs = "ču (stoupá) i (stoupá)"
+ipa = "t͡ɕu˨˦ ʔi˨˦"
+poznamka = "nápis"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "miễn phí"
+cs = "zdarma"
+vyslovnost_cs = "miən (stoupá se zlomem) fi (stoupá)"
+ipa = "miən˧ˀ˥ fi˨˦"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "khuyến mãi"
+cs = "akce, výprodej"
+vyslovnost_cs = "chuiən (stoupá) maj (stoupá se zlomem)"
+ipa = "xʷiən˨˦ maj˧ˀ˥"
+poznamka = "nápis v obchodech; sleva = giảm giá (lekce 12)"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "nhà hàng"
+cs = "restaurace"
+vyslovnost_cs = "ňa (klesá) hang (klesá)"
+ipa = "ɲa˧˨ haŋ˧˨"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "lễ tân"
+cs = "recepce"
+vyslovnost_cs = "le (stoupá se zlomem) tən (rovně)"
+ipa = "le˧ˀ˥ tɤ̆n˧˧"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "thu ngân"
+cs = "pokladna (v obchodě)"
+vyslovnost_cs = "thu (rovně) ngən (rovně)"
+ipa = "tʰu˧˧ ŋɤ̆n˧˧"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "thuê"
+cs = "pronajmout, půjčit si"
+vyslovnost_cs = "thue (rovně)"
+ipa = "tʰʷe˧˧"
+poznamka = "thuê xe máy = půjčit si motorku"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "cấm hút thuốc"
+cs = "zákaz kouření"
+vyslovnost_cs = "kəm (stoupá) hut (stoupá) thuək (stoupá)"
+ipa = "kɤ̆m˨˦ hut˦˥ tʰuək˦˥"
+poznamka = "nápis; hút thuốc = kouřit"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "hết hàng"
+cs = "vyprodáno"
+vyslovnost_cs = "het (stoupá) hang (klesá)"
+ipa = "het˦˥ haŋ˧˨"
+poznamka = "nápis v obchodě; hàng = zboží"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "hết phòng"
+cs = "plně obsazeno (hotel)"
+vyslovnost_cs = "het (stoupá) fong (klesá)"
+ipa = "het˦˥ fɔŋ͡m˧˨"
+poznamka = "nápis u hotelu"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "cho thuê xe máy"
+cs = "půjčovna motorek"
+vyslovnost_cs = "čo (rovně) thue (rovně) se (rovně) maj (stoupá)"
+ipa = "t͡ɕɔ˧˧ tʰʷe˧˧ sɛ˧˧ măj˨˦"
+poznamka = "nápis; cho thuê = pronajímá se"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "không phận sự miễn vào"
+cs = "nepovolaným vstup zakázán"
+vyslovnost_cs = "chong (rovně) fən (krátce klesá, ráz) sɨ (krátce klesá, ráz) miən (stoupá se zlomem) vau (klesá)"
+ipa = "xoŋ͡m˧˧ fɤ̆n˨˩ˀ sɯ˨˩ˀ miən˧ˀ˥ vaw˧˨"
+poznamka = "nápis"
+stitky = ["nápis"]

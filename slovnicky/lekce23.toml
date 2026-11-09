@@ -1,0 +1,201 @@
+nazev = "Povídání s místními"
+popis = "Cestování, reakce v rozhovoru a poděkování za pohostinnost"
+
+[[slovicka]]
+vi = "Việt Nam"
+cs = "Vietnam"
+vyslovnost_cs = "viət (krátce klesá) nam (rovně)"
+ipa = "viət˨˩ nam˧˧"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "lần"
+cs = "krát"
+vyslovnost_cs = "lən (klesá)"
+ipa = "lɤ̆n˧˨"
+poznamka = "hai lần = dvakrát"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "lần đầu"
+cs = "poprvé"
+vyslovnost_cs = "lən (klesá) dəu (klesá)"
+ipa = "lɤ̆n˧˨ ɗɤ̆w˧˨"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "kỳ nghỉ"
+cs = "dovolená, prázdniny"
+vyslovnost_cs = "ki (klesá) ngi (klesá hluboko)"
+ipa = "ki˧˨ ŋi˧˩˨"
+poznamka = "píše se i kì nghỉ"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "nói chuyện"
+cs = "povídat si"
+vyslovnost_cs = "noj (stoupá) čuiən (krátce klesá, ráz)"
+ipa = "nɔj˨˦ t͡ɕʷiən˨˩ˀ"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "thú vị"
+cs = "zajímavý"
+vyslovnost_cs = "thu (stoupá) vi (krátce klesá, ráz)"
+ipa = "tʰu˨˦ vi˨˩ˀ"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "nổi tiếng"
+cs = "slavný, známý"
+vyslovnost_cs = "noj (klesá hluboko) tiəng (stoupá)"
+ipa = "noj˧˩˨ tiəŋ˨˦"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "văn hóa"
+cs = "kultura"
+vyslovnost_cs = "van (rovně) hua (stoupá)"
+ipa = "văn˧˧ hʷa˨˦"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "món ăn"
+cs = "jídlo (pokrm)"
+vyslovnost_cs = "mon (stoupá) an (rovně)"
+ipa = "mɔn˨˦ ʔăn˧˧"
+poznamka = "món = chod, pokrm"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "quê"
+cs = "rodný kraj; venkov"
+vyslovnost_cs = "kue (rovně)"
+ipa = "kʷe˧˧"
+poznamka = "về quê = jet domů (na venkov)"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "mời"
+cs = "pozvat; nabídnout"
+vyslovnost_cs = "məj (klesá)"
+ipa = "mɤj˧˨"
+poznamka = "mời anh ăn = vezměte si (jídlo); xin mời viz lekce 1"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "mến khách"
+cs = "pohostinný"
+vyslovnost_cs = "men (stoupá) chajk (stoupá)"
+ipa = "men˨˦ xɛk̟˦˥"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "nhớ"
+cs = "pamatovat si; stýskat se"
+vyslovnost_cs = "ňə (stoupá)"
+ipa = "ɲɤ˨˦"
+poznamka = "tôi sẽ nhớ Việt Nam = bude se mi stýskat po Vietnamu"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "tuyệt vời"
+cs = "skvělý, úžasný"
+vyslovnost_cs = "tuiət (krátce klesá) vəj (klesá)"
+ipa = "tʷiət˨˩ vɤj˧˨"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "tất nhiên"
+cs = "samozřejmě, jasně"
+vyslovnost_cs = "tət (stoupá) ňiən (rovně)"
+ipa = "tɤ̆t˦˥ ɲiən˧˧"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "số điện thoại"
+cs = "telefonní číslo"
+vyslovnost_cs = "so (stoupá) diən (krátce klesá, ráz) thuaj (krátce klesá, ráz)"
+ipa = "so˨˦ ɗiən˨˩ˀ tʰʷaj˨˩ˀ"
+poznamka = "často se místo čísla vyměňuje kontakt na Zalo (vietnamská chatovací aplikace)"
+stitky = ["konverzace"]
+
+[[slovicka]]
+vi = "tôi đến Việt Nam lần đầu"
+cs = "jsem ve Vietnamu poprvé"
+vyslovnost_cs = "toj (rovně) den (stoupá) viət (krátce klesá) nam (rovně) lən (klesá) dəu (klesá)"
+ipa = "toj˧˧ ɗen˨˦ viət˨˩ nam˧˧ lɤ̆n˧˨ ɗɤ̆w˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn ở đây bao lâu rồi?"
+cs = "jak dlouho už tu jsi?"
+vyslovnost_cs = "ban (krátce klesá, ráz) ə (klesá hluboko) dəj (rovně) bau (rovně) ləu (rovně) zoj (klesá)"
+ipa = "ɓan˨˩ˀ ʔɤ˧˩˨ ɗɤ̆j˧˧ ɓaw˧˧ lɤ̆w˧˧ zoj˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi ở đây hai tuần"
+cs = "jsem tu dva týdny"
+vyslovnost_cs = "toj (rovně) ə (klesá hluboko) dəj (rovně) haj (rovně) tuən (klesá)"
+ipa = "toj˧˧ ʔɤ˧˩˨ ɗɤ̆j˧˧ haj˧˧ tʷɤ̆n˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "Việt Nam đẹp quá!"
+cs = "Vietnam je krásný!"
+vyslovnost_cs = "viət (krátce klesá) nam (rovně) dep (krátce klesá) kua (stoupá)"
+ipa = "viət˨˩ nam˧˧ ɗɛp˨˩ kʷa˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bạn chụp giúp tôi nhé?"
+cs = "vyfotíte mě, prosím?"
+vyslovnost_cs = "ban (krátce klesá, ráz) čup (krátce klesá) zup (stoupá) toj (rovně) ňe (stoupá)"
+ipa = "ɓan˨˩ˀ t͡ɕup˨˩ zup˦˥ toj˧˧ ɲɛ˨˦"
+poznamka = "giúp = pomoct, udělat za někoho; nhé = změkčující částice"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "thật à?"
+cs = "opravdu?"
+vyslovnost_cs = "thət (krátce klesá) a (klesá)"
+ipa = "tʰɤ̆t˨˩ ʔa˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "thế à?"
+cs = "vážně? / aha"
+vyslovnost_cs = "the (stoupá) a (klesá)"
+ipa = "tʰe˨˦ ʔa˧˨"
+poznamka = "severní; jih: vậy hả?"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "hay quá!"
+cs = "to je super!"
+vyslovnost_cs = "haj (rovně) kua (stoupá)"
+ipa = "hăj˧˧ kʷa˨˦"
+poznamka = "hay = zajímavý, dobrý (o filmu, příběhu, nápadu)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cảm ơn đã mời tôi"
+cs = "díky za pozvání"
+vyslovnost_cs = "kam (klesá hluboko) ən (rovně) da (stoupá se zlomem) məj (klesá) toj (rovně)"
+ipa = "kam˧˩˨ ʔɤn˧˧ ɗa˧ˀ˥ mɤj˧˨ toj˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi rất thích Việt Nam"
+cs = "Vietnam se mi moc líbí"
+vyslovnost_cs = "toj (rovně) zət (stoupá) thik (stoupá) viət (krátce klesá) nam (rovně)"
+ipa = "toj˧˧ zɤ̆t˦˥ tʰik̟˦˥ viət˨˩ nam˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "quê bạn ở đâu?"
+cs = "odkud pocházíš?"
+vyslovnost_cs = "kue (rovně) ban (krátce klesá, ráz) ə (klesá hluboko) dəu (rovně)"
+ipa = "kʷe˧˧ ɓan˨˩ˀ ʔɤ˧˩˨ ɗɤ̆w˧˧"
+stitky = ["fráze"]

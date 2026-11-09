@@ -1,0 +1,191 @@
+nazev = "Památky a výlety"
+popis = "Památky, příroda, vstupenky, fotografování a výlety"
+
+[[slovicka]]
+vi = "chùa"
+cs = "buddhistický chrám, pagoda"
+vyslovnost_cs = "čuə (klesá)"
+ipa = "t͡ɕuə˧˨"
+poznamka = "do chrámů se chodí se zakrytými rameny a koleny"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "đền"
+cs = "chrám (zasvěcený hrdinovi nebo duchu)"
+vyslovnost_cs = "den (klesá)"
+ipa = "ɗen˧˨"
+poznamka = "např. đền Ngọc Sơn na jezeře Hoàn Kiếm"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "lăng"
+cs = "mauzoleum, hrobka"
+vyslovnost_cs = "lang (rovně)"
+ipa = "lăŋ˧˧"
+poznamka = "Lăng Bác = mauzoleum Ho Či Mina"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "bảo tàng"
+cs = "muzeum"
+vyslovnost_cs = "bau (klesá hluboko) tang (klesá)"
+ipa = "ɓaw˧˩˨ taŋ˧˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "phố cổ"
+cs = "staré město"
+vyslovnost_cs = "fo (stoupá) ko (klesá hluboko)"
+ipa = "fo˨˦ ko˧˩˨"
+poznamka = "hanojské staré město u jezera Hoàn Kiếm"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "hồ"
+cs = "jezero"
+vyslovnost_cs = "ho (klesá)"
+ipa = "ho˧˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "sông"
+cs = "řeka"
+vyslovnost_cs = "song (rovně)"
+ipa = "soŋ͡m˧˧"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "núi"
+cs = "hora"
+vyslovnost_cs = "nuj (stoupá)"
+ipa = "nuj˨˦"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "biển"
+cs = "moře"
+vyslovnost_cs = "biən (klesá hluboko)"
+ipa = "ɓiən˧˩˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "bãi biển"
+cs = "pláž"
+vyslovnost_cs = "baj (stoupá se zlomem) biən (klesá hluboko)"
+ipa = "ɓaj˧ˀ˥ ɓiən˧˩˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "đảo"
+cs = "ostrov"
+vyslovnost_cs = "dau (klesá hluboko)"
+ipa = "ɗaw˧˩˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "vịnh"
+cs = "záliv"
+vyslovnost_cs = "ving (krátce klesá, ráz)"
+ipa = "viŋ̟˨˩ˀ"
+poznamka = "vịnh Hạ Long = zátoka Ha Long"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "hang"
+cs = "jeskyně"
+vyslovnost_cs = "hang (rovně)"
+ipa = "haŋ˧˧"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "thuyền"
+cs = "loď, člun"
+vyslovnost_cs = "thuiən (klesá)"
+ipa = "tʰʷiən˧˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "du lịch"
+cs = "cestování, turistika; cestovat"
+vyslovnost_cs = "zu (rovně) lik (krátce klesá)"
+ipa = "zu˧˧ lik̟˨˩"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "khách du lịch"
+cs = "turista, turistka"
+vyslovnost_cs = "chajk (stoupá) zu (rovně) lik (krátce klesá)"
+ipa = "xɛk̟˦˥ zu˧˧ lik̟˨˩"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "tham quan"
+cs = "prohlédnout si, navštívit (památku)"
+vyslovnost_cs = "tham (rovně) kuan (rovně)"
+ipa = "tʰam˧˧ kʷan˧˧"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "hướng dẫn viên"
+cs = "průvodce, průvodkyně"
+vyslovnost_cs = "hɨəng (stoupá) zən (stoupá se zlomem) viən (rovně)"
+ipa = "hɯəŋ˨˦ zɤ̆n˧ˀ˥ viən˧˧"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "chụp ảnh"
+cs = "fotit"
+vyslovnost_cs = "čup (krátce klesá) ajng (klesá hluboko)"
+ipa = "t͡ɕup˨˩ ʔɛŋ̟˧˩˨"
+poznamka = "jih: chụp hình"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "vé vào cửa"
+cs = "vstupenka"
+vyslovnost_cs = "ve (stoupá) vau (klesá) kɨə (klesá hluboko)"
+ipa = "vɛ˨˦ vaw˧˨ kɯə˧˩˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "giờ mở cửa"
+cs = "otevírací doba"
+vyslovnost_cs = "zə (klesá) mə (klesá hluboko) kɨə (klesá hluboko)"
+ipa = "zɤ˧˨ mɤ˧˩˨ kɯə˧˩˨"
+stitky = ["výlet"]
+
+[[slovicka]]
+vi = "chụp ảnh ở đây được không?"
+cs = "můžu tu fotit?"
+vyslovnost_cs = "čup (krátce klesá) ajng (klesá hluboko) ə (klesá hluboko) dəj (rovně) dɨək (krátce klesá) chong (rovně)"
+ipa = "t͡ɕup˨˩ ʔɛŋ̟˧˩˨ ʔɤ˧˩˨ ɗɤ̆j˧˧ ɗɯək˨˩ xoŋ͡m˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cấm chụp ảnh"
+cs = "zákaz fotografování"
+vyslovnost_cs = "kəm (stoupá) čup (krátce klesá) ajng (klesá hluboko)"
+ipa = "kɤ̆m˨˦ t͡ɕup˨˩ ʔɛŋ̟˧˩˨"
+poznamka = "nápis"
+stitky = ["nápis"]
+
+[[slovicka]]
+vi = "mấy giờ đóng cửa?"
+cs = "v kolik zavírají?"
+vyslovnost_cs = "məj (stoupá) zə (klesá) dong (stoupá) kɨə (klesá hluboko)"
+ipa = "mɤ̆j˨˦ zɤ˧˨ ɗɔŋ͡m˨˦ kɯə˧˩˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi hai vé"
+cs = "dvě vstupenky, prosím"
+vyslovnost_cs = "čo (rovně) toj (rovně) haj (rovně) ve (stoupá)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ haj˧˧ vɛ˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi muốn đi Hạ Long"
+cs = "chci jet do Ha Longu"
+vyslovnost_cs = "toj (rovně) muən (stoupá) di (rovně) ha (krátce klesá, ráz) long (rovně)"
+ipa = "toj˧˧ muən˨˦ ɗi˧˧ ha˨˩ˀ lɔŋ͡m˧˧"
+stitky = ["fráze"]

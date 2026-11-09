@@ -1,0 +1,202 @@
+nazev = "Počasí a roční období"
+popis = "Počasí, déšť a slunce, teplota a roční období"
+
+[[slovicka]]
+vi = "thời tiết"
+cs = "počasí"
+vyslovnost_cs = "thəj (klesá) tiət (stoupá)"
+ipa = "tʰɤj˧˨ tiət˦˥"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "trời"
+cs = "nebe; počasí (ve větách)"
+vyslovnost_cs = "čəj (klesá)"
+ipa = "t͡ɕɤj˧˨"
+poznamka = "trời mưa = prší, doslova nebe prší"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mưa"
+cs = "déšť; pršet"
+vyslovnost_cs = "mɨə (rovně)"
+ipa = "mɯə˧˧"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "nắng"
+cs = "slunce, slunečno"
+vyslovnost_cs = "nang (stoupá)"
+ipa = "năŋ˨˦"
+poznamka = "sluneční svit; slunce jako těleso = mặt trời"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "gió"
+cs = "vítr"
+vyslovnost_cs = "zo (stoupá)"
+ipa = "zɔ˨˦"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mây"
+cs = "mrak, oblak"
+vyslovnost_cs = "məj (rovně)"
+ipa = "mɤ̆j˧˧"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "bão"
+cs = "tajfun, bouře"
+vyslovnost_cs = "bau (stoupá se zlomem)"
+ipa = "ɓaw˧ˀ˥"
+poznamka = "tajfuny přicházejí hlavně v létě a na podzim"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "ẩm"
+cs = "vlhký"
+vyslovnost_cs = "əm (klesá hluboko)"
+ipa = "ʔɤ̆m˧˩˨"
+poznamka = "Hanoj je na jaře velmi vlhká"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mát"
+cs = "příjemně chladno, chladivý"
+vyslovnost_cs = "mat (stoupá)"
+ipa = "mat˦˥"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "rét"
+cs = "zima, chladno (počasí)"
+vyslovnost_cs = "zet (stoupá)"
+ipa = "zɛt˦˥"
+poznamka = "severní slovo; lạnh = studený obecně (lekce 11)"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "ướt"
+cs = "mokrý"
+vyslovnost_cs = "ɨət (stoupá)"
+ipa = "ʔɯət˦˥"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "ô"
+cs = "deštník"
+vyslovnost_cs = "o (rovně)"
+ipa = "ʔo˧˧"
+poznamka = "jih: dù"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "áo mưa"
+cs = "pláštěnka"
+vyslovnost_cs = "au (stoupá) mɨə (rovně)"
+ipa = "ʔaw˨˦ mɯə˧˧"
+poznamka = "levné pláštěnky se prodávají všude, i pro motorkáře"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mùa"
+cs = "roční období"
+vyslovnost_cs = "muə (klesá)"
+ipa = "muə˧˨"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mùa mưa"
+cs = "období dešťů"
+vyslovnost_cs = "muə (klesá) mɨə (rovně)"
+ipa = "muə˧˨ mɯə˧˧"
+poznamka = "na severu zhruba od května do září; opakem je mùa khô = období sucha"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mùa xuân"
+cs = "jaro"
+vyslovnost_cs = "muə (klesá) suən (rovně)"
+ipa = "muə˧˨ sʷɤ̆n˧˧"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mùa hè"
+cs = "léto"
+vyslovnost_cs = "muə (klesá) he (klesá)"
+ipa = "muə˧˨ hɛ˧˨"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mùa thu"
+cs = "podzim"
+vyslovnost_cs = "muə (klesá) thu (rovně)"
+ipa = "muə˧˨ tʰu˧˧"
+poznamka = "pro Hanoj nejpříjemnější období"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "mùa đông"
+cs = "zima (roční období)"
+vyslovnost_cs = "muə (klesá) dong (rovně)"
+ipa = "muə˧˨ ɗoŋ͡m˧˧"
+poznamka = "na severu bývá chladná a vlhká, na jihu zima není"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "nhiệt độ"
+cs = "teplota"
+vyslovnost_cs = "ňiət (krátce klesá) do (krátce klesá, ráz)"
+ipa = "ɲiət˨˩ ɗo˨˩ˀ"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "độ"
+cs = "stupeň"
+vyslovnost_cs = "do (krátce klesá, ráz)"
+ipa = "ɗo˨˩ˀ"
+poznamka = "ba mươi độ = třicet stupňů"
+stitky = ["počasí"]
+
+[[slovicka]]
+vi = "hôm nay thời tiết thế nào?"
+cs = "jaké je dnes počasí?"
+vyslovnost_cs = "hom (rovně) naj (rovně) thəj (klesá) tiət (stoupá) the (stoupá) nau (klesá)"
+ipa = "hom˧˧ năj˧˧ tʰɤj˧˨ tiət˦˥ tʰe˨˦ naw˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "trời mưa"
+cs = "prší"
+vyslovnost_cs = "čəj (klesá) mɨə (rovně)"
+ipa = "t͡ɕɤj˧˨ mɯə˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "trời nóng quá"
+cs = "je hrozné horko"
+vyslovnost_cs = "čəj (klesá) nong (stoupá) kua (stoupá)"
+ipa = "t͡ɕɤj˧˨ nɔŋ͡m˨˦ kʷa˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "trời đẹp quá"
+cs = "to je krásně (o počasí)"
+vyslovnost_cs = "čəj (klesá) dep (krátce klesá) kua (stoupá)"
+ipa = "t͡ɕɤj˧˨ ɗɛp˨˩ kʷa˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ngày mai có mưa không?"
+cs = "bude zítra pršet?"
+vyslovnost_cs = "ngaj (klesá) maj (rovně) ko (stoupá) mɨə (rovně) chong (rovně)"
+ipa = "ŋăj˧˨ maj˧˧ kɔ˨˦ mɯə˧˧ xoŋ͡m˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "mang ô đi"
+cs = "vezmi si deštník"
+vyslovnost_cs = "mang (rovně) o (rovně) di (rovně)"
+ipa = "maŋ˧˧ ʔo˧˧ ɗi˧˧"
+stitky = ["fráze"]

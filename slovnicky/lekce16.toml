@@ -1,0 +1,229 @@
+nazev = "Vietnamská kuchyně a chutě"
+popis = "Typická jídla, chutě, úprava jídla, přání k objednávce a alergie"
+
+[[slovicka]]
+vi = "bún chả"
+cs = "grilované vepřové s rýžovými nudlemi (bún chả)"
+vyslovnost_cs = "bun (stoupá) ča (klesá hluboko)"
+ipa = "ɓun˨˦ t͡ɕa˧˩˨"
+poznamka = "hanojská specialita k obědu, nudle a maso se namáčejí do sladkokyselé omáčky"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "nem rán"
+cs = "smažené závitky (nem)"
+vyslovnost_cs = "nem (rovně) zan (stoupá)"
+ipa = "nɛm˧˧ zan˨˦"
+poznamka = "jih: chả giò"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "bánh cuốn"
+cs = "rýžové rolky plněné masem a houbami"
+vyslovnost_cs = "bajng (stoupá) kuən (stoupá)"
+ipa = "ɓɛŋ̟˨˦ kuən˨˦"
+poznamka = "jemné placky z rýžového těsta, typická snídaně"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "chả cá"
+cs = "ryba na kurkumě s koprem (chả cá)"
+vyslovnost_cs = "ča (klesá hluboko) ka (stoupá)"
+ipa = "t͡ɕa˧˩˨ ka˨˦"
+poznamka = "hanojská specialita, nejznámější je chả cá Lã Vọng"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "xôi"
+cs = "lepkavá rýže (xôi)"
+vyslovnost_cs = "soj (rovně)"
+ipa = "soj˧˧"
+poznamka = "levná snídaně z ulice, sladká i slaná"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "lẩu"
+cs = "hotpot, ohnivý kotlík (lẩu)"
+vyslovnost_cs = "ləu (klesá hluboko)"
+ipa = "lɤ̆w˧˩˨"
+poznamka = "vaří se u stolu, jí se ve skupině"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "ngọt"
+cs = "sladký"
+vyslovnost_cs = "ngot (krátce klesá)"
+ipa = "ŋɔt˨˩"
+stitky = ["chuť"]
+
+[[slovicka]]
+vi = "chua"
+cs = "kyselý"
+vyslovnost_cs = "čuə (rovně)"
+ipa = "t͡ɕuə˧˧"
+stitky = ["chuť"]
+
+[[slovicka]]
+vi = "mặn"
+cs = "slaný"
+vyslovnost_cs = "man (krátce klesá, ráz)"
+ipa = "măn˨˩ˀ"
+stitky = ["chuť"]
+
+[[slovicka]]
+vi = "đắng"
+cs = "hořký"
+vyslovnost_cs = "dang (stoupá)"
+ipa = "ɗăŋ˨˦"
+stitky = ["chuť"]
+
+[[slovicka]]
+vi = "rán"
+cs = "smažený, smažit"
+vyslovnost_cs = "zan (stoupá)"
+ipa = "zan˨˦"
+poznamka = "jih: chiên; gà rán = smažené kuře"
+stitky = ["vaření"]
+
+[[slovicka]]
+vi = "nướng"
+cs = "grilovaný, pečený; grilovat"
+vyslovnost_cs = "nɨəng (stoupá)"
+ipa = "nɯəŋ˨˦"
+poznamka = "thịt nướng = grilované maso"
+stitky = ["vaření"]
+
+[[slovicka]]
+vi = "luộc"
+cs = "vařený (ve vodě); vařit"
+vyslovnost_cs = "luək (krátce klesá)"
+ipa = "luək˨˩"
+poznamka = "trứng luộc = vařené vejce"
+stitky = ["vaření"]
+
+[[slovicka]]
+vi = "xào"
+cs = "restovaný (na pánvi); restovat"
+vyslovnost_cs = "sau (klesá)"
+ipa = "saw˧˨"
+poznamka = "rau muống xào tỏi = restovaný vodní špenát s česnekem"
+stitky = ["vaření"]
+
+[[slovicka]]
+vi = "đường"
+klic = "đường (cukr)"
+cs = "cukr"
+vyslovnost_cs = "dɨəng (klesá)"
+ipa = "ɗɯəŋ˧˨"
+poznamka = "đường znamená i cesta (lekce 7)"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "muối"
+cs = "sůl"
+vyslovnost_cs = "muəj (stoupá)"
+ipa = "muəj˨˦"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "nước mắm"
+cs = "rybí omáčka"
+vyslovnost_cs = "nɨək (stoupá) mam (stoupá)"
+ipa = "nɯək˦˥ măm˨˦"
+poznamka = "základní vietnamské dochucovadlo"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "ớt"
+cs = "chilli"
+vyslovnost_cs = "ət (stoupá)"
+ipa = "ʔɤt˦˥"
+poznamka = "cay = pálivý (lekce 6)"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "lạc"
+klic = "lạc (arašídy)"
+cs = "arašídy"
+vyslovnost_cs = "lak (krátce klesá)"
+ipa = "lak˨˩"
+poznamka = "jih: đậu phộng; lạc znamená i zabloudit (tôi bị lạc)"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "đậu phụ"
+cs = "tofu"
+vyslovnost_cs = "dəu (krátce klesá, ráz) fu (krátce klesá, ráz)"
+ipa = "ɗɤ̆w˨˩ˀ fu˨˩ˀ"
+poznamka = "jih: đậu hũ"
+stitky = ["jídlo"]
+
+[[slovicka]]
+vi = "thêm"
+cs = "přidat, ještě (víc)"
+vyslovnost_cs = "them (rovně)"
+ipa = "tʰem˧˧"
+poznamka = "thêm đá = ještě led"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "mang về"
+cs = "s sebou (jídlo)"
+vyslovnost_cs = "mang (rovně) ve (klesá)"
+ipa = "maŋ˧˧ ve˧˨"
+poznamka = "doslova odnést domů"
+stitky = ["restaurace"]
+
+[[slovicka]]
+vi = "ít đường"
+cs = "méně cukru, prosím"
+vyslovnost_cs = "it (stoupá) dɨəng (klesá)"
+ipa = "ʔit˦˥ ɗɯəŋ˧˨"
+poznamka = "běžné přání u kávy a džusů, ít = málo"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "không đá"
+cs = "bez ledu"
+vyslovnost_cs = "chong (rovně) da (stoupá)"
+ipa = "xoŋ͡m˧˧ ɗa˨˦"
+poznamka = "led se dává skoro do všeho; nước đá = led (lekce 6)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi thêm một bát"
+cs = "ještě jednu misku, prosím"
+vyslovnost_cs = "čo (rovně) toj (rovně) them (rovně) mot (krátce klesá) bat (stoupá)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ tʰem˧˧ mot˨˩ ɓat˦˥"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ăn ở đây hay mang về?"
+cs = "tady, nebo s sebou?"
+vyslovnost_cs = "an (rovně) ə (klesá hluboko) dəj (rovně) haj (rovně) mang (rovně) ve (klesá)"
+ipa = "ʔăn˧˧ ʔɤ˧˩˨ ɗɤ̆j˧˧ hăj˧˧ maŋ˧˧ ve˧˨"
+poznamka = "hay = nebo (v otázce)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "tôi bị dị ứng lạc"
+cs = "jsem alergický na arašídy"
+vyslovnost_cs = "toj (rovně) bi (krátce klesá, ráz) zi (krátce klesá, ráz) ɨng (stoupá) lak (krátce klesá)"
+ipa = "toj˧˧ ɓi˨˩ˀ zi˨˩ˀ ʔɯŋ˨˦ lak˨˩"
+poznamka = "dị ứng = alergie (lekce 15)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "món này có lạc không?"
+cs = "jsou v tom jídle arašídy?"
+vyslovnost_cs = "mon (stoupá) naj (klesá) ko (stoupá) lak (krátce klesá) chong (rovně)"
+ipa = "mɔn˨˦ năj˧˨ kɔ˨˦ lak˨˩ xoŋ͡m˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "không cho mì chính"
+cs = "bez glutamátu, prosím"
+vyslovnost_cs = "chong (rovně) čo (rovně) mi (klesá) čing (stoupá)"
+ipa = "xoŋ͡m˧˧ t͡ɕɔ˧˧ mi˧˨ t͡ɕiŋ̟˨˦"
+poznamka = "mì chính = glutamát sodný; jih: bột ngọt"
+stitky = ["fráze"]

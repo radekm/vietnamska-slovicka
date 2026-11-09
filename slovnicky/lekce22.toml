@@ -1,0 +1,197 @@
+nazev = "Praktické služby a problémy"
+popis = "Peníze, telefon, prádelna, kadeřník, pošta a problémy v hotelu"
+
+[[slovicka]]
+vi = "rút tiền"
+cs = "vybrat peníze"
+vyslovnost_cs = "zut (stoupá) tiən (klesá)"
+ipa = "zut˦˥ tiən˧˨"
+poznamka = "bankomat = cây ATM (čte se a tê mờ) nebo cây rút tiền"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "đổi tiền"
+cs = "vyměnit peníze"
+vyslovnost_cs = "doj (klesá hluboko) tiən (klesá)"
+ipa = "ɗoj˧˩˨ tiən˧˨"
+poznamka = "ceny se píšou zkráceně 50k = 50 000 dongů; hovorově lít = 100 000, củ = 1 000 000"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "tỷ giá"
+cs = "kurz (měny)"
+vyslovnost_cs = "ti (klesá hluboko) za (stoupá)"
+ipa = "ti˧˩˨ za˨˦"
+poznamka = "píše se i tỉ giá"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "điện thoại"
+cs = "telefon"
+vyslovnost_cs = "diən (krátce klesá, ráz) thuaj (krátce klesá, ráz)"
+ipa = "ɗiən˨˩ˀ tʰʷaj˨˩ˀ"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "thẻ sim"
+cs = "SIM karta"
+vyslovnost_cs = "the (klesá hluboko) sim (rovně)"
+ipa = "tʰɛ˧˩˨ sim˧˧"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "sạc"
+cs = "nabít; nabíječka"
+vyslovnost_cs = "sak (krátce klesá)"
+ipa = "sak˨˩"
+poznamka = "cục sạc = nabíječka"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "pin"
+cs = "baterie"
+vyslovnost_cs = "pin (rovně)"
+ipa = "pin˧˧"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "mạng"
+cs = "internet, síť"
+vyslovnost_cs = "mang (krátce klesá, ráz)"
+ipa = "maŋ˨˩ˀ"
+poznamka = "wifi se píše i čte po anglicku (oai phai); mật khẩu wifi = heslo k wifi"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "giặt là"
+cs = "praní a žehlení, prádelna"
+vyslovnost_cs = "zat (krátce klesá) la (klesá)"
+ipa = "zăt˨˩ la˧˨"
+poznamka = "jih: giặt ủi"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "cắt tóc"
+cs = "stříhat vlasy"
+vyslovnost_cs = "kat (stoupá) tok (stoupá)"
+ipa = "kăt˦˥ tɔk͡p˦˥"
+poznamka = "hiệu cắt tóc = kadeřnictví"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "mát xa"
+cs = "masáž"
+vyslovnost_cs = "mat (stoupá) sa (rovně)"
+ipa = "mat˦˥ sa˧˧"
+poznamka = "píše se i mát-xa"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "bưu điện"
+cs = "pošta"
+vyslovnost_cs = "bɨu (rovně) diən (krátce klesá, ráz)"
+ipa = "ɓɯw˧˧ ɗiən˨˩ˀ"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "gửi"
+cs = "poslat"
+vyslovnost_cs = "gɨj (klesá hluboko)"
+ipa = "ɣɯj˧˩˨"
+stitky = ["služby"]
+
+[[slovicka]]
+vi = "nước nóng"
+cs = "teplá voda"
+vyslovnost_cs = "nɨək (stoupá) nong (stoupá)"
+ipa = "nɯək˦˥ nɔŋ͡m˨˦"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "khăn tắm"
+cs = "ručník, osuška"
+vyslovnost_cs = "chan (rovně) tam (stoupá)"
+ipa = "xăn˧˧ tăm˨˦"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "giấy vệ sinh"
+cs = "toaletní papír"
+vyslovnost_cs = "zəj (stoupá) ve (krátce klesá, ráz) sing (rovně)"
+ipa = "zɤ̆j˨˦ ve˨˩ˀ siŋ̟˧˧"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "hỏng"
+cs = "rozbitý"
+vyslovnost_cs = "hong (klesá hluboko)"
+ipa = "hɔŋ͡m˧˩˨"
+poznamka = "jih: hư"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "bẩn"
+cs = "špinavý"
+vyslovnost_cs = "bən (klesá hluboko)"
+ipa = "ɓɤ̆n˧˩˨"
+poznamka = "jih: dơ"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "sạch"
+cs = "čistý"
+vyslovnost_cs = "sajk (krátce klesá)"
+ipa = "sɛk̟˨˩"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "sửa"
+cs = "opravit"
+vyslovnost_cs = "sɨə (klesá hluboko)"
+ipa = "sɯə˧˩˨"
+stitky = ["ubytování"]
+
+[[slovicka]]
+vi = "tôi muốn đổi tiền"
+cs = "chci si vyměnit peníze"
+vyslovnost_cs = "toj (rovně) muən (stoupá) doj (klesá hluboko) tiən (klesá)"
+ipa = "toj˧˧ muən˨˦ ɗoj˧˩˨ tiən˧˨"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "điều hòa bị hỏng"
+cs = "klimatizace je rozbitá"
+vyslovnost_cs = "diəu (klesá) hua (klesá) bi (krátce klesá, ráz) hong (klesá hluboko)"
+ipa = "ɗiəw˧˨ hʷa˧˨ ɓi˨˩ˀ hɔŋ͡m˧˩˨"
+poznamka = "bị = postihlo (něco nepříjemného)"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "không có nước nóng"
+cs = "neteče teplá voda"
+vyslovnost_cs = "chong (rovně) ko (stoupá) nɨək (stoupá) nong (stoupá)"
+ipa = "xoŋ͡m˧˧ kɔ˨˦ nɯək˦˥ nɔŋ͡m˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "phòng này bẩn quá"
+cs = "tenhle pokoj je hrozně špinavý"
+vyslovnost_cs = "fong (klesá) naj (klesá) bən (klesá hluboko) kua (stoupá)"
+ipa = "fɔŋ͡m˧˨ năj˧˨ ɓɤ̆n˧˩˨ kʷa˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cho tôi đổi phòng"
+cs = "chci jiný pokoj"
+vyslovnost_cs = "čo (rovně) toj (rovně) doj (klesá hluboko) fong (klesá)"
+ipa = "t͡ɕɔ˧˧ toj˧˧ ɗoj˧˩˨ fɔŋ͡m˧˨"
+poznamka = "doslova nechte mě vyměnit pokoj"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "bao giờ xong?"
+cs = "kdy to bude hotové?"
+vyslovnost_cs = "bau (rovně) zə (klesá) song (rovně)"
+ipa = "ɓaw˧˧ zɤ˧˨ sɔŋ͡m˧˧"
+poznamka = "bao giờ = kdy (sever), xong = hotovo"
+stitky = ["fráze"]

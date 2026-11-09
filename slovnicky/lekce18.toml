@@ -1,0 +1,200 @@
+nazev = "Kde co je"
+popis = "Poloha, předložky, patro a vzdálenost"
+
+[[slovicka]]
+vi = "trên"
+cs = "na, nad, nahoře"
+vyslovnost_cs = "čen (rovně)"
+ipa = "t͡ɕen˧˧"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "dưới"
+cs = "pod, dole"
+vyslovnost_cs = "zɨəj (stoupá)"
+ipa = "zɯəj˨˦"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "trong"
+cs = "v, uvnitř"
+vyslovnost_cs = "čong (rovně)"
+ipa = "t͡ɕɔŋ͡m˧˧"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "ngoài"
+cs = "venku, vně"
+vyslovnost_cs = "nguaj (klesá)"
+ipa = "ŋʷaj˧˨"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "bên cạnh"
+cs = "vedle"
+vyslovnost_cs = "ben (rovně) kajng (krátce klesá, ráz)"
+ipa = "ɓen˧˧ kɛŋ̟˨˩ˀ"
+poznamka = "stačí i cạnh"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "đối diện"
+cs = "naproti"
+vyslovnost_cs = "doj (stoupá) ziən (krátce klesá, ráz)"
+ipa = "ɗoj˨˦ ziən˨˩ˀ"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "giữa"
+cs = "mezi, uprostřed"
+vyslovnost_cs = "zɨə (stoupá se zlomem)"
+ipa = "zɯə˧ˀ˥"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "góc"
+cs = "roh"
+vyslovnost_cs = "gok (stoupá)"
+ipa = "ɣɔk͡p˦˥"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "tầng"
+cs = "patro"
+vyslovnost_cs = "təng (klesá)"
+ipa = "tɤ̆ŋ˧˨"
+poznamka = "na severu je tầng một přízemí, na jihu se přízemí říká tầng trệt"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "phía trước"
+cs = "vpředu, před"
+vyslovnost_cs = "fiə (stoupá) čɨək (stoupá)"
+ipa = "fiə˨˦ t͡ɕɯək˦˥"
+poznamka = "trước = před (lekce 10)"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "phía sau"
+cs = "vzadu, za"
+vyslovnost_cs = "fiə (stoupá) sau (rovně)"
+ipa = "fiə˨˦ săw˧˧"
+poznamka = "sau = po, za (lekce 10)"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "trái"
+klic = "trái (vlevo)"
+cs = "vlevo, levý"
+vyslovnost_cs = "čaj (stoupá)"
+ipa = "t͡ɕaj˨˦"
+poznamka = "na jihu znamená trái i ovoce (trái cây)"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "phải"
+klic = "phải (vpravo)"
+cs = "vpravo, pravý"
+vyslovnost_cs = "faj (klesá hluboko)"
+ipa = "faj˧˩˨"
+poznamka = "phải znamená i muset (lekce 8)"
+stitky = ["směr"]
+
+[[slovicka]]
+vi = "phố"
+cs = "ulice (ve městě)"
+vyslovnost_cs = "fo (stoupá)"
+ipa = "fo˨˦"
+poznamka = "phố cổ = staré město; đường = silnice, cesta"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "ngõ"
+cs = "ulička"
+vyslovnost_cs = "ngo (stoupá se zlomem)"
+ipa = "ŋɔ˧ˀ˥"
+poznamka = "hanojské uličky odbočující z ulice, v adresách je číslo za ngõ"
+stitky = ["místo"]
+
+[[slovicka]]
+vi = "cây số"
+cs = "kilometr"
+vyslovnost_cs = "kəj (rovně) so (stoupá)"
+ipa = "kɤ̆j˧˧ so˨˦"
+poznamka = "hovorově; spisovně ki lô mét (km)"
+stitky = ["vzdálenost"]
+
+[[slovicka]]
+vi = "mét"
+cs = "metr"
+vyslovnost_cs = "met (stoupá)"
+ipa = "mɛt˦˥"
+stitky = ["vzdálenost"]
+
+[[slovicka]]
+vi = "đi bộ"
+cs = "jít pěšky"
+vyslovnost_cs = "di (rovně) bo (krátce klesá, ráz)"
+ipa = "ɗi˧˧ ɓo˨˩ˀ"
+stitky = ["vzdálenost"]
+
+[[slovicka]]
+vi = "cách"
+cs = "vzdálený (od)"
+vyslovnost_cs = "kajk (stoupá)"
+ipa = "kɛk̟˦˥"
+poznamka = "cách đây hai cây số = dva kilometry odsud"
+stitky = ["vzdálenost"]
+
+[[slovicka]]
+vi = "đi bộ năm phút"
+cs = "pět minut pěšky"
+vyslovnost_cs = "di (rovně) bo (krátce klesá, ráz) nam (rovně) fut (stoupá)"
+ipa = "ɗi˧˧ ɓo˨˩ˀ năm˧˧ fut˦˥"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "cách đây bao xa?"
+cs = "jak daleko je to odsud?"
+vyslovnost_cs = "kajk (stoupá) dəj (rovně) bau (rovně) sa (rovně)"
+ipa = "kɛk̟˦˥ ɗɤ̆j˧˧ ɓaw˧˧ sa˧˧"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "mất bao lâu?"
+cs = "jak dlouho to trvá?"
+vyslovnost_cs = "mət (stoupá) bau (rovně) ləu (rovně)"
+ipa = "mɤ̆t˦˥ ɓaw˧˧ lɤ̆w˧˧"
+poznamka = "mất = ztratit, tady trvat"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ở tầng hai"
+cs = "v prvním patře (nad přízemím)"
+vyslovnost_cs = "ə (klesá hluboko) təng (klesá) haj (rovně)"
+ipa = "ʔɤ˧˩˨ tɤ̆ŋ˧˨ haj˧˧"
+poznamka = "na severu je tầng một přízemí, takže tầng hai je první patro"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ở góc phố"
+cs = "na rohu ulice"
+vyslovnost_cs = "ə (klesá hluboko) gok (stoupá) fo (stoupá)"
+ipa = "ʔɤ˧˩˨ ɣɔk͡p˦˥ fo˨˦"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ngay bên cạnh"
+cs = "hned vedle"
+vyslovnost_cs = "ngaj (rovně) ben (rovně) kajng (krátce klesá, ráz)"
+ipa = "ŋăj˧˧ ɓen˧˧ kɛŋ̟˨˩ˀ"
+poznamka = "ngay = hned, přímo"
+stitky = ["fráze"]
+
+[[slovicka]]
+vi = "ở bên kia đường"
+cs = "na druhé straně ulice"
+vyslovnost_cs = "ə (klesá hluboko) ben (rovně) kiə (rovně) dɨəng (klesá)"
+ipa = "ʔɤ˧˩˨ ɓen˧˧ kiə˧˧ ɗɯəŋ˧˨"
+poznamka = "bên kia = na druhé straně"
+stitky = ["fráze"]
