@@ -473,6 +473,51 @@ Upřesnění (etapa 9, hotovo):
   *điều hòa*, *tàu hỏa*).
 - Tísňové linky v poznámkách lekce 15: policie 113, hasiči 114, záchranka 115.
 
+## Třetí sada lekcí (etapa 10)
+
+Schváleno autorem. Třetí sada je pro turistu: jídlo a pití podrobněji, orientace, nápisy,
+výlety, počasí, služby a povídání s místními. Platí pravidla pro obsah, klíče a homonyma
+z oddílu „Druhá sada lekcí (etapa 9)“.
+
+Témata v tomto pořadí, každá lekce **20–30 slovíček**:
+
+16. **Vietnamská kuchyně a chutě** (bún chả, nem rán, chả cá, xôi, chutě, úprava, přání
+    k objednávce, alergie). Navazuje na lekce 5 a 6.
+17. **Ovoce, pití a kavárna** (ovoce z trhu, nước mía, sinh tố, bia hơi, cà phê trứng,
+    přípitek). Hned po kuchyni, téma jídla zůstane pohromadě.
+18. **Kde co je** (trên, dưới, trong, ngoài, bên cạnh, đối diện, tầng, vzdálenost). Hlavně
+    předložky, tedy gramatika. Rozšiřuje lekci 7 a nápisy z ní berou *tầng*.
+19. **Nápisy a cedule** (lối vào, lối ra, mở cửa, đóng cửa, cấm, đẩy, kéo, hết hàng…).
+    Před památkami, aby z *mở cửa* a *đóng cửa* šlo v lekci 20 skládat otevírací dobu.
+20. **Památky a výlety** (chùa, đền, bảo tàng, hồ, núi, vịnh, hang, vstupenka, fotit).
+21. **Počasí a roční období** (mưa, nắng, gió, rét, ô, áo mưa, mùa…).
+22. **Praktické služby a problémy** (výběr a výměna peněz, SIM, nabíječka, prádelna,
+    kadeřník, masáž, pošta, problémy na pokoji).
+23. **Povídání s místními** (poprvé ve Vietnamu, jak dlouho tu jsi, reakce, poděkování
+    za pohostinnost). Poslední, protože používá slova ze všech předchozích lekcí, a proto
+    má víc frází než ostatní.
+
+Rozhodnutí:
+
+- **Nové klíče s `klic`:** `"đường (cukr)"` (připravený v etapě 8), `"phải (vpravo)"`
+  (vedle `"phải (muset)"`), a předem kvůli očekávaným homonymům `"lạc (arašídy)"`
+  (*lạc* = zabloudit), `"nam (muži)"` (*nam* = jih) a `"trái (vlevo)"` (na jihu *trái* =
+  ovoce).
+- ***chè*** je jedna kartička „sladký dezert chè; na severu i čaj“. Oba významy mají stejný
+  původ, v poznámce je *chè xanh* a *trà đá*. *bơ* (avokádo / máslo) se nepřidává, *sinh tố
+  bơ* je v poznámce u *sinh tố*.
+- **Nápisy se procvičují oběma směry** jako ostatní lekce, formát ani aplikace se nemění.
+  Lekce obsahuje jen nápisy složené z užitečných slov (*cấm*, *thuê*, *cửa*, *hết*), aby měl
+  smysl i směr CS → VI. Mají štítek `nápis`.
+- **Hovorové ceny** nejsou samostatné kartičky (slang, zdroje se u *xị*, *chai* a *vé*
+  rozcházejí). Shodné údaje jsou v poznámce u *đổi tiền* a u *đồng* v lekci 12 (změna jen
+  `poznamka`): na cedulkách se píše 50k = 50 000, hovorově *lít* = 100 000 a *củ* =
+  1 000 000.
+- **Latinkové zkratky** (*wifi*, *ATM*, *Zalo*) nejsou na kartičkách, neprošly by kontrolou
+  výslovnosti. Jsou v poznámkách u *mạng*, *rút tiền* a *số điện thoại*.
+- **Slova se spojovníkem** se zapisují bez něj (*mát xa*), pravopisná varianta je
+  v poznámce.
+
 ## Font
 
 Všude se používá **Noto Sans** (licence OFL), statické řezy `NotoSans-Regular.ttf`
@@ -543,6 +588,7 @@ slovnicky/
 | 7 | Statistiky | hotovo |
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo, restaurace, cesta) | hotovo |
 | 9 | Lekce: druhá sada (slovesa, stavba věty, čas, přídavná jména, nakupování, doprava, rodina, zdraví) | hotovo |
+| 10 | Lekce: třetí sada pro turistu (kuchyně, ovoce a pití, kde co je, nápisy, památky, počasí, služby, povídání) | rozpracováno |
 
 ## Otevřené otázky
 
