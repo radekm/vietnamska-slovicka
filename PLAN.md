@@ -503,8 +503,8 @@ Rozhodnutí:
   (vedle `"phải (muset)"`), a předem kvůli očekávaným homonymům `"lạc (arašídy)"`
   (*lạc* = zabloudit), `"nam (muži)"` (*nam* = jih) a `"trái (vlevo)"` (na jihu *trái* =
   ovoce).
-- ***chè*** je jedna kartička „sladký dezert chè; na severu i čaj“. Oba významy mají stejný
-  původ, v poznámce je *chè xanh* a *trà đá*. *bơ* (avokádo / máslo) se nepřidává, *sinh tố
+- ***chè*** je jedna kartička. Oba významy (dezert, na severu i čaj) mají stejný původ,
+  v poznámce je *chè xanh* a *trà đá*. Znění `cs` upravilo review, viz níže. *bơ* (avokádo / máslo) se nepřidává, *sinh tố
   bơ* je v poznámce u *sinh tố*.
 - **Nápisy se procvičují oběma směry** jako ostatní lekce, formát ani aplikace se nemění.
   Lekce obsahuje jen nápisy složené z užitečných slov (*cấm*, *thuê*, *cửa*, *hết*), aby měl
@@ -527,6 +527,43 @@ Upřesnění (etapa 10, hotovo):
 - Nové štítky: `chuť`, `vaření`, `ovoce`, `vzdálenost`, `nápis`, `výlet`, `počasí`,
   `služby`, `konverzace`. *cấm chụp ảnh* v lekci 20 má štítek `nápis`.
 - U *đồng* v lekci 12 se doplnila jen `poznamka` (hovorové ceny), klíč zůstal.
+
+## Review lekcí (po etapě 10)
+
+Review správnosti všech 23 lekcí (589 slovíček), kód aplikace se neměnil.
+
+Co review potvrdilo:
+
+- Pravopis je jednotný: tóny po staru (*hòa, hóa, hỏa, khóa, khỏe*), *kỳ, tỷ, lý* s y,
+  varianty *kì, tỉ* jen v poznámkách.
+- `tools/pronunciation.py --check` je bez rozdílů, přejímky a vlastní jména (*sim, pin, mét,
+  sạc, mát xa, Việt Nam, Hạ Long, buýt, Séc*) prošly ruční kontrolou.
+- Klíče jsou unikátní, odkazy na jiné lekce v poznámkách sedí.
+
+Co se opravilo:
+
+- **Jediná změna `vi`:** *cà phê sữa đá* (lekce 5) je jižní název, kartička je teď hanojské
+  ***nâu đá*** (schváleno autorem, kartička přišla o postup). Jižní název je v poznámce.
+- **Zpřesnění `cs` a poznámek** (klíče beze změny): *tôi ở đây hai tuần* (bez *rồi* = „na dva
+  týdny“), *bạn chụp giúp tôi nhé?* (tykání, zdvořilejší varianta v poznámce), *khuyến mãi*
+  (akce, ne výprodej; i *khuyến mại*), *tháng* (duben je vždy *tháng tư*), *bao giờ*,
+  *tạm biệt* (formální), *tính tiền* (i *thanh toán*), *xanh* (*xanh da trời*).
+- ***chè*** má `cs` jen „sladký dezert“, čaj je v poznámce, štítek `jídlo` (nahrazuje
+  rozhodnutí z etapy 10).
+- **Kartičky, které se pletly ve směru CS → VI,** dostaly rozlišující `cs`: *sắp* / *sớm*,
+  *thật à?* / *thế à?*, *hết* / *hết hàng*, *cửa* / *lối vào*, *cẩn thận!* / *chú ý*.
+- **Jižní varianty** se v poznámkách píšou jednotně „jih: …“ a doplnily se chybějící
+  (*xe lửa, máy lạnh, hẻm, lầu, bóp, ngò, má, coi, dĩa, gởi*). Učí se severní vietnamština,
+  jižní varianty jsou jen pro porozumění.
+- **Doslovné významy** v poznámkách jsou v uvozovkách („doslova „odnést domů““).
+- **Štítek `fráze`** mají navíc i fráze v lekcích 6, 7, 19 a 20, které měly jen tematický
+  štítek.
+
+Co zůstalo:
+
+- *bạn* se v `cs` překládá někde tykáním a někde vykáním (lekce 8, 13).
+- Český popis výslovnosti nerozliší *uân* a *uôn* (obojí „uən“), rozdíl je jen v IPA.
+- Hovorové ceny *lít* a *củ* se nepodařilo ověřit ve zdroji, odpovídají ale běžnému úzu.
 
 ## Font
 
@@ -599,9 +636,13 @@ slovnicky/
 | 8 | Lekce: první sada (pozdravy, čísla, základní fráze, jídlo, restaurace, cesta) | hotovo |
 | 9 | Lekce: druhá sada (slovesa, stavba věty, čas, přídavná jména, nakupování, doprava, rodina, zdraví) | hotovo |
 | 10 | Lekce: třetí sada pro turistu (kuchyně, ovoce a pití, kde co je, nápisy, památky, počasí, služby, povídání) | hotovo |
+| – | Review správnosti lekcí 1–23 | hotovo |
 
 ## Otevřené otázky
 
+- Ve směru CS → VI se na líci ukazuje i poznámka a ta často prozrazuje odpověď (u 111
+  slovíček obsahuje přímo hledané slovo, např. u *đi* „đi bộ = jít pěšky“). U názvů jídel (*phở, bún chả, chả cá, xôi, lẩu, bia hơi*) je
+  odpověď už v `cs`. Řešením by bylo ukazovat poznámku až na rubu, to je změna kódu.
 - Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
   upozornění). Případně doplnit potvrzovací dotaz.
 - V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.
