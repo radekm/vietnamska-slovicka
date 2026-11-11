@@ -115,7 +115,7 @@ klic = "đường (cukr)"
 cs = "cukr"
 vyslovnost_cs = "dɨəng (klesá)"
 ipa = "ɗɯəŋ˧˨"
-poznamka = "đường znamená i cesta (lekce 7)"
+poznamka = "đường znamená i „cesta“ (lekce 7)"
 stitky = ["jídlo"]
 
 [[slovicka]]
@@ -147,7 +147,7 @@ klic = "lạc (arašídy)"
 cs = "arašídy"
 vyslovnost_cs = "lak (krátce klesá)"
 ipa = "lak˨˩"
-poznamka = "jih: đậu phộng; lạc znamená i zabloudit (tôi bị lạc)"
+poznamka = "jih: đậu phộng; lạc znamená i „zabloudit“ (tôi bị lạc)"
 stitky = ["jídlo"]
 
 [[slovicka]]
@@ -171,7 +171,7 @@ vi = "mang về"
 cs = "s sebou (jídlo)"
 vyslovnost_cs = "mang (rovně) ve (klesá)"
 ipa = "maŋ˧˧ ve˧˨"
-poznamka = "doslova odnést domů"
+poznamka = "doslova „odnést domů“"
 stitky = ["restaurace"]
 
 [[slovicka]]

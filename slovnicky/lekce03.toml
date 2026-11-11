@@ -132,7 +132,7 @@ vi = "một trăm linh năm"
 cs = "sto pět"
 vyslovnost_cs = "mot (krátce klesá) čam (rovně) ling (rovně) nam (rovně)"
 ipa = "mot˨˩ t͡ɕăm˧˧ liŋ̟˧˧ năm˧˧"
-poznamka = "chybějící desítky se na severu vyjadřují slovem linh, na jihu lẻ"
+poznamka = "chybějící desítky se vyjadřují slovem linh; jih: lẻ"
 stitky = ["číslo"]
 
 [[slovicka]]
@@ -140,7 +140,7 @@ vi = "một nghìn"
 cs = "tisíc"
 vyslovnost_cs = "mot (krátce klesá) ngin (klesá)"
 ipa = "mot˨˩ ŋin˧˨"
-poznamka = "na severu nghìn, na jihu ngàn"
+poznamka = "jih: ngàn"
 stitky = ["číslo"]
 
 [[slovicka]]

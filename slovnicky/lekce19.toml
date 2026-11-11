@@ -37,7 +37,7 @@ vi = "mở cửa"
 cs = "otevřeno; otevřít"
 vyslovnost_cs = "mə (klesá hluboko) kɨə (klesá hluboko)"
 ipa = "mɤ˧˩˨ kɯə˧˩˨"
-poznamka = "nápis na dveřích, doslova otevřít dveře"
+poznamka = "nápis na dveřích, doslova „otevřít dveře“"
 stitky = ["nápis"]
 
 [[slovicka]]
@@ -45,7 +45,7 @@ vi = "đóng cửa"
 cs = "zavřeno; zavřít"
 vyslovnost_cs = "dong (stoupá) kɨə (klesá hluboko)"
 ipa = "ɗɔŋ͡m˨˦ kɯə˧˩˨"
-poznamka = "nápis na dveřích, doslova zavřít dveře"
+poznamka = "nápis na dveřích, doslova „zavřít dveře“"
 stitky = ["nápis"]
 
 [[slovicka]]
@@ -62,7 +62,7 @@ klic = "nam (muži)"
 cs = "muži (WC)"
 vyslovnost_cs = "nam (rovně)"
 ipa = "nam˧˧"
-poznamka = "nápis na WC; nam znamená i jih"
+poznamka = "nápis na WC; nam znamená i „jih“"
 stitky = ["nápis"]
 
 [[slovicka]]

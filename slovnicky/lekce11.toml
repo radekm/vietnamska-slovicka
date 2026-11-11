@@ -6,7 +6,7 @@ vi = "to"
 cs = "velký"
 vyslovnost_cs = "to (rovně)"
 ipa = "tɔ˧˧"
-poznamka = "stejně se říká lớn, na jihu i bự"
+poznamka = "stejně se říká lớn; jih: i bự"
 stitky = ["přídavné jméno"]
 
 [[slovicka]]
@@ -36,7 +36,7 @@ vi = "đắt"
 cs = "drahý"
 vyslovnost_cs = "dat (stoupá)"
 ipa = "ɗăt˦˥"
-poznamka = "na severu đắt, na jihu mắc"
+poznamka = "jih: mắc"
 stitky = ["přídavné jméno"]
 
 [[slovicka]]

@@ -63,7 +63,7 @@ vi = "hiệu thuốc"
 cs = "lékárna"
 vyslovnost_cs = "hiəu (krátce klesá, ráz) thuək (stoupá)"
 ipa = "hiəw˨˩ˀ tʰuək˦˥"
-poznamka = "na severu hiệu thuốc, na jihu nhà thuốc"
+poznamka = "jih: nhà thuốc"
 stitky = ["místo"]
 
 [[slovicka]]
@@ -102,7 +102,7 @@ vi = "rẽ trái"
 cs = "zahněte doleva"
 vyslovnost_cs = "ze (stoupá se zlomem) čaj (stoupá)"
 ipa = "zɛ˧ˀ˥ t͡ɕaj˨˦"
-poznamka = "na severu rẽ, na jihu quẹo"
+poznamka = "rẽ = zahnout; jih: quẹo"
 stitky = ["směr"]
 
 [[slovicka]]

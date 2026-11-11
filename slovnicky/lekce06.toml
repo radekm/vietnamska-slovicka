@@ -37,7 +37,7 @@ vi = "bát"
 cs = "miska"
 vyslovnost_cs = "bat (stoupá)"
 ipa = "ɓat˦˥"
-poznamka = "na severu bát, na jihu chén nebo tô"
+poznamka = "jih: chén nebo tô"
 stitky = ["nádobí"]
 
 [[slovicka]]
@@ -45,6 +45,7 @@ vi = "đĩa"
 cs = "talíř"
 vyslovnost_cs = "diə (stoupá se zlomem)"
 ipa = "ɗiə˧ˀ˥"
+poznamka = "jih: dĩa"
 stitky = ["nádobí"]
 
 [[slovicka]]
@@ -52,7 +53,7 @@ vi = "cốc"
 cs = "sklenice, hrnek"
 vyslovnost_cs = "kok (stoupá)"
 ipa = "kok͡p˦˥"
-poznamka = "na severu cốc, na jihu ly"
+poznamka = "jih: ly"
 stitky = ["nádobí"]
 
 [[slovicka]]
@@ -67,7 +68,7 @@ vi = "thìa"
 cs = "lžíce"
 vyslovnost_cs = "thiə (klesá)"
 ipa = "tʰiə˧˨"
-poznamka = "na severu thìa, na jihu muỗng"
+poznamka = "jih: muỗng"
 stitky = ["nádobí"]
 
 [[slovicka]]
@@ -96,7 +97,7 @@ vi = "không cho rau mùi"
 cs = "bez koriandru"
 vyslovnost_cs = "chong (rovně) čo (rovně) zau (rovně) muj (klesá)"
 ipa = "xoŋ͡m˧˧ t͡ɕɔ˧˧ zăw˧˧ muj˧˨"
-poznamka = "doslova „nedávat koriandr“; rau mùi = koriandr (na severu)"
+poznamka = "doslova „nedávat koriandr“; rau mùi = koriandr, jih: ngò"
 stitky = ["restaurace"]
 
 [[slovicka]]

@@ -58,7 +58,7 @@ vi = "thịt lợn"
 cs = "vepřové"
 vyslovnost_cs = "thit (krátce klesá) lən (krátce klesá, ráz)"
 ipa = "tʰit˨˩ lɤn˨˩ˀ"
-poznamka = "na severu lợn, na jihu heo"
+poznamka = "jih: thịt heo"
 stitky = ["jídlo"]
 
 [[slovicka]]
@@ -94,7 +94,7 @@ vi = "hoa quả"
 cs = "ovoce"
 vyslovnost_cs = "hua (rovně) kua (klesá hluboko)"
 ipa = "hʷa˧˧ kʷa˧˩˨"
-poznamka = "na severu hoa quả, na jihu trái cây"
+poznamka = "jih: trái cây"
 stitky = ["jídlo"]
 
 [[slovicka]]

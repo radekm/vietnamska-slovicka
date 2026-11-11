@@ -138,7 +138,7 @@ vi = "chiếc"
 cs = "(počítací slovo pro kusy, vozidla)"
 vyslovnost_cs = "čiək (stoupá)"
 ipa = "t͡ɕiək˦˥"
-poznamka = "một chiếc xe máy = jedna motorka; na jihu se místo chiếc často říká cái"
+poznamka = "một chiếc xe máy = jedna motorka; jih: často cái"
 stitky = ["počítací slovo"]
 
 [[slovicka]]
@@ -146,7 +146,7 @@ vi = "quả"
 cs = "(počítací slovo pro ovoce)"
 vyslovnost_cs = "kua (klesá hluboko)"
 ipa = "kʷa˧˩˨"
-poznamka = "ba quả xoài = tři manga; na jihu trái"
+poznamka = "ba quả xoài = tři manga; jih: trái"
 stitky = ["počítací slovo"]
 
 [[slovicka]]
@@ -162,7 +162,7 @@ vi = "cân"
 cs = "kilo"
 vyslovnost_cs = "kən (rovně)"
 ipa = "kɤ̆n˧˧"
-poznamka = "na severu cân, na jihu ký: một cân = kilo"
+poznamka = "một cân = kilo; jih: ký"
 stitky = ["nakupování"]
 
 [[slovicka]]

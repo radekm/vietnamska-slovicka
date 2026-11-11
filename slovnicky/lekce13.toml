@@ -21,7 +21,7 @@ vi = "ô tô"
 cs = "auto"
 vyslovnost_cs = "o (rovně) to (rovně)"
 ipa = "ʔo˧˧ to˧˧"
-poznamka = "na severu ô tô, na jihu xe hơi"
+poznamka = "jih: xe hơi"
 stitky = ["doprava"]
 
 [[slovicka]]
@@ -36,7 +36,7 @@ vi = "tàu hỏa"
 cs = "vlak"
 vyslovnost_cs = "tau (klesá) hua (klesá hluboko)"
 ipa = "tăw˧˨ hʷa˧˩˨"
-poznamka = "často jen tàu"
+poznamka = "často jen tàu; jih: xe lửa"
 stitky = ["doprava"]
 
 [[slovicka]]
@@ -146,6 +146,7 @@ vi = "điều hòa"
 cs = "klimatizace"
 vyslovnost_cs = "diəu (klesá) hua (klesá)"
 ipa = "ɗiəw˧˨ hʷa˧˨"
+poznamka = "jih: máy lạnh"
 stitky = ["ubytování"]
 
 [[slovicka]]

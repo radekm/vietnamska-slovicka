@@ -28,7 +28,7 @@ vi = "ốm"
 cs = "nemocný"
 vyslovnost_cs = "om (stoupá)"
 ipa = "ʔom˨˦"
-poznamka = "na severu ốm, na jihu bệnh"
+poznamka = "jih: bệnh"
 stitky = ["zdraví"]
 
 [[slovicka]]
@@ -144,6 +144,7 @@ vi = "ví"
 cs = "peněženka"
 vyslovnost_cs = "vi (stoupá)"
 ipa = "vi˨˦"
+poznamka = "jih: bóp"
 stitky = ["nouze"]
 
 [[slovicka]]

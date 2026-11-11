@@ -13,7 +13,7 @@ vi = "trời"
 cs = "nebe; počasí (ve větách)"
 vyslovnost_cs = "čəj (klesá)"
 ipa = "t͡ɕɤj˧˨"
-poznamka = "trời mưa = prší, doslova nebe prší"
+poznamka = "trời mưa = prší, doslova „nebe prší“"
 stitky = ["počasí"]
 
 [[slovicka]]

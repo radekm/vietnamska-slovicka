@@ -81,7 +81,7 @@ vi = "bố"
 cs = "táta"
 vyslovnost_cs = "bo (stoupá)"
 ipa = "ɓo˨˦"
-poznamka = "na severu, na jihu ba"
+poznamka = "jih: ba"
 stitky = ["rodina"]
 
 [[slovicka]]
@@ -89,6 +89,7 @@ vi = "mẹ"
 cs = "máma"
 vyslovnost_cs = "me (krátce klesá, ráz)"
 ipa = "mɛ˨˩ˀ"
+poznamka = "jih: má"
 stitky = ["rodina"]
 
 [[slovicka]]

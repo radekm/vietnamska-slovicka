@@ -63,7 +63,7 @@ vi = "tầng"
 cs = "patro"
 vyslovnost_cs = "təng (klesá)"
 ipa = "tɤ̆ŋ˧˨"
-poznamka = "na severu je tầng một přízemí, na jihu se přízemí říká tầng trệt"
+poznamka = "na severu je tầng một přízemí; jih: přízemí je tầng trệt, patro lầu"
 stitky = ["místo"]
 
 [[slovicka]]
@@ -97,7 +97,7 @@ klic = "phải (vpravo)"
 cs = "vpravo, pravý"
 vyslovnost_cs = "faj (klesá hluboko)"
 ipa = "faj˧˩˨"
-poznamka = "phải znamená i muset (lekce 8)"
+poznamka = "phải znamená i „muset“ (lekce 8)"
 stitky = ["směr"]
 
 [[slovicka]]
@@ -113,7 +113,7 @@ vi = "ngõ"
 cs = "ulička"
 vyslovnost_cs = "ngo (stoupá se zlomem)"
 ipa = "ŋɔ˧ˀ˥"
-poznamka = "hanojské uličky odbočující z ulice, v adresách je číslo za ngõ"
+poznamka = "hanojské uličky odbočující z ulice, v adresách je číslo za ngõ; jih: hẻm"
 stitky = ["místo"]
 
 [[slovicka]]

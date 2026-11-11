@@ -162,7 +162,7 @@ vi = "chúc sức khỏe!"
 cs = "na zdraví! (přípitek)"
 vyslovnost_cs = "čuk (stoupá) sɨk (stoupá) chue (klesá hluboko)"
 ipa = "t͡ɕuk͡p˦˥ sɯk˦˥ xʷɛ˧˩˨"
-poznamka = "zdvořilejší přípitek, doslova přeji zdraví"
+poznamka = "zdvořilejší přípitek, doslova „přeji zdraví“"
 stitky = ["fráze"]
 
 [[slovicka]]
@@ -170,7 +170,7 @@ vi = "trăm phần trăm!"
 cs = "do dna!"
 vyslovnost_cs = "čam (rovně) fən (klesá) čam (rovně)"
 ipa = "t͡ɕăm˧˧ fɤ̆n˧˨ t͡ɕăm˧˧"
-poznamka = "doslova sto procent"
+poznamka = "doslova „sto procent“"
 stitky = ["fráze"]
 
 [[slovicka]]

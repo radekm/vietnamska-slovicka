@@ -98,6 +98,7 @@ vi = "gửi"
 cs = "poslat"
 vyslovnost_cs = "gɨj (klesá hluboko)"
 ipa = "ɣɯj˧˩˨"
+poznamka = "jih: gởi"
 stitky = ["služby"]
 
 [[slovicka]]
