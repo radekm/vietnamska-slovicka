@@ -167,7 +167,7 @@ cs = "zákaz fotografování"
 vyslovnost_cs = "kəm (stoupá) čup (krátce klesá) ajng (klesá hluboko)"
 ipa = "kɤ̆m˨˦ t͡ɕup˨˩ ʔɛŋ̟˧˩˨"
 poznamka = "nápis"
-stitky = ["nápis"]
+stitky = ["nápis", "fráze"]
 
 [[slovicka]]
 vi = "mấy giờ đóng cửa?"

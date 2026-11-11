@@ -6,7 +6,7 @@ vi = "nhà vệ sinh ở đâu?"
 cs = "kde je záchod?"
 vyslovnost_cs = "ňa (klesá) ve (krátce klesá, ráz) sing (rovně) ə (klesá hluboko) dəu (rovně)"
 ipa = "ɲa˧˨ ve˨˩ˀ siŋ̟˧˧ ʔɤ˧˩˨ ɗɤ̆w˧˧"
-stitky = ["cesta"]
+stitky = ["cesta", "fráze"]
 
 [[slovicka]]
 vi = "khách sạn"
@@ -95,7 +95,7 @@ vi = "đi thẳng"
 cs = "jděte rovně"
 vyslovnost_cs = "di (rovně) thang (klesá hluboko)"
 ipa = "ɗi˧˧ tʰăŋ˧˩˨"
-stitky = ["směr"]
+stitky = ["směr", "fráze"]
 
 [[slovicka]]
 vi = "rẽ trái"
@@ -103,14 +103,14 @@ cs = "zahněte doleva"
 vyslovnost_cs = "ze (stoupá se zlomem) čaj (stoupá)"
 ipa = "zɛ˧ˀ˥ t͡ɕaj˨˦"
 poznamka = "rẽ = zahnout; jih: quẹo"
-stitky = ["směr"]
+stitky = ["směr", "fráze"]
 
 [[slovicka]]
 vi = "rẽ phải"
 cs = "zahněte doprava"
 vyslovnost_cs = "ze (stoupá se zlomem) faj (klesá hluboko)"
 ipa = "zɛ˧ˀ˥ faj˧˩˨"
-stitky = ["směr"]
+stitky = ["směr", "fráze"]
 
 [[slovicka]]
 vi = "bên trái"
@@ -145,14 +145,14 @@ vi = "có xa không?"
 cs = "je to daleko?"
 vyslovnost_cs = "ko (stoupá) sa (rovně) chong (rovně)"
 ipa = "kɔ˨˦ sa˧˧ xoŋ͡m˧˧"
-stitky = ["cesta"]
+stitky = ["cesta", "fráze"]
 
 [[slovicka]]
 vi = "tôi bị lạc"
 cs = "zabloudil jsem"
 vyslovnost_cs = "toj (rovně) bi (krátce klesá, ráz) lak (krátce klesá)"
 ipa = "toj˧˧ ɓi˨˩ˀ lak˨˩"
-stitky = ["cesta"]
+stitky = ["cesta", "fráze"]
 
 [[slovicka]]
 vi = "bản đồ"

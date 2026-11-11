@@ -7,7 +7,7 @@ cs = "prosím vás! (zavolání obsluhy)"
 vyslovnost_cs = "em (rovně) əj (rovně)"
 ipa = "ʔɛm˧˧ ʔɤj˧˧"
 poznamka = "obsluha bývá mladší, proto em; na staršího anh ơi nebo chị ơi"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "thực đơn"
@@ -22,7 +22,7 @@ cs = "můžu vidět jídelní lístek?"
 vyslovnost_cs = "čo (rovně) toj (rovně) sem (rovně) thɨk (krátce klesá) dən (rovně)"
 ipa = "t͡ɕɔ˧˧ toj˧˧ sɛm˧˧ tʰɯk˨˩ ɗɤn˧˧"
 poznamka = "doslova „dejte mi podívat se na jídelní lístek“"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "cho tôi một bát phở"
@@ -30,7 +30,7 @@ cs = "dejte mi jednu misku phở"
 vyslovnost_cs = "čo (rovně) toj (rovně) mot (krátce klesá) bat (stoupá) fə (klesá hluboko)"
 ipa = "t͡ɕɔ˧˧ toj˧˧ mot˨˩ ɓat˦˥ fɤ˧˩˨"
 poznamka = "cho tôi … = dejte mi …, chtěl bych …"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "bát"
@@ -76,7 +76,7 @@ vi = "một chai bia"
 cs = "jedna láhev piva"
 vyslovnost_cs = "mot (krátce klesá) čaj (rovně) biə (rovně)"
 ipa = "mot˨˩ t͡ɕaj˧˧ ɓiə˧˧"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "cay"
@@ -90,7 +90,7 @@ vi = "không cay"
 cs = "nepálivé, bez chilli"
 vyslovnost_cs = "chong (rovně) kaj (rovně)"
 ipa = "xoŋ͡m˧˧ kăj˧˧"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "không cho rau mùi"
@@ -98,7 +98,7 @@ cs = "bez koriandru"
 vyslovnost_cs = "chong (rovně) čo (rovně) zau (rovně) muj (klesá)"
 ipa = "xoŋ͡m˧˧ t͡ɕɔ˧˧ zăw˧˧ muj˧˨"
 poznamka = "doslova „nedávat koriandr“; rau mùi = koriandr, jih: ngò"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "món này là món gì?"
@@ -106,7 +106,7 @@ cs = "co je tohle za jídlo?"
 vyslovnost_cs = "mon (stoupá) naj (klesá) la (klesá) mon (stoupá) zi (klesá)"
 ipa = "mɔn˨˦ năj˧˨ la˧˨ mɔn˨˦ zi˧˨"
 poznamka = "món = jídlo, chod"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "ngon quá!"
@@ -114,7 +114,7 @@ cs = "to je výborné!"
 vyslovnost_cs = "ngon (rovně) kua (stoupá)"
 ipa = "ŋɔn˧˧ kʷa˨˦"
 poznamka = "quá = moc, velmi (dává se za přídavné jméno)"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "tôi ăn chay"
@@ -122,7 +122,7 @@ cs = "jsem vegetarián"
 vyslovnost_cs = "toj (rovně) an (rovně) čaj (rovně)"
 ipa = "toj˧˧ ʔăn˧˧ t͡ɕăj˧˧"
 poznamka = "doslova „jím postní jídlo“"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "nước đá"
@@ -137,7 +137,7 @@ cs = "kolik to stojí?"
 vyslovnost_cs = "bau (rovně) ňiəu (rovně) tiən (klesá)"
 ipa = "ɓaw˧˧ ɲiəw˧˧ tiən˧˨"
 poznamka = "tiền = peníze"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "tính tiền"
@@ -145,7 +145,7 @@ cs = "zaplatím / účet, prosím"
 vyslovnost_cs = "ting (stoupá) tiən (klesá)"
 ipa = "tiŋ̟˨˦ tiən˧˨"
 poznamka = "např. em ơi, tính tiền! (doslova „spočítat peníze“); stejně často thanh toán = zaplatit"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
 vi = "cho tôi xin hóa đơn"
@@ -153,4 +153,4 @@ cs = "můžu dostat účtenku?"
 vyslovnost_cs = "čo (rovně) toj (rovně) sin (rovně) hua (stoupá) dən (rovně)"
 ipa = "t͡ɕɔ˧˧ toj˧˧ sin˧˧ hʷa˨˦ ɗɤn˧˧"
 poznamka = "xin = zdvořile poprosit"
-stitky = ["restaurace"]
+stitky = ["restaurace", "fráze"]

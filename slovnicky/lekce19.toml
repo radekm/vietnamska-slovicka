@@ -177,7 +177,7 @@ cs = "zákaz kouření"
 vyslovnost_cs = "kəm (stoupá) hut (stoupá) thuək (stoupá)"
 ipa = "kɤ̆m˨˦ hut˦˥ tʰuək˦˥"
 poznamka = "nápis; hút thuốc = kouřit"
-stitky = ["nápis"]
+stitky = ["nápis", "fráze"]
 
 [[slovicka]]
 vi = "hết hàng"
@@ -201,7 +201,7 @@ cs = "půjčovna motorek"
 vyslovnost_cs = "čo (rovně) thue (rovně) se (rovně) maj (stoupá)"
 ipa = "t͡ɕɔ˧˧ tʰʷe˧˧ sɛ˧˧ măj˨˦"
 poznamka = "nápis; cho thuê = pronajímá se"
-stitky = ["nápis"]
+stitky = ["nápis", "fráze"]
 
 [[slovicka]]
 vi = "không phận sự miễn vào"
@@ -209,4 +209,4 @@ cs = "nepovolaným vstup zakázán"
 vyslovnost_cs = "chong (rovně) fən (krátce klesá, ráz) sɨ (krátce klesá, ráz) miən (stoupá se zlomem) vau (klesá)"
 ipa = "xoŋ͡m˧˧ fɤ̆n˨˩ˀ sɯ˨˩ˀ miən˧ˀ˥ vaw˧˨"
 poznamka = "nápis"
-stitky = ["nápis"]
+stitky = ["nápis", "fráze"]
