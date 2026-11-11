@@ -542,12 +542,15 @@ Co review potvrdilo:
 
 Co se opravilo:
 
-- **Jediná změna `vi`:** *cà phê sữa đá* (lekce 5) je jižní název, kartička je teď hanojské
-  ***nâu đá*** (schváleno autorem, kartička přišla o postup). Jižní název je v poznámce.
+- **Změny `vi`** (schváleno autorem, tyto čtyři kartičky přišly o postup): jižní nebo
+  spíš jižní podoby nahradila severní, původní je v poznámce jako „jih: …“.
+  *cà phê sữa đá* → ***nâu đá*** (lekce 5), *tính tiền* → ***thanh toán*** a *nước đá* →
+  ***đá*** (lekce 6), *khuyến mãi* → ***khuyến mại*** (lekce 19). *đá* má předem
+  `klic = "đá (led)"` kvůli homonymům (*đá* = kámen, kopnout).
 - **Zpřesnění `cs` a poznámek** (klíče beze změny): *tôi ở đây hai tuần* (bez *rồi* = „na dva
-  týdny“), *bạn chụp giúp tôi nhé?* (tykání, zdvořilejší varianta v poznámce), *khuyến mãi*
-  (akce, ne výprodej; i *khuyến mại*), *tháng* (duben je vždy *tháng tư*), *bao giờ*,
-  *tạm biệt* (formální), *tính tiền* (i *thanh toán*), *xanh* (*xanh da trời*).
+  týdny“), *bạn chụp giúp tôi nhé?* (tykání, zdvořilejší varianta v poznámce), *khuyến mại*
+  (akce, ne výprodej), *tháng* (duben je vždy *tháng tư*), *bao giờ*, *tạm biệt* (formální),
+  *xanh* (*xanh da trời*).
 - ***chè*** má `cs` jen „sladký dezert“, čaj je v poznámce, štítek `jídlo` (nahrazuje
   rozhodnutí z etapy 10).
 - **Kartičky, které se pletly ve směru CS → VI,** dostaly rozlišující `cs`: *sắp* / *sớm*,

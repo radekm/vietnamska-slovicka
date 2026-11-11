@@ -125,10 +125,12 @@ poznamka = "doslova „jím postní jídlo“"
 stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
-vi = "nước đá"
+vi = "đá"
+klic = "đá (led)"
 cs = "led (do pití)"
-vyslovnost_cs = "nɨək (stoupá) da (stoupá)"
-ipa = "nɯək˦˥ ɗa˨˦"
+vyslovnost_cs = "da (stoupá)"
+ipa = "ɗa˨˦"
+poznamka = "celým názvem nước đá, tak hlavně na jihu; đá znamená i „kámen“"
 stitky = ["pití"]
 
 [[slovicka]]
@@ -140,11 +142,11 @@ poznamka = "tiền = peníze"
 stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
-vi = "tính tiền"
+vi = "thanh toán"
 cs = "zaplatím / účet, prosím"
-vyslovnost_cs = "ting (stoupá) tiən (klesá)"
-ipa = "tiŋ̟˨˦ tiən˧˨"
-poznamka = "např. em ơi, tính tiền! (doslova „spočítat peníze“); stejně často thanh toán = zaplatit"
+vyslovnost_cs = "thajng (rovně) tuan (stoupá)"
+ipa = "tʰɛŋ̟˧˧ tʷan˨˦"
+poznamka = "např. em ơi, thanh toán! (thanh toán = zaplatit); jih: tính tiền, doslova „spočítat peníze“"
 stitky = ["restaurace", "fráze"]
 
 [[slovicka]]
