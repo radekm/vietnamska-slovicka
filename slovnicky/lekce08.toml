@@ -222,8 +222,8 @@ stitky = ["fráze"]
 
 [[slovicka]]
 vi = "bạn giúp tôi được không?"
-cs = "můžete mi pomoct?"
+cs = "můžeš mi pomoct?"
 vyslovnost_cs = "ban (krátce klesá, ráz) zup (stoupá) toj (rovně) dɨək (krátce klesá) chong (rovně)"
 ipa = "ɓan˨˩ˀ zup˦˥ toj˧˧ ɗɯək˨˩ xoŋ͡m˧˧"
-poznamka = "… được không? = může(te) …?"
+poznamka = "… được không? = můžeš …?, šlo by …?"
 stitky = ["fráze"]

@@ -561,10 +561,14 @@ Co se opravilo:
 - **Doslovné významy** v poznámkách jsou v uvozovkách („doslova „odnést domů““).
 - **Štítek `fráze`** mají navíc i fráze v lekcích 6, 7, 19 a 20, které měly jen tematický
   štítek.
+- **Štítek `poloha`** mají předložky a slova pro polohu v lekci 18 (*trên, dưới, trong,
+  góc, tầng*…). Štítek `místo` zůstal místům ve městě (lekce 7, *phố* a *ngõ* v lekci 18).
+- ***bạn* se v `cs` překládá všude tykáním** (opraveno *bạn giúp tôi được không?* v lekci 8).
+- **Názvy jídel v `cs`** (*phở, bún chả, chả cá, xôi, lẩu, bia hơi*) zůstávají, protože
+  se ta jídla tak jmenují (rozhodnutí autora).
 
 Co zůstalo:
 
-- *bạn* se v `cs` překládá někde tykáním a někde vykáním (lekce 8, 13).
 - Český popis výslovnosti nerozliší *uân* a *uôn* (obojí „uən“), rozdíl je jen v IPA.
 - Hovorové ceny *lít* a *củ* se nepodařilo ověřit ve zdroji, odpovídají ale běžnému úzu.
 
@@ -645,7 +649,7 @@ slovnicky/
 
 - Ve směru CS → VI se na líci ukazuje i poznámka a ta často prozrazuje odpověď (u 111
   slovíček obsahuje přímo hledané slovo, např. u *đi* „đi bộ = jít pěšky“). U názvů jídel (*phở, bún chả, chả cá, xôi, lẩu, bia hơi*) je
-  odpověď už v `cs`. Řešením by bylo ukazovat poznámku až na rubu, to je změna kódu.
+  odpověď už v `cs`, to je záměr. Řešením by bylo ukazovat poznámku až na rubu, to je změna kódu.
 - Neuložené změny v Nastavení se odchodem na jinou záložku zahodí (na obrazovce je jen
   upozornění). Případně doplnit potvrzovací dotaz.
 - V logu jsou i záznamy knihoven (eframe, wgpu, rfd). Případné filtrování zatím neřešíme.

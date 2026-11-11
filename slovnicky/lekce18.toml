@@ -6,28 +6,28 @@ vi = "trên"
 cs = "na, nad, nahoře"
 vyslovnost_cs = "čen (rovně)"
 ipa = "t͡ɕen˧˧"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "dưới"
 cs = "pod, dole"
 vyslovnost_cs = "zɨəj (stoupá)"
 ipa = "zɯəj˨˦"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "trong"
 cs = "v, uvnitř"
 vyslovnost_cs = "čong (rovně)"
 ipa = "t͡ɕɔŋ͡m˧˧"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "ngoài"
 cs = "venku, vně"
 vyslovnost_cs = "nguaj (klesá)"
 ipa = "ŋʷaj˧˨"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "bên cạnh"
@@ -35,28 +35,28 @@ cs = "vedle"
 vyslovnost_cs = "ben (rovně) kajng (krátce klesá, ráz)"
 ipa = "ɓen˧˧ kɛŋ̟˨˩ˀ"
 poznamka = "stačí i cạnh"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "đối diện"
 cs = "naproti"
 vyslovnost_cs = "doj (stoupá) ziən (krátce klesá, ráz)"
 ipa = "ɗoj˨˦ ziən˨˩ˀ"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "giữa"
 cs = "mezi, uprostřed"
 vyslovnost_cs = "zɨə (stoupá se zlomem)"
 ipa = "zɯə˧ˀ˥"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "góc"
 cs = "roh"
 vyslovnost_cs = "gok (stoupá)"
 ipa = "ɣɔk͡p˦˥"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "tầng"
@@ -64,7 +64,7 @@ cs = "patro"
 vyslovnost_cs = "təng (klesá)"
 ipa = "tɤ̆ŋ˧˨"
 poznamka = "na severu je tầng một přízemí; jih: přízemí je tầng trệt, patro lầu"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "phía trước"
@@ -72,7 +72,7 @@ cs = "vpředu, před"
 vyslovnost_cs = "fiə (stoupá) čɨək (stoupá)"
 ipa = "fiə˨˦ t͡ɕɯək˦˥"
 poznamka = "trước = před (lekce 10)"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "phía sau"
@@ -80,7 +80,7 @@ cs = "vzadu, za"
 vyslovnost_cs = "fiə (stoupá) sau (rovně)"
 ipa = "fiə˨˦ săw˧˧"
 poznamka = "sau = po, za (lekce 10)"
-stitky = ["místo"]
+stitky = ["poloha"]
 
 [[slovicka]]
 vi = "trái"
