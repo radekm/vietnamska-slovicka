@@ -127,11 +127,11 @@ stitky = ["pití"]
 
 [[slovicka]]
 vi = "chè"
-cs = "sladký dezert chè; na severu i čaj"
+cs = "sladký dezert (z fazolí, ovoce a kokosového mléka)"
 vyslovnost_cs = "če (klesá)"
 ipa = "t͡ɕɛ˧˨"
-poznamka = "dezert z fazolí, ovoce a kokosového mléka; čaj: chè xanh = zelený čaj, jinak trà (lekce 5)"
-stitky = ["pití"]
+poznamka = "na severu i čaj: chè xanh = zelený čaj, jinak trà (lekce 5); ledový čaj je trà đá"
+stitky = ["jídlo"]
 
 [[slovicka]]
 vi = "trà đá"

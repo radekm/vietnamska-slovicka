@@ -3,7 +3,7 @@ popis = "Nápisy na dveřích, v obchodech, v hotelu a na ulici"
 
 [[slovicka]]
 vi = "cửa"
-cs = "dveře, vchod"
+cs = "dveře"
 vyslovnost_cs = "kɨə (klesá hluboko)"
 ipa = "kɯə˧˩˨"
 stitky = ["nápis"]
@@ -99,7 +99,7 @@ stitky = ["nápis"]
 
 [[slovicka]]
 vi = "hết"
-cs = "došlo, vyprodáno, konec"
+cs = "došlo, skončilo"
 vyslovnost_cs = "het (stoupá)"
 ipa = "het˦˥"
 poznamka = "hết rồi = už není"
@@ -121,7 +121,7 @@ stitky = ["nápis"]
 
 [[slovicka]]
 vi = "chú ý"
-cs = "pozor, upozornění"
+cs = "upozornění, pozor (nápis)"
 vyslovnost_cs = "ču (stoupá) i (stoupá)"
 ipa = "t͡ɕu˨˦ ʔi˨˦"
 poznamka = "nápis"
@@ -136,10 +136,10 @@ stitky = ["nápis"]
 
 [[slovicka]]
 vi = "khuyến mãi"
-cs = "akce, výprodej"
+cs = "akce, akční nabídka"
 vyslovnost_cs = "chuiən (stoupá) maj (stoupá se zlomem)"
 ipa = "xʷiən˨˦ maj˧ˀ˥"
-poznamka = "nápis v obchodech; sleva = giảm giá (lekce 12)"
+poznamka = "nápis v obchodech, píše se i khuyến mại; sleva = giảm giá (lekce 12)"
 stitky = ["nápis"]
 
 [[slovicka]]

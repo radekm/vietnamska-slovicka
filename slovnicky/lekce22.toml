@@ -185,7 +185,7 @@ vi = "cho tôi đổi phòng"
 cs = "chci jiný pokoj"
 vyslovnost_cs = "čo (rovně) toj (rovně) doj (klesá hluboko) fong (klesá)"
 ipa = "t͡ɕɔ˧˧ toj˧˧ ɗoj˧˩˨ fɔŋ͡m˧˨"
-poznamka = "doslova nechte mě vyměnit pokoj"
+poznamka = "doslova „nechte mě vyměnit pokoj“; zdvořileji cho tôi đổi phòng được không?"
 stitky = ["fráze"]
 
 [[slovicka]]
@@ -193,5 +193,5 @@ vi = "bao giờ xong?"
 cs = "kdy to bude hotové?"
 vyslovnost_cs = "bau (rovně) zə (klesá) song (rovně)"
 ipa = "ɓaw˧˧ zɤ˧˨ sɔŋ͡m˧˧"
-poznamka = "bao giờ = kdy (sever), xong = hotovo"
+poznamka = "bao giờ = kdy (stejně jako khi nào), xong = hotovo"
 stitky = ["fráze"]

@@ -136,9 +136,10 @@ stitky = ["fráze"]
 
 [[slovicka]]
 vi = "tôi ở đây hai tuần"
-cs = "jsem tu dva týdny"
+cs = "jsem tu na dva týdny"
 vyslovnost_cs = "toj (rovně) ə (klesá hluboko) dəj (rovně) haj (rovně) tuən (klesá)"
 ipa = "toj˧˧ ʔɤ˧˩˨ ɗɤ̆j˧˧ haj˧˧ tʷɤ̆n˧˨"
+poznamka = "tôi ở đây hai tuần rồi = jsem tu už dva týdny"
 stitky = ["fráze"]
 
 [[slovicka]]
@@ -150,25 +151,25 @@ stitky = ["fráze"]
 
 [[slovicka]]
 vi = "bạn chụp giúp tôi nhé?"
-cs = "vyfotíte mě, prosím?"
+cs = "vyfotíš mě, prosím?"
 vyslovnost_cs = "ban (krátce klesá, ráz) čup (krátce klesá) zup (stoupá) toj (rovně) ňe (stoupá)"
 ipa = "ɓan˨˩ˀ t͡ɕup˨˩ zup˦˥ toj˧˧ ɲɛ˨˦"
-poznamka = "giúp = pomoct, udělat za někoho; nhé = změkčující částice"
+poznamka = "giúp = pomoct, udělat za někoho; nhé = změkčující částice; cizího a staršího: anh/chị chụp giúp em được không ạ?"
 stitky = ["fráze"]
 
 [[slovicka]]
 vi = "thật à?"
-cs = "opravdu?"
+cs = "opravdu? (je to pravda?)"
 vyslovnost_cs = "thət (krátce klesá) a (klesá)"
 ipa = "tʰɤ̆t˨˩ ʔa˧˨"
 stitky = ["fráze"]
 
 [[slovicka]]
 vi = "thế à?"
-cs = "vážně? / aha"
+cs = "aha, je to tak? (přitakání)"
 vyslovnost_cs = "the (stoupá) a (klesá)"
 ipa = "tʰe˨˦ ʔa˧˨"
-poznamka = "severní; jih: vậy hả?"
+poznamka = "reakce na novou informaci, severní; jih: vậy hả?"
 stitky = ["fráze"]
 
 [[slovicka]]

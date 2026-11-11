@@ -101,7 +101,7 @@ vi = "tháng"
 cs = "měsíc"
 vyslovnost_cs = "thang (stoupá)"
 ipa = "tʰaŋ˨˦"
-poznamka = "měsíce se tvoří tháng + číslo: tháng hai = únor; leden je často tháng giêng, duben tháng tư"
+poznamka = "měsíce se tvoří tháng + číslo: tháng hai = únor; leden je i tháng giêng, duben je vždy tháng tư"
 stitky = ["čas"]
 
 [[slovicka]]
@@ -129,7 +129,7 @@ stitky = ["čas"]
 
 [[slovicka]]
 vi = "sớm"
-cs = "brzy"
+cs = "brzy (časně)"
 vyslovnost_cs = "səm (stoupá)"
 ipa = "sɤm˨˦"
 stitky = ["čas"]
